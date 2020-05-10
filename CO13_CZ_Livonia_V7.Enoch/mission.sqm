@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
 		nextID=39;
@@ -131,7 +131,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=12;
+		items=9;
 		class Item0
 		{
 			dataType="Group";
@@ -305,36 +305,6 @@ class Mission
 		};
 		class Item2
 		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=3;
-			atlOffset=-252.4516;
-		};
-		class Item3
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=8;
-			atlOffset=-252.4516;
-		};
-		class Item4
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=13;
-			atlOffset=-252.4516;
-		};
-		class Item5
-		{
 			dataType="Marker";
 			position[]={9908.4521,184.39735,3803.0471};
 			name="respawn_west";
@@ -345,7 +315,7 @@ class Mission
 			id=17;
 			atlOffset=2.750885;
 		};
-		class Item6
+		class Item3
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -437,7 +407,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item7
+		class Item4
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -530,7 +500,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item8
+		class Item5
 		{
 			dataType="Group";
 			side="West";
@@ -549,13 +519,13 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{[this,""BLUFOR_MTP"",""PL""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""PL""] call tb3_gear_fnc_Loadout;}";
 						description="Team Leader (Mission lead)@Team 1";
 						isPlayable=1;
 					};
 					id=23;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -611,7 +581,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""BLUFOR_MTP"",""MED""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""MED""] call tb3_gear_fnc_Loadout;}";
 						description="Medic@Team 1";
 						isPlayable=1;
 					};
@@ -666,19 +636,20 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9906.8887,181.65042,3800.9028};
-						angles[]={-0,0,6.2816415};
+						angles[]={0,0,6.2816415};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[this,""BLUFOR_MTP"",""FSO""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""FSO""] call tb3_gear_fnc_Loadout;}";
 						description="Fire Support Officer@Team 1";
 						isPlayable=1;
 					};
 					id=25;
 					type="B_soldier_UAV_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -727,9 +698,9 @@ class Mission
 			{
 			};
 			id=22;
-			atlOffset=1.5258789e-005;
+			atlOffset=3.0517578e-005;
 		};
-		class Item9
+		class Item6
 		{
 			dataType="Group";
 			side="West";
@@ -749,7 +720,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{[this,""BLUFOR_MTP"",""TL""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""TL""] call tb3_gear_fnc_Loadout;}";
 						description="Team Leader @Team 2";
 						isPlayable=1;
 					};
@@ -810,12 +781,13 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this,""BLUFOR_MTP"",""UGL""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""UGL""] call tb3_gear_fnc_Loadout;}";
 						description="Rifleman (UGL) @Team 2";
 						isPlayable=1;
 					};
 					id=28;
 					type="B_Soldier_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -870,7 +842,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this,""BLUFOR_MTP"",""RF""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""RF""] call tb3_gear_fnc_Loadout;}";
 						description="Rifleman  @Team 2";
 						isPlayable=1;
 					};
@@ -931,7 +903,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""BLUFOR_MTP"",""LMG""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""LMG""] call tb3_gear_fnc_Loadout;}";
 						description="Autormatic Rifleman @Team 2";
 						isPlayable=1;
 					};
@@ -987,7 +959,7 @@ class Mission
 			id=26;
 			atlOffset=3.0517578e-005;
 		};
-		class Item10
+		class Item7
 		{
 			dataType="Group";
 			side="West";
@@ -1007,13 +979,13 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{[this,""BLUFOR_MTP"",""TL""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""TL""] call tb3_gear_fnc_Loadout;}";
 						description="Team Leader @Team 3";
 						isPlayable=1;
 					};
 					id=32;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1068,12 +1040,13 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this,""BLUFOR_MTP"",""UGL""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""UGL""] call tb3_gear_fnc_Loadout;}";
 						description="Rifleman (UGL) @Team 3";
 						isPlayable=1;
 					};
 					id=33;
 					type="B_Soldier_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1128,7 +1101,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this,""BLUFOR_MTP"",""RF""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""RF""] call tb3_gear_fnc_Loadout;}";
 						description="Rifleman  @Team 3";
 						isPlayable=1;
 					};
@@ -1189,12 +1162,13 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[this,""BLUFOR_MTP"",""LMG""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""LMG""] call tb3_gear_fnc_Loadout;}";
 						description="Autormatic Rifleman @Team 3";
 						isPlayable=1;
 					};
 					id=35;
 					type="B_soldier_AR_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1243,9 +1217,9 @@ class Mission
 			{
 			};
 			id=31;
-			atlOffset=1.5258789e-005;
+			atlOffset=3.0517578e-005;
 		};
-		class Item11
+		class Item8
 		{
 			dataType="Group";
 			side="West";
@@ -1263,13 +1237,13 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,""BLUFOR_MTP"",""PILOT""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""PILOT""] call tb3_gear_fnc_Loadout;}";
 						description="Air Crew @Rotary Wing / Air Support";
 						isPlayable=1;
 					};
 					id=37;
 					type="B_Helipilot_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1324,12 +1298,13 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this,""BLUFOR_MTP"",""PILOT""] call tb3_gear_fnc_Loadout;}";
+						init="call{[this,""BLUFOR_WDL"",""PILOT""] call tb3_gear_fnc_Loadout;}";
 						description="Air Crew @Rotary Wing / Air Support";
 						isPlayable=1;
 					};
 					id=38;
 					type="B_Helipilot_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1378,7 +1353,7 @@ class Mission
 			{
 			};
 			id=36;
-			atlOffset=1.5258789e-005;
+			atlOffset=3.0517578e-005;
 		};
 	};
 };
