@@ -4,4 +4,5 @@ class TB3_Gear {
 	#include "blufor_mtp.hpp"
   #include "blufor_wdl.hpp"
   #include "napa.hpp"
+  #include "rhscon_wdl.hpp"
 };
