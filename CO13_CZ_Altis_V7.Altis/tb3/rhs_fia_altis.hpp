@@ -1,6 +1,6 @@
 //"rhs_weap_rpg75"
 
-class NAPA {
+class RHS_FIA_Altis {
   class BaseUnit {
     allowPlayerGoggles = 1;
     ace_medic = 1;

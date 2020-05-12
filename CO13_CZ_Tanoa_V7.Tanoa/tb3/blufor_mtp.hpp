@@ -180,14 +180,15 @@ class BLUFOR_MTP {
         {"B_IR_Grenade",1},
         {"ACE_fieldDressing",20},
         {"ACE_packingBandage",20},
-        {"ACE_quikclot",20},
-        {"ACE_elasticBandage",20},
+        {"ACE_quikclot",10},
+        {"ACE_elasticBandage",10},
         {"ACE_morphine",10},
         {"ACE_epinephrine",10},
         {"ACE_adenosine",10},
         {"ACE_salineIV_250",4},
-        {"ACE_bloodIV",4},
+        {"ACE_salineIV_500",2},
         {"ACE_personalAidKit",1},
+        {"ACE_surgicalKit",1},
         {"ACE_splint",8},
         {"ACE_tourniquet",5}
       };

@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=39;
+		nextID=41;
 	};
 	class Camera
 	{
-		pos[]={9905.1055,185.13777,3783.6235};
-		dir[]={0.2155156,-0.27391788,0.93740976};
-		up[]={0.061387394,0.96173537,0.26701692};
-		aside[]={0.97468328,-2.0582229e-007,-0.22408524};
+		pos[]={9910.667,206.63278,3767.498};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -144,8 +144,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9914.1543,181.64594,3799.8801};
-						angles[]={6.278389,0,0.0032018756};
+						position[]={9914.1543,181.64592,3799.8801};
+						angles[]={6.2783856,0,0.0031939524};
 					};
 					side="West";
 					flags=6;
@@ -155,11 +155,12 @@ class Mission
 						init="call{[this,""BLUFOR_WDL"",""ZEUS""] call tb3_gear_fnc_Loadout;}";
 						name="zeus";
 						description="Zeus@High Command";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1;
 					type="B_officer_F";
-					atlOffset=3.0517578e-005;
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -208,7 +209,7 @@ class Mission
 			{
 			};
 			id=0;
-			atlOffset=3.0517578e-005;
+			atlOffset=1.5258789e-005;
 		};
 		class Item1
 		{

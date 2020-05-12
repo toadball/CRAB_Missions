@@ -146,15 +146,17 @@ class NAPA {
     backpackContents[] = {
       {"ACE_fieldDressing",20},
       {"ACE_packingBandage",20},
-      {"ACE_quikclot",20},
-      {"ACE_morphine",20},
-      {"ACE_epinephrine",20},
-      {"ACE_adenosine",20},
+      {"ACE_quikclot",10},
+      {"ACE_elasticBandage",10},
+      {"ACE_morphine",10},
+      {"ACE_epinephrine",10},
+      {"ACE_adenosine",10},
       {"ACE_salineIV_250",4},
-      {"ACE_bloodIV",4},
+      {"ACE_salineIV_500",2},
       {"ACE_personalAidKit",1},
-      {"ACE_splint",4},
-      {"ACE_tourniquet",4}
+      {"ACE_surgicalKit",1},
+      {"ACE_splint",8},
+      {"ACE_tourniquet",5}
     };
   };
 
@@ -250,15 +252,17 @@ class NAPA {
       {"rhs_medic_bag",1,{
           {"ACE_fieldDressing",20},
           {"ACE_packingBandage",20},
-          {"ACE_quikclot",20},
+          {"ACE_quikclot",10},
+          {"ACE_elasticBandage",10},
           {"ACE_morphine",10},
           {"ACE_epinephrine",10},
           {"ACE_adenosine",10},
           {"ACE_salineIV_250",4},
-          {"ACE_bloodIV",4},
+          {"ACE_salineIV_500",2},
           {"ACE_personalAidKit",1},
-          {"ACE_splint",4},
-          {"ACE_tourniquet",4}
+          {"ACE_surgicalKit",1},
+          {"ACE_splint",8},
+          {"ACE_tourniquet",5}
         }
       },
       {"rhsgref_ttsko_alicepack",2,{
