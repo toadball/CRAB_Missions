@@ -22,7 +22,7 @@ class CfgDebriefing
 	};
 };
 
-OnLoadName  = "Crab Zeus - Altis";
+OnLoadName  = "Crab Zeus - Livonia";
 OnLoadMission = "Crabs";
 author = "Some Crab";
 briefingName = "Crab Zeus";
@@ -36,10 +36,11 @@ respawnDelay = 2;
 respawnOnStart = -1;
 respawnTemplates[] = {"MenuPosition"};
 enableDebugConsole	= 1;
+enableTargetDebug = 1;
 //enableDebugConsole[] = {"76561198011038597", "3749832749732749", "7492374983274234"};
 class Header
 {
 	gameType =  COOP;
 	minPlayers =  1;
-	maxPlayers = 13;
+	maxPlayers = 10;
 };
