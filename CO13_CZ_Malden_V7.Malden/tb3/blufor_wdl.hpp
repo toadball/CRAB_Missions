@@ -293,5 +293,76 @@ class BLUFOR_WDL {
 			{"ToolKit",1}
 		};
 	};
+  class LauncherCrate {
+    vehCargoWeapons[] = {
+      {"rhs_weap_m72a7",10},
+      {"launch_MRAWS_green_F",2},
+      {"ACE_Vector",2}
+    };
+    vehCargoMagazines[] = {
+      {"MRAWS_HE_F",12},
+      {"MRAWS_HEAT55_F",12},
+      {"MRAWS_HEAT_F",6}
+    };
+    vehCargoRucks[] = {
+      {"rhsusf_assault_eagleaiii_coy",2},
+      {"B_Carryall_cbr",2}
+    };
+  };
 
+  class LargeGearCrate {
+    vehCargoWeapons[] = {
+      {"rhs_weap_m72a7",10},
+      {"ACE_Vector",2}
+    };
+    vehCargoMagazines[] = {
+      {"rhs_mag_30Rnd_556x45_M855A1_PMAG",20},
+      {"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",20},
+      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",12},
+      {"rhsusf_20Rnd_762x51_SR25_m118_special_Mag",3},
+      {"rhsusf_20Rnd_762x51_SR25_m62_Mag",3},
+      {"HandGrenade",16},
+      {"SmokeShell",16},
+      {"1Rnd_HE_Grenade_shell",20},
+      {"DemoCharge_Remote_Mag",16}
+    };
+    vehCargoItems[] = {
+      {"ToolKit",1},
+      {"ACE_M26_Clacker",4},
+      {"ACE_DefusalKit",2}
+    };
+    vehCargoRucks[] = {
+      {"B_Carryall_cbr",2,{
+          {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",4},
+          {"HandGrenade",2},
+          {"SmokeShell",2}
+        }
+      },
+      {"rhsusf_assault_eagleaiii_coy",1,{
+          {"ACE_fieldDressing",20},
+          {"ACE_packingBandage",20},
+          {"ACE_quikclot",10},
+          {"ACE_elasticBandage",10},
+          {"ACE_morphine",10},
+          {"ACE_epinephrine",10},
+          {"ACE_adenosine",10},
+          {"ACE_salineIV_250",4},
+          {"ACE_salineIV_500",2},
+          {"ACE_personalAidKit",1},
+          {"ACE_surgicalKit",1},
+          {"ACE_splint",8},
+          {"ACE_tourniquet",5}
+        }
+      },
+      {"B_Carryall_cbr",2,{
+          {"rhs_mag_30Rnd_556x45_M855A1_PMAG",6},
+          {"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",2},
+          {"HandGrenade",2},
+          {"SmokeShell",2},
+          {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2}
+        }
+      },
+      {"rhsusf_assault_eagleaiii_coy",4}
+    };
+  };
 };
