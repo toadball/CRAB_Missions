@@ -214,6 +214,23 @@ class NAPA {
 			{"ToolKit",1}
 		};
 	};
+  
+  class LauncherCrate {
+    vehCargoWeapons[] = {
+      {"rhs_weap_rpg75",10},
+      {"RPG7_F",2},
+      {"ACE_Vector",2}
+    };
+    vehCargoMagazines[] = {
+      {"rhs_rpg7_OG7V_mag",12},
+      {"RPG7_F",12},
+      {"rhs_rpg7_PG7VR_mag",6}
+    };
+    vehCargoRucks[] = {
+      {"rhs_rpg_empty",2},
+      {"rhsgref_ttsko_alicepack",1}
+    };
+  };
   class LargeGearCrate {
     vehCargoWeapons[] = {
       {"rhs_weap_rpg75",5},
@@ -224,6 +241,8 @@ class NAPA {
       {"rhs_30Rnd_762x39mm_Savz58_Tracer",20},
       {"rhs_100Rnd_762x54mmR",6},
       {"rhs_100Rnd_762x54mmR_green",6},
+      {"rhs_10Rnd_762x54mmR_7N1",4},
+      {"rhs_10Rnd_762x54mmR_7N14",4},
       {"HandGrenade",16},
       {"SmokeShell",16},
       {"1Rnd_HE_Grenade_shell",20},
@@ -243,10 +262,21 @@ class NAPA {
         }
       },
       {"B_Carryall_oli",1,{
-          {"rhs_10Rnd_762x54mmR_7N1",2},
-          {"rhs_10Rnd_762x54mmR_7N14",2},
+          {"rhs_30Rnd_762x39mm_Savz58",6},
+          {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
           {"HandGrenade",2},
-          {"SmokeShell",2}
+          {"SmokeShell",2},
+          {"rhs_100Rnd_762x54mmR",1},
+          {"rhs_100Rnd_762x54mmR_green",1}
+        }
+      },
+      {"rhsgref_ttsko_alicepack",1,{
+          {"rhs_30Rnd_762x39mm_Savz58",6},
+          {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
+          {"HandGrenade",2},
+          {"SmokeShell",2},
+          {"rhs_100Rnd_762x54mmR",1},
+          {"rhs_100Rnd_762x54mmR_green",1}
         }
       },
       {"rhs_medic_bag",1,{
@@ -263,15 +293,6 @@ class NAPA {
           {"ACE_surgicalKit",1},
           {"ACE_splint",8},
           {"ACE_tourniquet",5}
-        }
-      },
-      {"rhsgref_ttsko_alicepack",2,{
-          {"rhs_30Rnd_762x39mm_Savz58",6},
-          {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2},
-          {"rhs_10Rnd_762x54mmR_7N1",2},
-          {"rhs_10Rnd_762x54mmR_7N14",2}
         }
       },
       {"B_FieldPack_oli",4}
