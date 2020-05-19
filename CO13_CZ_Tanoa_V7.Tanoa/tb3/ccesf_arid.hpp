@@ -13,7 +13,7 @@
                             }
             };
             
-            assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","ace_maptools", "ItemRadio", "nvgoggles_opfor"};
+            assignedItems[] = {"ItemMap","ItemCompass","ItemWatch", "ItemRadio", "nvgoggles_opfor"};
             
             headgear[] = {
                 "rhs_6b27m_ml",
@@ -49,6 +49,7 @@
             backpack[] = {"b_carryall_oli"};
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 4},
                 {"30Rnd_762x39_ak12_mag_tracer_f", 2},
                 {"SmokeShell", 2}
@@ -82,6 +83,7 @@
                 {"30Rnd_762x39_ak12_mag_f", 4},
                 {"ace_microdagr", 1},
                 {"SmokeShell", 2},
+                {"ace_maptools", 1},
                 {"SmokeShellGreen", 2},
                 {"rhs_vg40Op_green", 3},
                 {"rhs_vg40Op_red", 3},
@@ -112,6 +114,7 @@
 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 8},
                 {"30Rnd_762x39_ak12_mag_tracer_f", 2},
                 {"SmokeShell", 2},
@@ -135,6 +138,7 @@
 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 6},
                 {"30Rnd_762x39_ak12_mag_tracer_f", 2},
                 {"SmokeShell", 2},
@@ -157,7 +161,7 @@
             };
 
             backpackContents[] = {
-
+                {"ace_maptools", 1},
                 {"75rnd_762x39_ak12_mag_f", 5}
             };      
         };
@@ -183,6 +187,7 @@
 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 4},
                 {"SmokeShell", 2},
                 {"rhs_vog25", 15},
@@ -215,6 +220,7 @@
              backpackContents[] = {
                 {"acre_prc148", 1},
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
                 {"SmokeShell", 2},
                 {"itc_land_b_uav_packed", 2}
@@ -246,6 +252,7 @@
              backpackContents[] = {
                 {"acre_prc148", 1},
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
                 {"SmokeShell", 2},
                 {"SmokeShellGreen", 2},
@@ -258,6 +265,7 @@
         class RTO: baseUnit { 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 7},
                 {"30Rnd_762x39_ak12_mag_tracer_f", 2},
                 {"SmokeShell", 2},
@@ -287,6 +295,7 @@
                 
             backpackContents[] = {
                 {"rhs_acc_tgpv2", 1},
+                {"ace_maptools", 1},
                 {"rhs_acc_1pn34", 1},
                 {"rhs_10rnd_762x54mmr_7n14", 6},
                 {"SmokeShell", 2},
@@ -314,6 +323,7 @@
                 
             backpackContents[] = {
                 {"rhs_acc_1pn34", 1},
+                {"ace_maptools", 1},
                 {"rhs_20rnd_9x39mm_sp6", 3},
                 {"SmokeShell", 2},
                 {"ACE_salineIV_500", 2}
@@ -335,6 +345,7 @@
 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
                 {"rhs_rpg7_pg7vl_mag", 1},
                 {"rhs_rpg7_tbg7v_mag", 1}
@@ -344,6 +355,7 @@
         class LATA: baseUnit { 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
                 {"rhs_rpg7_pg7vl_mag", 4},
                 {"rhs_rpg7_tbg7v_mag", 2}
@@ -365,6 +377,7 @@
 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
                 {"RPG32_F", 1},
                 {"RPG32_HE_F", 1}
@@ -374,6 +387,7 @@
         class HATA: baseUnit { 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
                 {"RPG32_F", 3},
                 {"RPG32_HE_F", 2}
@@ -387,6 +401,7 @@
 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
                 {"SmokeShell", 2},
                 {"ACE_fieldDressing", 15},
@@ -419,7 +434,7 @@
             };
 
             backpackContents[] = {
-
+                {"ace_maptools", 1},
                 {"rhs_100rnd_762x54mmr_7n26", 3}
             };      
         };
@@ -439,6 +454,7 @@
 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
+                {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
                 {"SmokeShell", 2},
                 {"rhs_100rnd_762x54mmr_7n26", 4}
@@ -490,6 +506,7 @@
             vest[] = {"rhs_vest_commander"};
             vestContents[] = {
                 {"rhsgref_20rnd_765x17_vz61", 5},
+                {"ace_maptools", 1},
                 {"ace_microdagr", 1},
                 {"SmokeShellOrange", 2}
             };
