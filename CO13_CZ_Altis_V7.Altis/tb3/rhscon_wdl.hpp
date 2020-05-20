@@ -52,7 +52,7 @@ class RHSCON_WDL {
         {"HandGrenade",2},
         {"SmokeShell",2},
         {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
+        {"ACE_MapTools",1},
         {"ACE_microDAGR",1}
       };
 
@@ -92,10 +92,20 @@ class RHSCON_WDL {
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"Chemlight_green",2},
-      {"B_IR_Grenade",1},
+      {"ACE_MapTools",1},
       {"ace_IR_strobe_item",1},
       {"ACRE_PRC148",1},
-      {"ACE_microDAGR",1},
+      {"ACE_microDAGR",1}
+    };
+    backpackContents[] = {
+      {"rhsgref_30rnd_556x45_m21",4},
+      {"rhsgref_30rnd_556x45_m21_t",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",1},
       {"itc_land_tablet_rover",1}
     };
   };
@@ -120,7 +130,7 @@ class RHSCON_WDL {
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"Chemlight_green",2},
-      {"B_IR_Grenade",1},
+      {"ACE_MapTools",1},
       {"ACE_microDAGR",1}
     };
     backpackContents[] = {
@@ -143,7 +153,7 @@ class RHSCON_WDL {
         {"HandGrenade",2},
         {"SmokeShell",2},
         {"Chemlight_green",2},
-        {"ace_IR_strobe_item",1},
+        {"ACE_MapTools",1},
         {"itc_land_b_ar2i_packed",2},
         {"ace_uavbattery",2}
       };
@@ -168,8 +178,8 @@ class RHSCON_WDL {
         {"ACE_morphine",10},
         {"ACE_epinephrine",10},
         {"ACE_adenosine",10},
-        {"ACE_salineIV_250",4},
-        {"ACE_salineIV_500",2},
+        {"ACE_salineIV_250",8},
+        {"ACE_salineIV_500",4},
         {"ACE_personalAidKit",1},
         {"ACE_surgicalKit",1},
         {"ACE_splint",8},
@@ -190,7 +200,7 @@ class RHSCON_WDL {
         {"HandGrenade",2},
         {"SmokeShell",2},
         {"Chemlight_green",2},
-        {"B_IR_Grenade",1}
+        {"ACE_MapTools",1}
       };
       backpackContents[] = {
         {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2},
@@ -288,7 +298,13 @@ class RHSCON_WDL {
           {"SmokeShell",2}
         }
       },
-      {"rhs_medic_bag",1,{
+      {"B_Carryall_green_F",1,{
+          {"rhsgref_30rnd_556x45_m21",4},
+          {"rhsgref_30rnd_556x45_m21_t",2},
+          {"HandGrenade",2},
+          {"SmokeShell",2},
+          {"Chemlight_green",2},
+          {"B_IR_Grenade",1},
           {"ACE_fieldDressing",20},
           {"ACE_packingBandage",20},
           {"ACE_quikclot",10},
@@ -296,8 +312,8 @@ class RHSCON_WDL {
           {"ACE_morphine",10},
           {"ACE_epinephrine",10},
           {"ACE_adenosine",10},
-          {"ACE_salineIV_250",4},
-          {"ACE_salineIV_500",2},
+          {"ACE_salineIV_250",8},
+          {"ACE_salineIV_500",4},
           {"ACE_personalAidKit",1},
           {"ACE_surgicalKit",1},
           {"ACE_splint",8},

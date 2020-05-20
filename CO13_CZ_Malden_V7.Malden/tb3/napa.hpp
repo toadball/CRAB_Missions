@@ -77,11 +77,21 @@ class NAPA {
       {"rhs_30Rnd_762x39mm_Savz58",4},
       {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
       {"HandGrenade",2},
-      {"SmokeShell",2}
+      {"SmokeShell",2},
+      {"ACE_MapTools",1}
     };
 
-    backpack[] = {};
-    backpackContents[] = {};
+    backpack[] = {
+      "B_FieldPack_oli",
+      "B_FieldPack_khk"
+    };
+    backpackContents[] = {
+      {"rhs_30Rnd_762x39mm_Savz58",4},
+      {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"rhs_100Rnd_762x54mmR_green",1}
+    };
 
     magazines[] = {}; items[] = {};
   };
@@ -103,17 +113,20 @@ class NAPA {
       },
       "Binocular"
     };
-    backpack[] = {
-      "B_Carryall_oli",
-      "B_FieldPack_oli",
-      "B_FieldPack_khk"
+
+    vest[] = {
+      "V_Chestrig_oli",
+      "V_Chestrig_rgr",
+      "V_TacChestrig_grn_F",
+      "V_TacChestrig_oli_F"
     };
     vestContents[] = {
       {"rhs_30Rnd_762x39mm_Savz58",4},
       {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
       {"HandGrenade",2},
       {"SmokeShell",2},
-      {"ACRE_PRC148"}
+      {"ACRE_PRC148",1},
+      {"ACE_MapTools",1}
     };
 
   };
@@ -122,27 +135,42 @@ class NAPA {
   class RF: BaseUnit {};
   class UGL: BaseUnit {
     weapons[] = {
-      {"rhs_weap_m79",
-        {"1Rnd_HE_Grenade_shell"}
-      }
+      {
+        {"rhs_weap_savz58p",
+          {"rhs_30Rnd_762x39mm_Savz58"}
+        },
+        {"rhs_weap_savz58p_black",
+          {"rhs_30Rnd_762x39mm_Savz58"}
+        },
+        {"rhs_weap_savz58v",
+          {"rhs_30Rnd_762x39mm_Savz58"}
+        },
+        {"rhs_weap_savz58v_black",
+          {"rhs_30Rnd_762x39mm_Savz58"}
+        }
+      },
+      "launch_RPG7_F"
     };
-    vestContents[] = {
-      {"HandGrenade",2},
-      {"SmokeShell",2},
-      {"1Rnd_HE_Grenade_shell",14},
-      {"1Rnd_Smoke_Grenade_Shell",6}
+    backpack[] = {"rhs_rpg_empty"};
+    backpackContents[] = {
+      {"RPG7_F",2},
+      {"rhs_rpg7_OG7V_mag",1}
+    };
+  };
+  class RPG: UGL {};
+  class RPGA: BaseUnit {
+    backpack[] = {"rhs_rpg_empty"};
+    backpackContents[] = {
+      {"RPG7_F",1},
+      {"rhs_rpg7_OG7V_mag",2}
     };
   };
   class UAV: BaseUnit {};
 	class FSO: UAV {};
   class MED: BaseUnit {
     ace_medic = 2;
-    backpack[] = {
-      "B_Carryall_oli",
-      "B_FieldPack_oli",
-      "B_FieldPack_khk",
-      "rhs_medic_bag"
-    };
+
+    backpack[] = { "B_Carryall_oli" };
     backpackContents[] = {
       {"ACE_fieldDressing",20},
       {"ACE_packingBandage",20},
@@ -151,8 +179,8 @@ class NAPA {
       {"ACE_morphine",10},
       {"ACE_epinephrine",10},
       {"ACE_adenosine",10},
-      {"ACE_salineIV_250",4},
-      {"ACE_salineIV_500",2},
+      {"ACE_salineIV_250",8},
+      {"ACE_salineIV_500",4},
       {"ACE_personalAidKit",1},
       {"ACE_surgicalKit",1},
       {"ACE_splint",8},
@@ -176,9 +204,9 @@ class NAPA {
       {"rhs_100Rnd_762x54mmR",1},
       {"rhs_100Rnd_762x54mmR_green",1},
       {"HandGrenade",2},
-      {"SmokeShell",2}
+      {"SmokeShell",2},
+      {"ACE_MapTools",1}
     };
-    backpack[] = { "B_Carryall_oli" };
     backpackContents[] = {
       {"rhs_100Rnd_762x54mmR",1},
       {"rhs_100Rnd_762x54mmR_green",1}
@@ -194,7 +222,8 @@ class NAPA {
       {"rhs_10Rnd_762x54mmR_7N1",4},
       {"rhs_10Rnd_762x54mmR_7N14",4},
       {"HandGrenade",2},
-      {"SmokeShell",2}
+      {"SmokeShell",2},
+      {"ACE_MapTools",1}
     };
   };
   class PILOT: baseUnit {
@@ -205,7 +234,8 @@ class NAPA {
       {"SmokeShellGreen",2},
       {"HandGrenade",1},
       {"SmokeShellRed",1},
-      {"ACRE_PRC148",1}
+      {"ACRE_PRC148",1},
+      {"ACE_MapTools",1}
     };
 		backpack[] = {
 			"B_FieldPack_oli","B_FieldPack_khk"
@@ -214,7 +244,7 @@ class NAPA {
 			{"ToolKit",1}
 		};
 	};
-  
+
   class LauncherCrate {
     vehCargoWeapons[] = {
       {"rhs_weap_rpg75",10},
@@ -254,7 +284,7 @@ class NAPA {
       {"ACE_DefusalKit",2}
     };
     vehCargoRucks[] = {
-      {"B_Carryall_oli",1,{
+      {"B_Carryall_oli",2,{
         {"rhs_10Rnd_762x54mmR_7N1",2},
         {"rhs_10Rnd_762x54mmR_7N14",2},
         {"HandGrenade",2},
@@ -279,7 +309,11 @@ class NAPA {
           {"rhs_100Rnd_762x54mmR_green",1}
         }
       },
-      {"rhs_medic_bag",1,{
+      {"B_Carryall_oli",1,{
+          {"rhs_30Rnd_762x39mm_Savz58",6},
+          {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
+          {"HandGrenade",2},
+          {"SmokeShell",2},
           {"ACE_fieldDressing",20},
           {"ACE_packingBandage",20},
           {"ACE_quikclot",10},
@@ -287,8 +321,8 @@ class NAPA {
           {"ACE_morphine",10},
           {"ACE_epinephrine",10},
           {"ACE_adenosine",10},
-          {"ACE_salineIV_250",4},
-          {"ACE_salineIV_500",2},
+          {"ACE_salineIV_250",8},
+          {"ACE_salineIV_500",4},
           {"ACE_personalAidKit",1},
           {"ACE_surgicalKit",1},
           {"ACE_splint",8},

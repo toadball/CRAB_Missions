@@ -53,7 +53,8 @@ class BLUFOR_WDL {
         {"SmokeShell",2},
         {"Chemlight_green",2},
         {"B_IR_Grenade",1},
-        {"rhsusf_acc_nt4_black",1}
+        {"rhsusf_acc_nt4_black",1},
+        {"ACE_MapTools",1}
       };
 
     backpack[] = {"rhsusf_assault_eagleaiii_coy"};
@@ -96,7 +97,8 @@ class BLUFOR_WDL {
       {"ace_IR_strobe_item",1},
       {"ACRE_PRC148",1},
       {"rhsusf_acc_nt4_black",1},
-      {"itc_land_tablet_rover",1}
+      {"itc_land_tablet_rover",1},
+      {"ACE_MapTools",1}
     };
   };
   class ZEUS: PL {
@@ -127,7 +129,8 @@ class BLUFOR_WDL {
         {"B_IR_Grenade",1},
         {"rhsusf_acc_nt4_black",1},
         {"1Rnd_HE_Grenade_shell",10},
-        {"1Rnd_Smoke_Grenade_Shell",2}
+        {"1Rnd_Smoke_Grenade_Shell",2},
+        {"ACE_MapTools",1}
       };
       backpackContents[] = {
         {"rhs_mag_30Rnd_556x45_M855A1_PMAG",4},
@@ -151,7 +154,8 @@ class BLUFOR_WDL {
       {"B_IR_Grenade",1},
       {"ace_IR_strobe_item",1},
       {"ACRE_PRC148",1},
-      {"rhsusf_acc_nt4_black",1}
+      {"rhsusf_acc_nt4_black",1},
+      {"ACE_MapTools",1}
     };
     backpack[] = {"itc_land_b_uav_backpack"};
     assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","B_UavTerminal","rhsusf_ANPVS_15"};
@@ -185,8 +189,8 @@ class BLUFOR_WDL {
         {"ACE_morphine",10},
         {"ACE_epinephrine",10},
         {"ACE_adenosine",10},
-        {"ACE_salineIV_250",4},
-        {"ACE_salineIV_500",2},
+        {"ACE_salineIV_250",8},
+        {"ACE_salineIV_500",4},
         {"ACE_personalAidKit",1},
         {"ACE_surgicalKit",1},
         {"ACE_splint",8},
@@ -209,7 +213,8 @@ class BLUFOR_WDL {
         {"SmokeShell",2},
         {"Chemlight_green",2},
         {"B_IR_Grenade",1},
-        {"rhsusf_acc_nt4_black",1}
+        {"rhsusf_acc_nt4_black",1},
+        {"ACE_MapTools",1}
       };
       backpackContents[] = {
         {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2},
@@ -236,7 +241,8 @@ class BLUFOR_WDL {
         {"SmokeShell",2},
         {"Chemlight_green",2},
         {"B_IR_Grenade",1},
-        {"rhsusf_acc_aac_762sdn6_silencer",1}
+        {"rhsusf_acc_aac_762sdn6_silencer",1},
+        {"ACE_MapTools",1}
       };
       backpackContents[] = {
         {"rhsusf_20Rnd_762x51_SR25_m118_special_Mag",3},
@@ -284,7 +290,8 @@ class BLUFOR_WDL {
 		vestContents[] = {
 			{"rhsusf_mag_40Rnd_46x30_FMJ",6},
 			{"SmokeShellRed",2},
-			{"ACRE_PRC152",1}
+			{"ACRE_PRC148",1},
+      {"ACE_MapTools",1}
 		};
 		backpack[] = {
 			"rhsusf_falconii_coy","rhsusf_falconii_mc"
@@ -338,7 +345,13 @@ class BLUFOR_WDL {
           {"SmokeShell",2}
         }
       },
-      {"rhsusf_assault_eagleaiii_coy",1,{
+      {"B_Carryall_cbr",1,{
+          {"rhs_mag_30Rnd_556x45_M855A1_PMAG",4},
+          {"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",2},
+          {"HandGrenade",2},
+          {"SmokeShell",2},
+          {"Chemlight_green",2},
+          {"B_IR_Grenade",1},
           {"ACE_fieldDressing",20},
           {"ACE_packingBandage",20},
           {"ACE_quikclot",10},
@@ -346,8 +359,8 @@ class BLUFOR_WDL {
           {"ACE_morphine",10},
           {"ACE_epinephrine",10},
           {"ACE_adenosine",10},
-          {"ACE_salineIV_250",4},
-          {"ACE_salineIV_500",2},
+          {"ACE_salineIV_250",8},
+          {"ACE_salineIV_500",4},
           {"ACE_personalAidKit",1},
           {"ACE_surgicalKit",1},
           {"ACE_splint",8},
