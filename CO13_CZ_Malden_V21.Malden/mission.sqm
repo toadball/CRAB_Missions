@@ -62,7 +62,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="CO13_CZ_Malden_V7";
+		briefingName="CO13_CZ_Malden_V21";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
