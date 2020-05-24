@@ -1,7 +1,7 @@
   class chud {
     class BaseUnit {
       ace_earplugs = 1;
-      allowPlayerGoggles = 1;
+      allowPlayerGoggles = 0;
       ace_medic = 1;
 
       weapons[] = {
@@ -29,7 +29,10 @@
 		"rhs_ssh68",
       };
 
-      goggles[] = {};
+      goggles[] = {
+		  "G_Balaclava_blk",
+		  "G_Balaclava_oli"
+	  };
 
       uniform[] = {
 		"rhsgref_uniform_altis_lizard",
@@ -105,7 +108,21 @@
   };
   
   class PL: SL {};
-  class ZEUS: SL {};
+  class ZEUS: baseUnit {
+	  
+	  vest[] = {};
+	  backpack[] = {};
+	  weapons[] = {
+					{"hgun_Pistol_heavy_02_F",
+					{"6Rnd_45ACP_Cylinder"}}
+			      };
+	  
+	  
+	  headgear[] = {"H_Beret_CSAT_01_F"};
+	  uniform[] = {"rhs_uniform_mflora_patchless"};
+	  goggles[] = {"G_Aviator"};
+	  
+  };
   class TL: baseUnit {
 
 
