@@ -5,7 +5,6 @@ class TB3_Gear {
 	#include "blufor_wdl.hpp"
 	#include "napa.hpp"
 	#include "ecdfsf_arid.hpp"
-	#include "ecdfsf_wdl.hpp"
 	#include "rhscon_wdl.hpp"
 	#include "cdf_wdl.hpp"
 	#include "brh.hpp"
