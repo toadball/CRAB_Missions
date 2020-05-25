@@ -144,6 +144,7 @@ class RHS_TNLA {
       {"ACE_adenosine",10},
       {"ACE_salineIV_250",8},
       {"ACE_salineIV_500",4},
+      {"ACE_bloodIV",1},
       {"ACE_personalAidKit",1},
       {"ACE_surgicalKit",1},
       {"ACE_splint",8},
@@ -200,17 +201,19 @@ class RHS_TNLA {
   class LauncherCrate {
     vehCargoWeapons[] = {
       {"rhs_weap_rpg75",10},
-      {"RPG7_F",2},
+      {"rhs_weap_rpg7",2},
       {"Binocular",2}
     };
     vehCargoMagazines[] = {
       {"rhs_rpg7_OG7V_mag",12},
-      {"RPG7_F",12},
-      {"rhs_rpg7_PG7VR_mag",6}
+      {"rhs_rpg7_PG7V_mag",12}
     };
     vehCargoRucks[] = {
       {"rhs_rpg_empty",2},
       {"rhsgref_ttsko_alicepack",1}
+    };
+    vehCargoItems[] = {
+      {"rhs_acc_pgo7v",1}
     };
   };
   class LargeGearCrate {
@@ -238,10 +241,10 @@ class RHS_TNLA {
     };
     vehCargoRucks[] = {
       {"B_Carryall_oli",1,{
-        {"rhs_10Rnd_762x54mmR_7N1",2},
-        {"rhs_10Rnd_762x54mmR_7N14",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2}
+          {"rhs_10Rnd_762x54mmR_7N1",2},
+          {"rhs_10Rnd_762x54mmR_7N14",2},
+          {"HandGrenade",2},
+          {"SmokeShell",2}
         }
       },
       {"B_Carryall_oli",1,{
@@ -262,7 +265,7 @@ class RHS_TNLA {
           {"rhs_100Rnd_762x54mmR_green",1}
         }
       },
-      {"rhs_medic_bag",1,{
+      {"B_Carryall_oli",1,{
           {"ACE_fieldDressing",20},
           {"ACE_packingBandage",20},
           {"ACE_quikclot",10},
@@ -272,6 +275,7 @@ class RHS_TNLA {
           {"ACE_adenosine",10},
           {"ACE_salineIV_250",4},
           {"ACE_salineIV_500",2},
+          {"ACE_bloodIV",1},
           {"ACE_personalAidKit",1},
           {"ACE_surgicalKit",1},
           {"ACE_splint",8},
