@@ -8,5 +8,5 @@ class TB3_Gear {
 	#include "ecdfsf_wdl.hpp"
 	#include "rhscon_wdl.hpp"
 	#include "cdf_wdl.hpp"
-	#include "chudsloadout.hpp"
+	#include "brh.hpp"
 };
