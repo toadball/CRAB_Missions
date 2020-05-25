@@ -22,7 +22,7 @@ class CfgDebriefing
 	};
 };
 
-OnLoadName  = "Crab Zeus - Livonia";
+OnLoadName  = "Crab Zeus - Tanoa";
 OnLoadMission = "Crabs";
 author = "Some Crab";
 briefingName = "Crab Zeus";
