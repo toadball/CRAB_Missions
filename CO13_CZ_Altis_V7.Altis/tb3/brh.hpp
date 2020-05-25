@@ -1,4 +1,4 @@
-  class chud {
+  class brh {
     class BaseUnit {
       ace_earplugs = 1;
       allowPlayerGoggles = 0;
