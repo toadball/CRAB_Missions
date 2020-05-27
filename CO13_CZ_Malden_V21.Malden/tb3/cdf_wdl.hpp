@@ -35,7 +35,7 @@
         {"ACE_elasticBandage",4},
         {"ACE_quikclot",4},
         {"ACE_morphine",2},
-        {"ACE_adenosine",1}
+        {"ACE_adenosine",1},
         {"ACE_tourniquet",2},
         {"ACE_Splint",2},
         {"ACE_salineIV_500",1},
@@ -198,7 +198,7 @@
       {"rhs_mag_m713_red",2},
       {"SmokeShell",2},
       {"rhs_mag_m714_white",4},
-      {"laserbatteries",2}
+      {"laserbatteries",2},
       {"ace_microdagr",1}
     };
   };
@@ -546,7 +546,7 @@
       {"SmokeShell",2},
       {"SmokeShellgreen",2},
       {"rhs_mag_rgd5",1},
-      {"Chemlight_green",2}mag
+      {"Chemlight_green",2},
       {"ace_microdagr",1}
     };
   };
