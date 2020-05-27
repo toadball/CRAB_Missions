@@ -134,7 +134,8 @@ class BLUFOR_MTP {
         {"itc_land_b_ar2i_packed",1},
         {"ace_uavbattery",2},
         {"Laserdesignator_01_khk_F",1},
-        {"Laserbatteries",3};
+        {"Laserbatteries",3},
+        {"itc_land_tablet_rover",1}
       };
 
   };

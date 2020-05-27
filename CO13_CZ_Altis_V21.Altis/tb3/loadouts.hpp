@@ -8,4 +8,5 @@ class TB3_Gear {
     #include "cdf_wdl.hpp"
     #include "rhs_tnla.hpp"
 	  #include "brh.hpp"
+    #include "redfor_spetz.hpp"
 };
