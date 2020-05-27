@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=23;
+		nextID=33;
 	};
 	class Camera
 	{
-		pos[]={3509.2332,95.37738,12864.528};
-		dir[]={-0.79152858,-0.61125141,0.0011492281};
-		up[]={-0.61126435,0.79141992,0.00088677375};
-		aside[]={0.0014538455,-2.945041e-007,1.0000706};
+		pos[]={15242.992,317.01038,14874.939};
+		dir[]={-0.63831151,-0.70694131,0.30470183};
+		up[]={-0.63797867,0.70726877,0.30454361};
+		aside[]={0.43080187,5.2520772e-007,0.90247548};
 	};
 };
 binarizationWanted=0;
@@ -23,13 +23,18 @@ addons[]=
 {
 	"A3_Characters_F",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"A3_Boat_F_Destroyer_Destroyer_01",
+	"A3_Static_F_Destroyer_Boat_Rack_01",
+	"A3_Characters_F_Common",
+	"itc_land_veh_hammer",
+	"itc_land_vls"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=3;
+		items=7;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -50,6 +55,32 @@ class AddonsMetaData
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Boat_F_Destroyer";
+			name="Arma 3 Jets - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Static_F_Destroyer";
+			name="CFGPATCHES_A3_Static_F_Destroyer";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="itc_land_veh_hammer";
+			name="itc_land_veh_hammer";
+			author="ITC Addons Team";
+		};
+		class Item6
+		{
+			className="itc_land_vls";
+			name="itc_land_vls";
+			author="ITC Addons Team";
 		};
 	};
 };
@@ -108,7 +139,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="CO13_CZ_Tanoa_V21";
+		briefingName="CO13_CZ_Tanoa_V22";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -131,7 +162,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=9;
+		items=17;
 		class Item0
 		{
 			dataType="Group";
@@ -159,6 +190,7 @@ class Mission
 					};
 					id=1;
 					type="B_officer_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -207,6 +239,7 @@ class Mission
 			{
 			};
 			id=0;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item1
 		{
@@ -509,7 +542,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3437.5254,9.5014381,12861.479};
-						angles[]={-0,4.7726026,0};
+						angles[]={0,4.7726026,0};
 					};
 					side="West";
 					flags=6;
@@ -522,6 +555,7 @@ class Mission
 					};
 					id=7;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -571,7 +605,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3438.887,9.5014381,12860.567};
-						angles[]={-0,4.7726026,0};
+						angles[]={0,4.7726026,0};
 					};
 					side="West";
 					flags=4;
@@ -583,6 +617,7 @@ class Mission
 					};
 					id=8;
 					type="B_medic_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -632,7 +667,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3439.1631,9.5014381,12862.295};
-						angles[]={-0,4.7726026,0};
+						angles[]={0,4.7726026,0};
 					};
 					side="West";
 					flags=4;
@@ -645,6 +680,7 @@ class Mission
 					};
 					id=9;
 					type="B_soldier_UAV_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -693,6 +729,7 @@ class Mission
 			{
 			};
 			id=6;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item6
 		{
@@ -720,6 +757,7 @@ class Mission
 					};
 					id=11;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -781,6 +819,7 @@ class Mission
 					};
 					id=12;
 					type="B_Soldier_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -842,6 +881,7 @@ class Mission
 					};
 					id=13;
 					type="B_Soldier_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -903,6 +943,7 @@ class Mission
 					};
 					id=14;
 					type="B_soldier_AR_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -951,6 +992,7 @@ class Mission
 			{
 			};
 			id=10;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item7
 		{
@@ -978,6 +1020,7 @@ class Mission
 					};
 					id=16;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1039,7 +1082,7 @@ class Mission
 					};
 					id=17;
 					type="B_Soldier_F";
-					atlOffset=-9.5367432e-007;
+					atlOffset=-1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1101,6 +1144,7 @@ class Mission
 					};
 					id=18;
 					type="B_Soldier_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1162,6 +1206,7 @@ class Mission
 					};
 					id=19;
 					type="B_soldier_AR_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1210,6 +1255,7 @@ class Mission
 			{
 			};
 			id=15;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item8
 		{
@@ -1236,6 +1282,7 @@ class Mission
 					};
 					id=21;
 					type="B_Helipilot_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1297,6 +1344,7 @@ class Mission
 					};
 					id=22;
 					type="B_Helipilot_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1345,6 +1393,210 @@ class Mission
 			{
 			};
 			id=20;
+			atlOffset=-9.5367432e-007;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14975.328,0.46930695,14979.562};
+				angles[]={0,1.0221658,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=23;
+			type="Land_Destroyer_01_base_F";
+			atlOffset=58.262505;
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14982.008,7.2256107,14997.109};
+				angles[]={-0,4.1637583,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=24;
+			type="Land_Destroyer_01_Boat_Rack_01_F";
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14993.78,7.225111,14977.298};
+				angles[]={-0,4.1637583,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=25;
+			type="Land_Destroyer_01_Boat_Rack_01_F";
+		};
+		class Item12
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14907.904,12.563171,14938.273};
+						angles[]={0.013602046,4.1637583,6.260932};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="NGSG";
+					};
+					id=27;
+					type="B_UAV_AI";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=27;
+						item1=28;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=26;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14907.926,15.299758,14938.158};
+				angles[]={0.013602046,4.1637583,6.260932};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				init="call{{_x setGroupID [""CNV Mantis - NGS""]} forEach (crew this);}";
+				name="NGS";
+				receiveRemoteTargets=1;
+			};
+			id=28;
+			type="itc_land_NGS01_hammer2_mod1";
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14922.097,10.99385,14947.167};
+						angles[]={0.0036539643,4.1637583,6.2771854};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="VLSG";
+					};
+					id=30;
+					type="B_UAV_AI";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=30;
+						item1=31;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=29;
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14922.111,12.355684,14947.284};
+				angles[]={0.0036539643,4.1637583,6.2771854};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				init="call{{_x setGroupID [""CNV Mantis - VLS""]} forEach (crew this);}";
+				name="VLS";
+				receiveRemoteTargets=1;
+			};
+			id=31;
+			type="itc_land_b_vls2_slam";
+		};
+		class Item16
+		{
+			dataType="Marker";
+			position[]={14941.205,-22.780001,14958.823};
+			name="Marker_Destroyer";
+			text=" CNV LATRO";
+			type="mil_triangle";
+			a=2;
+			b=2;
+			angle=238.56598;
+			id=32;
+			atlOffset=37.660751;
 		};
 	};
 };

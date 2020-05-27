@@ -22,7 +22,6 @@ binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Aegis_Characters_F_Aegis",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Ui_F"
 };
@@ -30,7 +29,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=4;
+		items=3;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -40,19 +39,12 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="A3_Aegis_Characters_F_Aegis";
-			name="Arma 3 Aegis - Characters and Clothing";
-			author="AveryTheKitty";
-			url="https://forums.bistudio.com/forums/topic/205858-arma-3-aegis-alpha";
-		};
-		class Item2
-		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item2
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
@@ -68,7 +60,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -116,7 +108,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="CO13_CZ_Livonia_V21";
+		briefingName="CO13_CZ_Livonia_V22";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;

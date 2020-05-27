@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=40;
+		nextID=50;
 	};
 	class Camera
 	{
-		pos[]={8369.4932,1333.844,2724.8928};
-		dir[]={-0.50942349,-0.62688565,0.5896939};
-		up[]={-0.40981016,0.77909255,0.47438523};
-		aside[]={0.75684649,5.5498676e-006,0.65381044};
+		pos[]={12251.665,268.41666,-56.29528};
+		dir[]={-0.73445439,-0.41629612,0.53608191};
+		up[]={-0.33624047,0.90923423,0.24542457};
+		aside[]={0.58959347,-6.3142215e-007,0.8077637};
 	};
 };
 binarizationWanted=0;
@@ -23,13 +23,18 @@ addons[]=
 {
 	"A3_Ui_F",
 	"A3_Characters_F",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"A3_Boat_F_Destroyer_Destroyer_01",
+	"A3_Static_F_Destroyer_Boat_Rack_01",
+	"A3_Characters_F_Common",
+	"itc_land_veh_hammer",
+	"itc_land_vls"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=3;
+		items=7;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -51,6 +56,32 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item3
+		{
+			className="A3_Boat_F_Destroyer";
+			name="Arma 3 Jets - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Static_F_Destroyer";
+			name="CFGPATCHES_A3_Static_F_Destroyer";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="itc_land_veh_hammer";
+			name="itc_land_veh_hammer";
+			author="ITC Addons Team";
+		};
+		class Item6
+		{
+			className="itc_land_vls";
+			name="itc_land_vls";
+			author="ITC Addons Team";
+		};
 	};
 };
 randomSeed=2484739;
@@ -62,7 +93,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="CO13_CZ_Malden_V21";
+		briefingName="CO13_CZ_Malden_V22";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -83,7 +114,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=9;
+		items=17;
 		class Item0
 		{
 			dataType="Marker";
@@ -1299,6 +1330,215 @@ class Mission
 			{
 			};
 			id=37;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11982.838,0.30675507,182.90799};
+				angles[]={0,2.3397207,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=40;
+			type="Land_Destroyer_01_base_F";
+			atlOffset=73.167343;
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12001.39,7.0570412,180.91626};
+				angles[]={0,5.4813132,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=41;
+			type="Land_Destroyer_01_Boat_Rack_01_F";
+			atlOffset=80.455956;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11985.231,6.5679932,164.52245};
+				angles[]={0,5.4813132,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=42;
+			type="Land_Destroyer_01_Boat_Rack_01_F";
+			atlOffset=79.630287;
+		};
+		class Item12
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={11925.84,12.535359,237.93814};
+						angles[]={6.2650495,5.4813132,6.264442};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="NGSG";
+					};
+					id=44;
+					type="B_UAV_AI";
+					atlOffset=0.13197136;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=44;
+						item1=45;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=43;
+			atlOffset=0.13197136;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11925.787,15.268509,237.74377};
+				angles[]={6.2650495,5.4813132,6.264442};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				init="call{{_x setGroupID [""CNV Mantis - NGS""]} forEach (crew this);}";
+				name="NGS";
+				receiveRemoteTargets=1;
+			};
+			id=45;
+			type="itc_land_NGS01_hammer2_mod1";
+			atlOffset=0.13197136;
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={11937.884,10.671811,226.36998};
+						angles[]={0,5.4813132,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						name="VLSG";
+					};
+					id=47;
+					type="B_UAV_AI";
+					atlOffset=83.632607;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=47;
+						item1=48;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=46;
+			atlOffset=83.632607;
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11937.865,12.043198,226.28078};
+				angles[]={0,5.4813132,0};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+				init="call{{_x setGroupID [""CNV Mantis - VLS""]} forEach (crew this);}";
+				name="VLS";
+				receiveRemoteTargets=1;
+			};
+			id=48;
+			type="itc_land_b_vls2_slam";
+			atlOffset=83.632607;
+		};
+		class Item16
+		{
+			dataType="Marker";
+			position[]={11955.163,28.419001,213.87};
+			name="Marker_Destroyer";
+			text=" CNV Crustaceous";
+			type="mil_triangle";
+			a=2;
+			b=2;
+			angle=312.89996;
+			id=49;
+			atlOffset=3.134552;
 		};
 	};
 };
