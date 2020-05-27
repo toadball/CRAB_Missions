@@ -73,7 +73,7 @@
             vestContents[] = {
                 {"30Rnd_762x39_ak12_mag_f", 4},
                 {"rhs_mag_rgd5", 3},
-                {"rhs_vog25", 10},
+                {"rhs_vog25", 5},
                 {"acre_prc148", 1},
                 {"rhs_mag_9x18_8_57n181s", 2}
             };
@@ -81,10 +81,12 @@
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
                 {"30Rnd_762x39_ak12_mag_f", 4},
+                {"itc_land_tablet_rover", 1},
                 {"ace_microdagr", 1},
                 {"SmokeShell", 2},
                 {"ace_maptools", 1},
                 {"SmokeShellGreen", 2},
+                {"rhs_vog25", 5},
                 {"rhs_vg40Op_green", 3},
                 {"rhs_vg40Op_red", 3},
                 {"rhs_vg40md", 5}
@@ -147,7 +149,7 @@
             };      
         };
 
-      class AR: baseUnit { 
+        class AR: baseUnit { 
 
             weapons[] = {
                             {"arifle_rpk12_f", 
@@ -162,7 +164,7 @@
 
             backpackContents[] = {
                 {"ace_maptools", 1},
-                {"75rnd_762x39_ak12_mag_f", 5}
+                {"75rnd_762x39_ak12_mag_f", 6}
             };      
         };
         class UGL: baseUnit { 
@@ -180,7 +182,7 @@
             vestContents[] = {
                 {"30Rnd_762x39_ak12_mag_f", 4},
                 {"rhs_mag_rgd5", 1},
-                {"rhs_vog25", 10},
+                {"rhs_vog25", 5},
                 {"rhs_vg40tb", 4},
                 {"rhs_mag_9x18_8_57n181s", 2}
             };
@@ -190,7 +192,7 @@
                 {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 4},
                 {"SmokeShell", 2},
-                {"rhs_vog25", 15},
+                {"rhs_vog25", 25},
                 {"rhs_vg40md", 5}
 
             };      
@@ -228,7 +230,7 @@
             };      
         };
 
-        class FO: baseUnit {
+        class FSO: baseUnit {
             assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","ace_maptools", "ItemRadio", "nvgoggles_opfor", "B_UAV_Terminal"};
 
             weapons[] = {
@@ -238,7 +240,7 @@
                             {"rhs_weap_pb_6p9",
                                 {"rhs_mag_9x18_8_57n181s"}
                             },
-                            "ace_vector"
+                            "Laserdesignator_01_khk_F"
             };
 
             vestContents[] = {
@@ -251,6 +253,8 @@
 
              backpackContents[] = {
                 {"acre_prc148", 1},
+                {"Laserbatteries", 3},
+                {"itc_land_tablet_rover", 1},
                 {"rhs_acc_pbs1", 1},
                 {"ace_maptools", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
@@ -362,7 +366,7 @@
             };           
         };
 
-        class HAT: baseUnit { 
+        class MAT: baseUnit { 
             weapons[] = {
                             {"rhs_weap_ak103_npz", 
                                 {"30Rnd_762x39_ak12_mag_f", "rhs_acc_perst1ik", "rhs_acc_ekp8_18", "rhs_acc_grip_ffg2"},
@@ -384,7 +388,7 @@
             };      
         };
 
-        class HATA: baseUnit { 
+        class MATA: baseUnit { 
             backpackContents[] = {
                 {"rhs_acc_pbs1", 1},
                 {"ace_maptools", 1},
@@ -413,6 +417,7 @@
                 {"ACE_adenosine", 10},
                 {"ACE_salineIV_250", 5},
                 {"ACE_bloodIV_500", 4},
+                {"ACE_salineIV", 2},
                 {"ACE_salineiv_500", 4},
                 {"ACE_personalAidKit", 1},
                 {"ACE_surgicalKit", 1},
@@ -509,8 +514,146 @@
                 {"ace_maptools", 1},
                 {"ace_microdagr", 1},
                 {"SmokeShellOrange", 2}
-            };
-                
+            };            
 
         };
+    };
+
+    class CCESF_WDL: CCESF_ARID {
+
+        class PL: PL {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class ZEUS: ZEUS {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class SL: SL {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class UAV: UAV {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class FSO: FSO {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class RTO: RTO {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class TL: TL {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class RF: RF {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class AR: AR {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class UGL: UGL {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class DMR: DMR {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_sniper"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class VSS: VSS {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_sniper"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class MED: MED {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_medic"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class LAT: LAT {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class LATA: LATA {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class MAT: MAT {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class MATA: MATA {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class LMG: LMG {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class LMGA: LMGA {
+            headgear[] = { "rhsgref_6b27m_ttsko_digi" };
+            uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
+            vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
+            backpack[] = {"B_Carryall_green_F"};
+        };
+
+        class PILOT: PILOT {};
+
     };
