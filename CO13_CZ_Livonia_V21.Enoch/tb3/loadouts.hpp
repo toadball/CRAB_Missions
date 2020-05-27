@@ -7,4 +7,5 @@ class TB3_Gear {
     #include "ccesf_arid.hpp"
     #include "rhscon_wdl.hpp"
     #include "cdf_wdl.hpp"
+	#include "brh.hpp"
 };
