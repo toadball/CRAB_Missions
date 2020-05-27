@@ -154,13 +154,14 @@ class RHSCON_WDL {
         {"SmokeShell",2},
         {"Chemlight_green",2},
         {"ACE_MapTools",1},
-        {"itc_land_b_ar2i_packed",2},
-        {"ace_uavbattery",2}
+        {"itc_land_b_ar2i_packed",1},
+        {"ace_uavbattery",2},
+        {"Laserdesignator_01_khk_F",1},
+        {"Laserbatteries",3},
+        {"itc_land_tablet_rover",1}
       };
   };
-	class FSO: UAV {
-    assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","B_UavTerminal","rhsusf_ANPVS_15"};
-  };
+	class FSO: UAV {};
   class MED: BaseUnit {
     ace_medic = 2;
     backpack[] = {"B_Carryall_green_F"};
@@ -180,6 +181,7 @@ class RHSCON_WDL {
         {"ACE_adenosine",10},
         {"ACE_salineIV_250",8},
         {"ACE_salineIV_500",4},
+        {"ACE_bloodIV",1},
         {"ACE_personalAidKit",1},
         {"ACE_surgicalKit",1},
         {"ACE_splint",8},
@@ -314,6 +316,7 @@ class RHSCON_WDL {
           {"ACE_adenosine",10},
           {"ACE_salineIV_250",8},
           {"ACE_salineIV_500",4},
+          {"ACE_bloodIV",1},
           {"ACE_personalAidKit",1},
           {"ACE_surgicalKit",1},
           {"ACE_splint",8},

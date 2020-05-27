@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
 		nextID=40;
@@ -850,7 +850,7 @@ class Mission
 					class Attributes
 					{
 						init="call{[this,""BLUFOR_MTP"",""LMG""] call tb3_gear_fnc_Loadout;}";
-						description="Autormatic Rifleman @Team 2";
+						description="Ottomatic Rifleman @Team 2";
 						isPlayable=1;
 					};
 					id=31;
@@ -1109,7 +1109,7 @@ class Mission
 					class Attributes
 					{
 						init="call{[this,""BLUFOR_MTP"",""LMG""] call tb3_gear_fnc_Loadout;}";
-						description="Autormatic Rifleman @Team 3";
+						description="Ottomatic Rifleman @Team 3";
 						isPlayable=1;
 					};
 					id=36;
@@ -1175,13 +1175,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1044.6327,3.308193,673.56445};
-						angles[]={0,4.7726026,0};
+						position[]={1044.6331,3.3082128,673.56396};
+						angles[]={0,4.772603,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						rank="CAPTAIN";
 						init="call{[this,""BLUFOR_MTP"",""PILOT""] call tb3_gear_fnc_Loadout;}";
 						description="Air Crew @Rotary Wing / Air Support";
 						isPlayable=1;
@@ -1236,13 +1237,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1044.7428,3.2912824,675.00195};
-						angles[]={0,4.7726026,0};
+						position[]={1044.743,3.2912908,675.00201};
+						angles[]={0,4.772603,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CAPTAIN";
 						init="call{[this,""BLUFOR_MTP"",""PILOT""] call tb3_gear_fnc_Loadout;}";
 						description="Air Crew @Rotary Wing / Air Support";
 						isPlayable=1;

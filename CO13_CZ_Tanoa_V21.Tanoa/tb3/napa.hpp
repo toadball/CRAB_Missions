@@ -181,6 +181,7 @@ class NAPA {
       {"ACE_adenosine",10},
       {"ACE_salineIV_250",8},
       {"ACE_salineIV_500",4},
+      {"ACE_bloodIV",1},
       {"ACE_personalAidKit",1},
       {"ACE_surgicalKit",1},
       {"ACE_splint",8},
@@ -248,17 +249,19 @@ class NAPA {
   class LauncherCrate {
     vehCargoWeapons[] = {
       {"rhs_weap_rpg75",10},
-      {"RPG7_F",2},
-      {"ACE_Vector",2}
+      {"rhs_weap_rpg7",2},
+      {"Binocular",2}
     };
     vehCargoMagazines[] = {
       {"rhs_rpg7_OG7V_mag",12},
-      {"RPG7_F",12},
-      {"rhs_rpg7_PG7VR_mag",6}
+      {"rhs_rpg7_PG7V_mag",12}
     };
     vehCargoRucks[] = {
       {"rhs_rpg_empty",2},
       {"rhsgref_ttsko_alicepack",1}
+    };
+    vehCargoItems[] = {
+      {"rhs_acc_pgo7v",1}
     };
   };
   class LargeGearCrate {
@@ -323,6 +326,7 @@ class NAPA {
           {"ACE_adenosine",10},
           {"ACE_salineIV_250",8},
           {"ACE_salineIV_500",4},
+          {"ACE_bloodIV",1},
           {"ACE_personalAidKit",1},
           {"ACE_surgicalKit",1},
           {"ACE_splint",8},
