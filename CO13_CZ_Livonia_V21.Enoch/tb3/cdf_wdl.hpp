@@ -28,14 +28,14 @@
 
       uniform[] = {
         "rhsgref_uniform_woodland",
-        "rhsgref_uniform_woodland_olive",
-        "rhs_uniform_bdu_erdl"
+        "rhsgref_uniform_woodland_olive"
         };
       uniformContents[] = {
         {"ACE_fieldDressing",4},
         {"ACE_elasticBandage",4},
         {"ACE_quikclot",4},
         {"ACE_morphine",2},
+        {"ACE_adenosine",1}
         {"ACE_tourniquet",2},
         {"ACE_Splint",2},
         {"ACE_salineIV_500",1},
@@ -198,6 +198,7 @@
       {"rhs_mag_m713_red",2},
       {"SmokeShell",2},
       {"rhs_mag_m714_white",4},
+      {"laserbatteries",2}
       {"ace_microdagr",1}
     };
   };
@@ -254,8 +255,8 @@
       {"rhs_weap_m32",
         {"rhsusf_mag_6rnd_m433_hedp","rhsusf_acc_anpeq15side_bk"}
       },
-      {"rhs_weap_pp2000_folded",
-        {"rhs_mag_9x19mm_7n31_44","optic_Holosight_smg_blk_F"}
+      {"rhs_weap_6p53",
+        {"rhs_18rnd_9x21mm_7n29"}
       },
       "ace_yardage450"
     };
@@ -266,7 +267,7 @@
       {"rhsusf_mag_6rnd_m441_he",1},
       {"rhs_mag_rgd5",2},
       {"SmokeShell",2},
-      {"rhs_mag_9x19mm_7n31_44",2},
+      {"rhs_18rnd_9x21mm_7n29",2},
       {"ace_maptools",1}
     };
 
@@ -276,7 +277,7 @@
       {"rhsusf_mag_6rnd_m433_hedp",2},
       {"rhsusf_mag_6rnd_m441_he",1},
       {"rhsusf_mag_6rnd_m714_white",2},
-      {"rhs_mag_9x19mm_7n31_44",4},
+      {"rhs_18rnd_9x21mm_7n29",4},
       {"rhs_mag_rgd5",2},
       {"SmokeShell",2}
     };
@@ -297,7 +298,7 @@
       {"rhs_mag_30Rnd_556x45_Mk262_PMAG",6},
       {"rhs_mag_rgd5", 2},
       {"rhs_mag_m433_hedp", 6},
-      {"rhs_mag_m441_he", 4},
+      {"rhs_mag_m441_he", 6},
       {"rhs_18rnd_9x21mm_7n29",2},
       {"ace_maptools",1}
     };
@@ -308,15 +309,14 @@
       {"rhs_mag_30Rnd_556x45_Mk262_PMAG",6},
       {"SmokeShell",2},
       {"rhs_mag_rgd5",2},
-      {"rhs_mag_m433_hedp",12},
+      {"rhs_mag_m433_hedp",6},
       {"rhs_mag_m441_he",6},
-      {"rhs_mag_m397_het", 6},
-      {"rhs_mag_m714_white", 6}
+      {"rhs_mag_m714_white", 4}
     };
   };
   class UGL: GN {};
 
-  class RPG: baseUnit {
+  class MAT: baseUnit {
 
     weapons[] = {
       {"rhs_weap_m16a4_imod_grip",
@@ -338,7 +338,7 @@
     };
   };
 
-  class RPGA: baseUnit {
+  class MATA: baseUnit {
 
     weapons[] = {
       {"rhs_weap_m16a4_imod_grip",
@@ -357,6 +357,49 @@
       {"rhs_mag_30Rnd_556x45_Mk262_PMAG", 4},
       {"MRAWS_HEAT55_F", 2},
       {"MRAWS_HE_F", 2}
+    };
+  };
+
+  class HAT: baseUnit {
+
+    weapons[] = {
+      {"rhs_weap_m16a4_imod_grip",
+        {"rhs_mag_30Rnd_556x45_Mk262_PMAG","rhsusf_acc_anpeq15side_bk","optic_Holosight_blk_F",rhsusf_acc_grip1"},
+      },
+      {"rhs_weap_6p53",
+        {"rhs_18rnd_9x21mm_7n29"}
+      },
+      {"launch_o_titan_short_f",
+        {"Titan_AT", "rhsusf_acc_anpeq15side_bk"}
+      }
+    };
+    backpackContents[] = {
+      {"rhsusf_ANPVS_15",1},
+      {"rhsusf_acc_rotex5_grey",1},
+      {"rhs_mag_30Rnd_556x45_Mk262_PMAG", 4},
+      {"Titan_AT", 1}
+    };
+  };
+
+  class HATA: baseUnit {
+
+    weapons[] = {
+      {"rhs_weap_m16a4_imod_grip",
+        {"rhs_mag_30Rnd_556x45_Mk262_PMAG","rhsusf_acc_anpeq15side_bk","optic_Holosight_blk_F",rhsusf_acc_grip1"},
+      },
+      {"rhs_weap_6p53",
+        {"rhs_18rnd_9x21mm_7n29"}
+      },
+      "ace_vector"
+    };
+    
+    backpack[]={"rhsgref_hidf_alicepack"};
+    backpackContents[] = {
+      {"rhsusf_ANPVS_15",1},
+      {"rhsusf_acc_rotex5_grey",1},
+      {"rhs_mag_30Rnd_556x45_Mk262_PMAG", 4},
+      {"Titan_AT", 1},
+      {"Titan_AP", 2}
     };
   };
 
@@ -402,15 +445,15 @@
   class MG: baseUnit {
 
     weapons[] = {
-      {"rhs_weap_mg42",
-        {"rhsgref_50Rnd_792x57_SmK_alltracers_drum"},
+      {"rhs_m240b",
+        {"rhsusf_100Rnd_762x51_m80a1epr","rhsusf_acc_anpeq15side_bk","optic_Holosight_blk_F"},
       },
       {"rhs_weap_6p53",
           {"rhs_18rnd_9x21mm_7n29"}
       }
     };
     vestContents[] = {
-      {"rhsgref_296Rnd_792x57_SmK_belt",1},
+      {"rhsusf_100Rnd_762x51_m80a1epr",3},
       {"SmokeShell",2},
       {"rhs_18rnd_9x21mm_7n29",2},
       {"rhs_mag_rgd5",2},
@@ -418,7 +461,7 @@
     };
 
     backpackContents[] = {
-      {"rhsgref_296Rnd_792x57_SmK_belt",1},
+      {"rhsusf_100Rnd_762x51_m80a1epr",3},
       {"SmokeShell",2},
       {"rhs_mag_rgd5",2}
     };
@@ -468,15 +511,15 @@
       {"rhs_mag_30Rnd_556x45_Mk262_PMAG",4},
       {"SmokeShell",2},
       {"rhs_mag_rgd5",2},
-      {"rhsgref_296Rnd_792x57_SmK_belt",2}
+      {"rhsusf_100Rnd_762x51_m80a1epr",6}
     };
   };
 
   class PT: baseUnit {
 
     weapons[] = {
-      {"rhs_weap_pp2000",
-        {"rhs_mag_9x19mm_7n31_44","optic_Holosight_smg_blk_F"},
+      {"smg_03c__tr_black",
+        {"50rnd_570x28_smg_03","rhsuf_acc_anpeq15a""optic_Holosight_smg_blk_F"},
       },
       {"rhs_weap_6p53",
           {"rhs_18rnd_9x21mm_7n29"}
@@ -493,7 +536,7 @@
     vest[] = {"V_Pocketed_olive_F"};
     vestContents[] = {
       {"acre_prc148",1},
-      {"rhs_mag_9x19mm_7n31_44",4},
+      {"50rnd_570x28_smg_03",4},
       {"rhs_18rnd_9x21mm_7n29",2},
       {"ace_maptools",1}
     };
@@ -502,7 +545,9 @@
     backpackContents[] = {
       {"SmokeShell",2},
       {"SmokeShellgreen",2},
-      {"rhs_mag_rgd5",1}
+      {"rhs_mag_rgd5",1},
+      {"Chemlight_green",2}mag
+      {"ace_microdagr",1}
     };
   };
   class PILOT: PT {};
