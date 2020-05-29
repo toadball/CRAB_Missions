@@ -22,7 +22,7 @@ class CfgDebriefing
 	};
 };
 
-OnLoadName  = "Crab Zeus - Altis";
+OnLoadName  = "Crab Zeus - Livonia";
 OnLoadMission = "Crabs";
 author = "Some Crab";
 briefingName = "Crab Zeus";
@@ -42,5 +42,5 @@ class Header
 {
 	gameType =  COOP;
 	minPlayers =  1;
-	maxPlayers = 13;
+	maxPlayers = 18;
 };
