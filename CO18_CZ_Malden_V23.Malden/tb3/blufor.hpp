@@ -135,6 +135,7 @@ class BLUFOR_MTP {
         {"ace_uavbattery",2},
         {"Laserdesignator_01_khk_F",1},
         {"Laserbatteries",3},
+        {"ACRE_PRC148",1},
         {"itc_land_tablet_rover",1}
       };
 

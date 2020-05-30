@@ -144,7 +144,20 @@ class RHSCON_WDL {
       {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",1}
     };
   };
-  class UAV: PL {
+  class FSO: PL {
+    vestContents[] = {
+      {"rhsgref_30rnd_556x45_m21",4},
+      {"rhsgref_30rnd_556x45_m21_t",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"ace_IR_strobe_item",1},
+      {"ACRE_PRC148",2},
+      {"rhsusf_acc_nt4_black",1},
+      {"ACE_MapTools",1},
+      {"ACE_MicroDagr",1}
+    };
     backpack[] = {"itc_land_b_uav_backpack"};
     assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","B_UavTerminal","rhsusf_ANPVS_15"};
       backpackContents[] = {
@@ -153,7 +166,7 @@ class RHSCON_WDL {
         {"HandGrenade",2},
         {"SmokeShell",2},
         {"Chemlight_green",2},
-        {"ACE_MapTools",1},
+        {"ace_IR_strobe_item",1},
         {"itc_land_b_ar2i_packed",1},
         {"ace_uavbattery",2},
         {"Laserdesignator_01_khk_F",1},
@@ -161,7 +174,6 @@ class RHSCON_WDL {
         {"itc_land_tablet_rover",1}
       };
   };
-	class FSO: UAV {};
   class MED: BaseUnit {
     ace_medic = 2;
     backpack[] = {"B_Carryall_green_F"};

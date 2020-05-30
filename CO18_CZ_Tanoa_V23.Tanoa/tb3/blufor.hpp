@@ -117,7 +117,7 @@ class BLUFOR_MTP {
       {"Chemlight_green",2},
       {"B_IR_Grenade",1},
       {"ace_IR_strobe_item",1},
-      {"ACRE_PRC148",1},
+      {"ACRE_PRC148",2},
       {"rhsusf_acc_nt4_black",1},
       {"ACE_MapTools",1},
       {"ACE_MicroDagr",1}
