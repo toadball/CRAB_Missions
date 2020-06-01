@@ -10,4 +10,5 @@ class TB3_Gear {
     #include "rhs_tnla.hpp"
     #include "redfor_spetz.hpp"
     #include "ldf.hpp"
+    #include "cecm.hpp"
 };

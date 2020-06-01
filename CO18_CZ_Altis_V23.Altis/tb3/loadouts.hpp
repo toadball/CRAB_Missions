@@ -7,7 +7,8 @@ class TB3_Gear {
     #include "rhscon_wdl.hpp"
     #include "cdf_wdl.hpp"
     #include "rhs_tnla.hpp"
-	  #include "brh.hpp"
+	#include "brh.hpp"
     #include "redfor_spetz.hpp"
     #include "ldf.hpp"
+	#include "cecm.hpp"
 };
