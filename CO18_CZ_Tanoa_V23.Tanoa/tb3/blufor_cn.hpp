@@ -268,13 +268,8 @@ class BLUFOR_AOR2CN {
   };
   class MAT: BaseUnit {
     weapons[] = {
-      {
-        {"rhs_weap_hk416d145",
-          {"rhsusf_acc_anpeq15_bk_light","rhsusf_acc_su230","30Rnd_580x42_Mag_F"}
-        },
-        {"rhs_weap_hk416d10",
-          {"rhsusf_acc_anpeq15_bk_light","rhsusf_acc_su230","30Rnd_580x42_Mag_F"}
-        }
+      {"arifle_CTAR_blk_F",
+        {"rhsusf_acc_su230","30Rnd_580x42_Mag_F"}
       },
       {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}},
       {"launch_MRAWS_green_rail_F",{"MRAWS_HEAT55_F"}}
@@ -375,11 +370,12 @@ class BLUFOR_AOR2CN {
       {"ACE_Vector",2}
     };
     vehCargoMagazines[] = {
-      {"30Rnd_580x42_Mag_F",20},
-      {"30Rnd_580x42_Mag_Tracer_F",20},
-      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",12},
-      {"rhsusf_20Rnd_762x51_SR25_m118_special_Mag",3},
-      {"rhsusf_20Rnd_762x51_SR25_m62_Mag",3},
+      {"30Rnd_580x42_Mag_F",32},
+      {"30Rnd_580x42_Mag_Tracer_F",16},
+      {"100Rnd_580x42_Mag_F",8},
+      {"100Rnd_580x42_Mag_Tracer_F",6},
+      {"20Rnd_650x39_Cased_Mag_F",12},
+      {"130Rnd_338_Mag",8},
       {"HandGrenade",16},
       {"SmokeShell",16},
       {"1Rnd_HE_Grenade_shell",20},
@@ -388,46 +384,22 @@ class BLUFOR_AOR2CN {
     vehCargoItems[] = {
       {"ToolKit",1},
       {"ACE_M26_Clacker",4},
-      {"ACE_DefusalKit",2}
+      {"ACE_DefusalKit",2},
+      {"ACE_fieldDressing",20},
+      {"ACE_packingBandage",20},
+      {"ACE_quikclot",20},
+      {"ACE_Tourniquet",8},
+      {"ACE_splint",4},
+      {"ACE_morphine",4},
+      {"ACE_epinephrine",4},
+      {"ACE_adenosine",4},
+      {"ACE_salineIV_500",4},
+      {"ACE_Flashlight_MX991",4},
+      {"ACE_MapTools",4}
     };
     vehCargoRucks[] = {
-      {"B_Carryall_green_F",2,{
-          {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",4},
-          {"HandGrenade",2},
-          {"SmokeShell",2}
-        }
-      },
-      {"B_Carryall_green_F",1,{
-          {"30Rnd_580x42_Mag_F",4},
-          {"30Rnd_580x42_Mag_Tracer_F",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2},
-          {"Chemlight_green",2},
-          {"B_IR_Grenade",1},
-          {"ACE_fieldDressing",20},
-          {"ACE_packingBandage",20},
-          {"ACE_quikclot",10},
-          {"ACE_elasticBandage",10},
-          {"ACE_morphine",10},
-          {"ACE_epinephrine",10},
-          {"ACE_adenosine",10},
-          {"ACE_salineIV_250",8},
-          {"ACE_salineIV_500",4},
-          {"ACE_bloodIV",1},
-          {"ACE_personalAidKit",1},
-          {"ACE_surgicalKit",1},
-          {"ACE_splint",8},
-          {"ACE_tourniquet",5}
-        }
-      },
-      {"B_Carryall_green_F",2,{
-          {"30Rnd_580x42_Mag_F",6},
-          {"30Rnd_580x42_Mag_Tracer_F",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2},
-          {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2}
-        }
-      },
+      {"B_Bergen_sgg_F",4},
+      {"B_Carryall_green_F",4},
       {"rhs_assault_umbts",4}
     };
   };
