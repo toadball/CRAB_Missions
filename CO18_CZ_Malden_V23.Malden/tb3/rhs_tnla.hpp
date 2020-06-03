@@ -210,7 +210,7 @@ class RHS_TNLA {
     };
     vehCargoRucks[] = {
       {"rhs_rpg_empty",2},
-      {"rhsgref_ttsko_alicepack",1}
+      {"rhsgref_ttsko_alicepack",2}
     };
     vehCargoItems[] = {
       {"rhs_acc_pgo7v",1}
@@ -222,11 +222,11 @@ class RHS_TNLA {
       {"Binocular",2}
     };
     vehCargoMagazines[] = {
-      {"30Rnd_762x39_Mag_Green_F",20},
-      {"30Rnd_762x39_Mag_Tracer_Green_F",20},
-      {"rhs_100Rnd_762x54mmR",6},
-      {"rhs_100Rnd_762x54mmR_green",6},
-      {"rhs_10Rnd_762x54mmR_7N1",4},
+      {"30Rnd_762x39_Mag_Green_F",32},
+      {"30Rnd_762x39_Mag_Tracer_Green_F",16},
+      {"rhs_100Rnd_762x54mmR",12},
+      {"rhs_100Rnd_762x54mmR_green",4},
+      {"rhs_10Rnd_762x54mmR_7N1",8},
       {"rhs_10Rnd_762x54mmR_7N14",4},
       {"HandGrenade",16},
       {"SmokeShell",16},
@@ -237,51 +237,24 @@ class RHS_TNLA {
     vehCargoItems[] = {
       {"ToolKit",1},
       {"ACE_M26_Clacker",4},
-      {"ACE_DefusalKit",2}
+      {"ACE_DefusalKit",2},
+      {"ToolKit",1},
+      {"ACE_M26_Clacker",4},
+      {"ACE_DefusalKit",2},
+      {"ACE_fieldDressing",20},
+      {"ACE_packingBandage",20},
+      {"ACE_quikclot",20},
+      {"ACE_Tourniquet",8},
+      {"ACE_splint",4},
+      {"ACE_morphine",4},
+      {"ACE_epinephrine",4},
+      {"ACE_adenosine",4},
+      {"ACE_salineIV_500",4},
+      {"ACE_Flashlight_MX991",4},
+      {"ACE_MapTools",4}
     };
     vehCargoRucks[] = {
-      {"B_Carryall_oli",1,{
-          {"rhs_10Rnd_762x54mmR_7N1",2},
-          {"rhs_10Rnd_762x54mmR_7N14",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2}
-        }
-      },
-      {"B_Carryall_oli",1,{
-          {"30Rnd_762x39_Mag_Green_F",6},
-          {"30Rnd_762x39_Mag_Tracer_Green_F",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2},
-          {"rhs_100Rnd_762x54mmR",1},
-          {"rhs_100Rnd_762x54mmR_green",1}
-        }
-      },
-      {"rhsgref_ttsko_alicepack",1,{
-          {"30Rnd_762x39_Mag_Green_F",6},
-          {"30Rnd_762x39_Mag_Tracer_Green_F",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2},
-          {"rhs_100Rnd_762x54mmR",1},
-          {"rhs_100Rnd_762x54mmR_green",1}
-        }
-      },
-      {"B_Carryall_oli",1,{
-          {"ACE_fieldDressing",20},
-          {"ACE_packingBandage",20},
-          {"ACE_quikclot",10},
-          {"ACE_elasticBandage",10},
-          {"ACE_morphine",10},
-          {"ACE_epinephrine",10},
-          {"ACE_adenosine",10},
-          {"ACE_salineIV_250",4},
-          {"ACE_salineIV_500",2},
-          {"ACE_bloodIV",1},
-          {"ACE_personalAidKit",1},
-          {"ACE_surgicalKit",1},
-          {"ACE_splint",8},
-          {"ACE_tourniquet",5}
-        }
-      },
+      {"rhsgref_ttsko_alicepack",4},
       {"B_FieldPack_oli",4}
     };
   };
