@@ -642,14 +642,14 @@
             backpack[] = {"B_Carryall_green_F"};
         };
 
-        class GPMG: LMG {
+        class GPMG: GPMG {
             headgear[] = { "rhsgref_6b27m_ttsko_digi" };
             uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
             vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
             backpack[] = {"B_Carryall_green_F"};
         };
 
-        class GPMGA: LMGA {
+        class GPMGA: GPMGA {
             headgear[] = { "rhsgref_6b27m_ttsko_digi" };
             uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
             vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
