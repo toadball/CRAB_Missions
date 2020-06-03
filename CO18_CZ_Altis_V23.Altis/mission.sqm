@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
 		nextID=132;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15198.044,43.325916,17291.027};
-		dir[]={0.083052106,-0.89010876,0.4481169};
-		up[]={0.16220535,0.45574814,0.87520456};
-		aside[]={0.98325568,6.1839819e-007,-0.18223125};
+		pos[]={15176.761,27.606693,17311.121};
+		dir[]={0.88123357,-0.41071764,-0.23403512};
+		up[]={0.3969695,0.91175443,-0.10542579};
+		aside[]={-0.25668269,-3.5608537e-008,-0.96650922};
 	};
 };
 binarizationWanted=0;
@@ -33,13 +33,14 @@ addons[]=
 	"A3_Characters_F_Common",
 	"itc_land_veh_hammer",
 	"itc_land_vls",
-	"A3_Characters_F"
+	"A3_Characters_F",
+	"A3_Aegis_Characters_F_Aegis"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -93,6 +94,13 @@ class AddonsMetaData
 			className="itc_land_vls";
 			name="itc_land_vls";
 			author="ITC Addons Team";
+		};
+		class Item8
+		{
+			className="A3_Aegis_Characters_F_Aegis";
+			name="Arma 3 Aegis - Characters and Clothing";
+			author="AveryTheKitty";
+			url="https://forums.bistudio.com/forums/topic/205858-arma-3-aegis-alpha";
 		};
 	};
 };

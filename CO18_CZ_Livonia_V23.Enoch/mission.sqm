@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	class ItemIDProvider
 	{
 		nextID=89;
 	};
 	class Camera
 	{
-		pos[]={9906.4365,184.58069,3804.2983};
-		dir[]={0.28725269,-0.75339663,-0.59150916};
-		up[]={0.32911646,0.65756172,-0.67771387};
-		aside[]={-0.89954132,2.651941e-007,-0.43684182};
+		pos[]={9893.6719,195.02753,3817.1047};
+		dir[]={0.35393551,-0.48365819,-0.80051094};
+		up[]={0.19558156,0.87525594,-0.44235426};
+		aside[]={-0.91460049,5.8207661e-009,-0.40438056};
 	};
 };
 binarizationWanted=0;
@@ -23,13 +23,14 @@ addons[]=
 {
 	"A3_Modules_F_Curator_Curator",
 	"A3_Ui_F",
-	"A3_Characters_F"
+	"A3_Characters_F",
+	"A3_Aegis_Characters_F_Aegis"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -50,6 +51,13 @@ class AddonsMetaData
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Aegis_Characters_F_Aegis";
+			name="Arma 3 Aegis - Characters and Clothing";
+			author="AveryTheKitty";
+			url="https://forums.bistudio.com/forums/topic/205858-arma-3-aegis-alpha";
 		};
 	};
 };
@@ -131,7 +139,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=12;
+		items=10;
 		class Item0
 		{
 			dataType="Logic";
@@ -426,26 +434,6 @@ class Mission
 		{
 			dataType="Group";
 			side="West";
-			class Attributes
-			{
-			};
-			id=22;
-			atlOffset=-252.4516;
-		};
-		class Item5
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=26;
-			atlOffset=-252.4516;
-		};
-		class Item6
-		{
-			dataType="Group";
-			side="West";
 			class Entities
 			{
 				items=1;
@@ -520,7 +508,7 @@ class Mission
 			id=65;
 			atlOffset=3.0517578e-005;
 		};
-		class Item7
+		class Item5
 		{
 			dataType="Group";
 			side="West";
@@ -722,7 +710,7 @@ class Mission
 			id=67;
 			atlOffset=1.5258789e-005;
 		};
-		class Item8
+		class Item6
 		{
 			dataType="Group";
 			side="West";
@@ -985,7 +973,7 @@ class Mission
 			id=71;
 			atlOffset=1.5258789e-005;
 		};
-		class Item9
+		class Item7
 		{
 			dataType="Group";
 			side="West";
@@ -1247,7 +1235,7 @@ class Mission
 			id=76;
 			atlOffset=3.0517578e-005;
 		};
-		class Item10
+		class Item8
 		{
 			dataType="Group";
 			side="West";
@@ -1260,7 +1248,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9909.0381,181.64697,3800.041};
-						angles[]={-0,5.9645925,6.2816415};
+						angles[]={0,5.9645925,6.2816415};
 					};
 					side="West";
 					flags=6;
@@ -1322,7 +1310,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9911.8945,181.64241,3800.1953};
-						angles[]={-0,5.9645925,6.2816415};
+						angles[]={0,5.9645925,6.2816415};
 					};
 					side="West";
 					flags=4;
@@ -1384,7 +1372,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9910.2764,181.64499,3799.6965};
-						angles[]={-0,5.9645925,6.2816415};
+						angles[]={0,5.9645925,6.2816415};
 					};
 					side="West";
 					flags=4;
@@ -1445,7 +1433,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9911.1133,181.64365,3799.9294};
-						angles[]={-0,5.9645925,6.2816415};
+						angles[]={0,5.9645925,6.2816415};
 					};
 					side="West";
 					flags=4;
@@ -1506,7 +1494,7 @@ class Mission
 			};
 			id=81;
 		};
-		class Item11
+		class Item9
 		{
 			dataType="Group";
 			side="West";
