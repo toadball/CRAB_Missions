@@ -2,7 +2,7 @@
         class baseUnit {
             ace_earplugs = 1;
             allowPlayerGoggles = 1;
-            ace_medic = 1;	
+            ace_medic = 1;  
             
             weapons[] = {
                             {"arifle_MSBS65_camo_F", 
@@ -166,11 +166,11 @@
             };      
         };
 
-       class AR: baseUnit { 
+       class LMG: baseUnit { 
 
             weapons[] = {
                             {"LMG_Mk200_black_F", 
-                                {"200Rnd_65x39_cased_Box", "optic_arco_lush_f", "acc_pointer_ir", "bipod_01_f_blk"},
+                                {"200Rnd_65x39_cased_Box", "optic_hamr", "acc_pointer_ir", "bipod_01_f_blk"},
                             }
                         };
             vestContents[] = {
@@ -275,6 +275,8 @@
                 {"30Rnd_65x39_caseless_msbs_mag", 2},
                 {"itc_land_tablet_rover", 1},
                 {"Laserbatteries", 3},
+                {"ace_vector", 1},
+                {"ace_microdagr", 1},
                 {"SmokeShell", 2},
                 {"SmokeShellGreen", 2},
                 {"1Rnd_SmokeGreen_Grenade_shell", 3},
@@ -300,7 +302,7 @@
             
             weapons[] = {
                             {"arifle_MSBS65_Mark_camo_F", 
-                                {"30Rnd_65x39_caseless_msbs_mag", "acc_pointer_ir", "optic_arco_lush_f", "bipod_01_f_blk"}
+                                {"30Rnd_65x39_caseless_msbs_mag", "acc_pointer_ir", "optic_hamr", "bipod_01_f_blk"}
                             },
                             {"hgun_Pistol_heavy_01_green_F",
                                 {"11Rnd_45ACP_Mag"}
@@ -428,11 +430,11 @@
       };      
         };
 
-        class LMG: baseUnit { 
+        class GPMG: baseUnit { 
 
             weapons[] = {
                             {"MMG_02_black_F", 
-                                {"130Rnd_338_Mag", "acc_pointer_ir", "bipod_01_f_blk"},
+                                {"130Rnd_338_Mag", "acc_pointer_ir", "bipod_01_f_blk", "optic_hamr"},
                             }
                         };
             vestContents[] = {
@@ -447,7 +449,7 @@
             };      
         };
 
-        class LMGA: baseUnit { 
+        class GPMGA: baseUnit { 
 
              weapons[] = {
                             {"arifle_MSBS65_camo_F", 

@@ -104,7 +104,7 @@ class REDFOR_SPETZ {
       {"Chemlight_green",2},
       {"B_IR_Grenade",1},
       {"ace_IR_strobe_item",1},
-      {"ACRE_PRC148",1},
+      {"ACRE_PRC148",2},
       {"muzzle_snds_b",1},
       {"ACE_MapTools",1},
       {"ACE_MicroDagr",1}
@@ -182,7 +182,8 @@ class REDFOR_SPETZ {
         {"Chemlight_green",2},
         {"B_IR_Grenade",1},
         {"1Rnd_HE_Grenade_shell",10},
-        {"1Rnd_Smoke_Grenade_Shell",2}
+        {"1Rnd_Smoke_Grenade_Shell",2},
+        {"75rnd_762x39_AK12_Mag_Tracer_F",2}
       };
   };
   class LMG: BaseUnit {
@@ -215,6 +216,35 @@ class REDFOR_SPETZ {
   };
   class GPMG: LMG {};
   class DMR: BaseUnit {
+    weapons[] = {
+      {"srifle_DMR_01_black_F",
+        {"optic_hamr","bipod_01_F_blk","rhs_acc_perst3","10Rnd_762x54_Mag"}
+      },
+      {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}},
+      "RangeFinder"
+    };
+      vestContents[] = {
+        {"10Rnd_762x54_Mag",4},
+        {"ACE_10Rnd_762x54_Tracer_mag",2},
+        {"16Rnd_9x21_Mag",2},
+        {"HandGrenade",2},
+        {"SmokeShell",2},
+        {"Chemlight_green",2},
+        {"B_IR_Grenade",1},
+        {"muzzle_snds_93mmg",1},
+        {"ACE_MapTools",1}
+      };
+      backpackContents[] = {
+        {"10Rnd_762x54_Mag",4},
+        {"ACE_10Rnd_762x54_Tracer_mag",2},
+        {"HandGrenade",2},
+        {"SmokeShell",2},
+        {"Chemlight_green",2},
+        {"B_IR_Grenade",1},
+        {"75rnd_762x39_AK12_Mag_Tracer_F",3}
+      };
+  };
+  class DMRDLC: BaseUnit {
     weapons[] = {
       {"srifle_DMR_05_blk_F",
         {"optic_hamr","bipod_01_F_blk","rhs_acc_perst3","10Rnd_93x64_DMR_05_Mag"}
@@ -332,20 +362,24 @@ class REDFOR_SPETZ {
       {"RPG32_HE_F",9}
     };
     vehCargoRucks[] = {
+      {"B_FieldPack_green_F",4},
       {"B_Carryall_green_F",4}
     };
   };
 
   class LargeGearCrate {
     vehCargoWeapons[] = {
-      {"rhs_weap_m72a7",10},
+      {"rhs_weap_rpg75",10},
       {"ACE_Vector",2}
     };
     vehCargoMagazines[] = {
-      {"30Rnd_762x39_AK12_Mag_F",20},
-      {"30Rnd_762x39_AK12_Mag_Tracer_F",20},
-      {"75rnd_762x39_AK12_Mag_F",12},
-      {"10Rnd_93x64_DMR_05_Mag",6},
+      {"30Rnd_762x39_AK12_Mag_F",32},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",16},
+      {"75rnd_762x39_AK12_Mag_F",10},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",10},
+      {"10Rnd_762x54_Mag",8},
+      {"ACE_10Rnd_762x54_Tracer_mag",4},
+      {"10Rnd_93x64_DMR_05_Mag",12},
       {"HandGrenade",16},
       {"SmokeShell",16},
       {"1Rnd_HE_Grenade_shell",20},
@@ -354,46 +388,24 @@ class REDFOR_SPETZ {
     vehCargoItems[] = {
       {"ToolKit",1},
       {"ACE_M26_Clacker",4},
-      {"ACE_DefusalKit",2}
+      {"ACE_DefusalKit",2},
+      {"ToolKit",1},
+      {"ACE_M26_Clacker",4},
+      {"ACE_DefusalKit",2},
+      {"ACE_fieldDressing",20},
+      {"ACE_packingBandage",20},
+      {"ACE_quikclot",20},
+      {"ACE_Tourniquet",8},
+      {"ACE_splint",4},
+      {"ACE_morphine",4},
+      {"ACE_epinephrine",4},
+      {"ACE_adenosine",4},
+      {"ACE_salineIV_500",4},
+      {"ACE_Flashlight_MX991",4},
+      {"ACE_MapTools",4}
     };
     vehCargoRucks[] = {
-      {"B_Carryall_green_F",2,{
-          {"75rnd_762x39_AK12_Mag_F",4},
-          {"HandGrenade",2},
-          {"SmokeShell",2}
-        }
-      },
-      {"B_Carryall_green_F",1,{
-          {"30Rnd_762x39_AK12_Mag_F",4},
-          {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2},
-          {"Chemlight_green",2},
-          {"B_IR_Grenade",1},
-          {"ACE_fieldDressing",20},
-          {"ACE_packingBandage",20},
-          {"ACE_quikclot",10},
-          {"ACE_elasticBandage",10},
-          {"ACE_morphine",10},
-          {"ACE_epinephrine",10},
-          {"ACE_adenosine",10},
-          {"ACE_salineIV_250",8},
-          {"ACE_salineIV_500",4},
-          {"ACE_bloodIV",1},
-          {"ACE_personalAidKit",1},
-          {"ACE_surgicalKit",1},
-          {"ACE_splint",8},
-          {"ACE_tourniquet",5}
-        }
-      },
-      {"B_Carryall_green_F",2,{
-          {"30Rnd_762x39_AK12_Mag_F",6},
-          {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2},
-          {"75rnd_762x39_AK12_Mag_F",3}
-        }
-      },
+      {"B_FieldPack_green_F",4},
       {"B_Carryall_green_F",4}
     };
   };
