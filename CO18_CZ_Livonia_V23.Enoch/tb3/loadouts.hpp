@@ -11,5 +11,9 @@ class TB3_Gear {
   	#include "brh.hpp"
     #include "redfor_spetz.hpp"
     #include "ldf.hpp"
-    #include "cecm.hpp"
+	  #include "cecm.hpp"  
+	  #include "brit_mtp.hpp"
+	  #include "crab_60.hpp"
+	  #include "crab_70.hpp"
+	  #include "crab_vhs.hpp"
 };
