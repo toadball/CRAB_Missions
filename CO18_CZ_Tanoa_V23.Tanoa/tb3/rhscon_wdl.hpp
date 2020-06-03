@@ -290,59 +290,36 @@ class RHSCON_WDL {
       {"ACE_Vector",2}
     };
     vehCargoMagazines[] = {
-      {"rhsgref_30rnd_556x45_m21",20},
-      {"rhsgref_30rnd_556x45_m21_t",20},
+      {"rhsgref_30rnd_556x45_m21",32},
+      {"rhsgref_30rnd_556x45_m21_t",16},
       {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",12},
-      {"rhs_10Rnd_762x54mmR_7N1",4},
+      {"rhs_10Rnd_762x54mmR_7N1",8},
       {"rhs_10Rnd_762x54mmR_7N14",4},
-      {"HandGrenade",16},
-      {"SmokeShell",16},
-      {"1Rnd_HE_Grenade_shell",20},
+      {"HandGrenade",24},
+      {"SmokeShell",24},
       {"DemoCharge_Remote_Mag",16}
     };
     vehCargoItems[] = {
       {"ToolKit",1},
       {"ACE_M26_Clacker",4},
-      {"ACE_DefusalKit",2}
+      {"ACE_DefusalKit",2},
+      {"ToolKit",1},
+      {"ACE_M26_Clacker",4},
+      {"ACE_DefusalKit",2},
+      {"ACE_fieldDressing",20},
+      {"ACE_packingBandage",20},
+      {"ACE_quikclot",20},
+      {"ACE_Tourniquet",8},
+      {"ACE_splint",4},
+      {"ACE_morphine",4},
+      {"ACE_epinephrine",4},
+      {"ACE_adenosine",4},
+      {"ACE_salineIV_500",4},
+      {"ACE_Flashlight_MX991",4},
+      {"ACE_MapTools",4}
     };
     vehCargoRucks[] = {
-      {"B_Carryall_green_F",2,{
-          {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",4},
-          {"HandGrenade",2},
-          {"SmokeShell",2}
-        }
-      },
-      {"B_Carryall_green_F",1,{
-          {"rhsgref_30rnd_556x45_m21",4},
-          {"rhsgref_30rnd_556x45_m21_t",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2},
-          {"Chemlight_green",2},
-          {"B_IR_Grenade",1},
-          {"ACE_fieldDressing",20},
-          {"ACE_packingBandage",20},
-          {"ACE_quikclot",10},
-          {"ACE_elasticBandage",10},
-          {"ACE_morphine",10},
-          {"ACE_epinephrine",10},
-          {"ACE_adenosine",10},
-          {"ACE_salineIV_250",8},
-          {"ACE_salineIV_500",4},
-          {"ACE_bloodIV",1},
-          {"ACE_personalAidKit",1},
-          {"ACE_surgicalKit",1},
-          {"ACE_splint",8},
-          {"ACE_tourniquet",5}
-        }
-      },
-      {"B_Carryall_green_F",2,{
-          {"rhsgref_30rnd_556x45_m21",6},
-          {"rhsgref_30rnd_556x45_m21_t",2},
-          {"HandGrenade",2},
-          {"SmokeShell",2},
-          {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2}
-        }
-      },
+      {"B_Carryall_green_F",4},
       {"rhs_assault_umbts",4}
     };
   };
