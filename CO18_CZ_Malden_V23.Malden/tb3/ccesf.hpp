@@ -149,7 +149,7 @@
             };      
         };
 
-        class AR: baseUnit { 
+        class LMG: baseUnit { 
 
             weapons[] = {
                             {"arifle_rpk12_f", 
@@ -257,6 +257,8 @@
                 {"itc_land_tablet_rover", 1},
                 {"rhs_acc_pbs1", 1},
                 {"ace_maptools", 1},
+                {"ace_vector", 1},
+                {"ace_microdagr", 1},
                 {"30Rnd_762x39_ak12_mag_f", 2},
                 {"SmokeShell", 2},
                 {"SmokeShellGreen", 2},
@@ -426,7 +428,7 @@
       };      
         };
 
-        class LMG: baseUnit { 
+        class GPMG: baseUnit { 
 
             weapons[] = {
                             {"rhs_weap_pkm", 
@@ -444,7 +446,7 @@
             };      
         };
 
-        class LMGA: baseUnit { 
+        class GPMGA: baseUnit { 
 
              weapons[] = {
                             {"rhs_weap_ak103_npz", 
@@ -577,7 +579,7 @@
             backpack[] = {"B_Carryall_green_F"};
         };
 
-        class AR: AR {
+        class LMG: LMG {
             headgear[] = { "rhsgref_6b27m_ttsko_digi" };
             uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
             vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
@@ -640,14 +642,14 @@
             backpack[] = {"B_Carryall_green_F"};
         };
 
-        class LMG: LMG {
+        class GPMG: GPMG {
             headgear[] = { "rhsgref_6b27m_ttsko_digi" };
             uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
             vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
             backpack[] = {"B_Carryall_green_F"};
         };
 
-        class LMGA: LMGA {
+        class GPMGA: GPMGA {
             headgear[] = { "rhsgref_6b27m_ttsko_digi" };
             uniform[] = {"rhsgref_uniform_para_ttsko_oxblood"};
             vest[] = {"rhsgref_6b23_ttsko_digi_rifleman"};
