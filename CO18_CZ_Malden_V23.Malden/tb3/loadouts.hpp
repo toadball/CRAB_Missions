@@ -3,6 +3,8 @@
 class TB3_Gear {
     #include "blufor.hpp"
     #include "blufor_CN.hpp"
+    #include "blufor_saq.hpp"
+    #include "blufor_saqcn.hpp"
     #include "napa.hpp"
     #include "ccesf.hpp"
     #include "rhscon_wdl.hpp"
@@ -11,4 +13,9 @@ class TB3_Gear {
   	#include "brh.hpp"
     #include "redfor_spetz.hpp"
     #include "ldf.hpp"
+	  #include "cecm.hpp"
+	  #include "brit_mtp.hpp"
+	  #include "crab_60.hpp"
+	  #include "crab_70.hpp"
+	  #include "crab_vhs.hpp"
 };

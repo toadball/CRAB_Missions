@@ -28,45 +28,43 @@ class RHSCON_WDL {
       "G_Tactical_Clear"
     };
     uniform[] = {"rhs_uniform_g3_m81"};
-
-      uniformContents[] = {
-        {"ACE_fieldDressing",5},
-				{"ACE_packingBandage",5},
-				{"ACE_quikclot",5},
-				{"ACE_Tourniquet",2},
-				{"ACE_splint",1},
-				{"ACE_morphine",1},
-        {"ACE_epinephrine",1},
-        {"ACE_adenosine",1},
-				{"ACE_salineIV_500",1},
-        {"ACE_Flashlight_MX991",1},
-        {"ACRE_PRC343",1}
-      };
+    uniformContents[] = {
+      {"ACE_fieldDressing",5},
+			{"ACE_packingBandage",5},
+			{"ACE_quikclot",5},
+			{"ACE_Tourniquet",2},
+			{"ACE_splint",1},
+			{"ACE_morphine",1},
+      {"ACE_epinephrine",1},
+      {"ACE_adenosine",1},
+			{"ACE_salineIV_500",1},
+      {"ACE_Flashlight_MX991",1},
+      {"ACRE_PRC343",1}
+    };
 
     vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
-
-      vestContents[] = {
-        {"rhsgref_30rnd_556x45_m21",4},
-        {"rhsgref_30rnd_556x45_m21_t",2},
-        {"16Rnd_9x21_Mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"ACE_MapTools",1},
-        {"ACE_microDAGR",1}
-      };
+    vestContents[] = {
+      {"rhsgref_30rnd_556x45_m21",4},
+      {"rhsgref_30rnd_556x45_m21_t",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"ACE_MapTools",1},
+      {"ACE_microDAGR",1}
+    };
 
     backpack[] = {"rhs_assault_umbts"};
-      backpackContents[] = {
-        {"rhsgref_30rnd_556x45_m21",4},
-        {"rhsgref_30rnd_556x45_m21_t",2},
-        {"16Rnd_9x21_Mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",1}
-      };
+    backpackContents[] = {
+      {"rhsgref_30rnd_556x45_m21",4},
+      {"rhsgref_30rnd_556x45_m21_t",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",1}
+    };
 
     magazines[] = {}; items[] = {};
   };
@@ -160,45 +158,45 @@ class RHSCON_WDL {
     };
     backpack[] = {"itc_land_b_uav_backpack"};
     assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","B_UavTerminal","rhsusf_ANPVS_15"};
-      backpackContents[] = {
-        {"rhsgref_30rnd_556x45_m21",4},
-        {"rhsgref_30rnd_556x45_m21_t",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"ace_IR_strobe_item",1},
-        {"itc_land_b_ar2i_packed",1},
-        {"ace_uavbattery",2},
-        {"Laserdesignator_01_khk_F",1},
-        {"Laserbatteries",3},
-        {"itc_land_tablet_rover",1}
-      };
+    backpackContents[] = {
+      {"rhsgref_30rnd_556x45_m21",4},
+      {"rhsgref_30rnd_556x45_m21_t",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"ace_IR_strobe_item",1},
+      {"itc_land_b_ar2i_packed",1},
+      {"ace_uavbattery",2},
+      {"Laserdesignator_01_khk_F",1},
+      {"Laserbatteries",3},
+      {"itc_land_tablet_rover",1}
+    };
   };
   class MED: BaseUnit {
     ace_medic = 2;
     backpack[] = {"B_Carryall_green_F"};
-      backpackContents[] = {
-        {"rhsgref_30rnd_556x45_m21",4},
-        {"rhsgref_30rnd_556x45_m21_t",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"ACE_fieldDressing",20},
-        {"ACE_packingBandage",20},
-        {"ACE_quikclot",10},
-        {"ACE_elasticBandage",10},
-        {"ACE_morphine",10},
-        {"ACE_epinephrine",10},
-        {"ACE_adenosine",10},
-        {"ACE_salineIV_250",8},
-        {"ACE_salineIV_500",4},
-        {"ACE_bloodIV",1},
-        {"ACE_personalAidKit",1},
-        {"ACE_surgicalKit",1},
-        {"ACE_splint",8},
-        {"ACE_tourniquet",5}
-      };
+    backpackContents[] = {
+      {"rhsgref_30rnd_556x45_m21",4},
+      {"rhsgref_30rnd_556x45_m21_t",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"ACE_fieldDressing",20},
+      {"ACE_packingBandage",20},
+      {"ACE_quikclot",10},
+      {"ACE_elasticBandage",10},
+      {"ACE_morphine",10},
+      {"ACE_epinephrine",10},
+      {"ACE_adenosine",10},
+      {"ACE_salineIV_250",8},
+      {"ACE_salineIV_500",4},
+      {"ACE_bloodIV",1},
+      {"ACE_personalAidKit",1},
+      {"ACE_surgicalKit",1},
+      {"ACE_splint",8},
+      {"ACE_tourniquet",5}
+    };
   };
 
   class LMG: BaseUnit {
@@ -208,25 +206,27 @@ class RHSCON_WDL {
       },
       {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}}
     };
-      vestContents[] = {
-        {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2},
-        {"16Rnd_9x21_Mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"ACE_MapTools",1}
-      };
-      backpackContents[] = {
-        {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1}
-      };
+    vestContents[] = {
+      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"ACE_MapTools",1}
+    };
+    backpackContents[] = {
+      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1}
+    };
   };
 	class PILOT: baseUnit {
 		weapons[] = {
-      {"rhsusf_weap_MP7A2",{"rhsusf_mag_40Rnd_46x30_FMJ","rhsusf_acc_eotech_552_d","rhsusf_acc_anpeq15side_bk"}},
+      {"rhsusf_weap_MP7A2",
+        {"rhsusf_mag_40Rnd_46x30_FMJ","rhsusf_acc_eotech_552_d","rhsusf_acc_anpeq15side_bk"}
+      },
       {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}}
     };
 		headgear[] = {
@@ -251,18 +251,14 @@ class RHSCON_WDL {
       "rhsusf_hgu56p_mask_smiley",
       "rhsusf_hgu56p_visor_mask_smiley"
 		};
-		uniform[] = {
-			"U_B_HeliPilotCoveralls",
-		};
+		uniform[] = {"U_B_HeliPilotCoveralls"};
 		vestContents[] = {
 			{"rhsusf_mag_40Rnd_46x30_FMJ",6},
 			{"SmokeShellRed",1},
       {"HandGrenade",1},
 			{"ACRE_PRC148",1}
 		};
-		backpack[] = {
-			"B_AssaultPack_khk"
-		};
+		backpack[] = {"B_AssaultPack_khk"};
 		backpackContents[] = {
 			{"ToolKit",1}
 		};

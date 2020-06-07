@@ -22,45 +22,44 @@ class REDFOR_SPETZ {
     };
     uniform[] = {"U_O_R_Gorka_01_F"};
 
-      uniformContents[] = {
-        {"ACE_fieldDressing",5},
-        {"ACE_packingBandage",5},
-        {"ACE_quikclot",5},
-        {"ACE_Tourniquet",2},
-        {"ACE_splint",1},
-        {"ACE_morphine",1},
-        {"ACE_epinephrine",1},
-        {"ACE_adenosine",1},
-        {"ACE_salineIV_500",1},
-        {"ACE_Flashlight_MX991",1},
-        {"ACRE_PRC343",1}
-      };
+    uniformContents[] = {
+      {"ACE_fieldDressing",5},
+      {"ACE_packingBandage",5},
+      {"ACE_quikclot",5},
+      {"ACE_Tourniquet",2},
+      {"ACE_splint",1},
+      {"ACE_morphine",1},
+      {"ACE_epinephrine",1},
+      {"ACE_adenosine",1},
+      {"ACE_salineIV_500",1},
+      {"ACE_Flashlight_MX991",1},
+      {"ACRE_PRC343",1}
+    };
 
     vest[] = {"V_SmershVest_01_F"};
-
-      vestContents[] = {
-        {"30Rnd_762x39_AK12_Mag_F",4},
-        {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
-        {"16Rnd_9x21_Mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"muzzle_snds_b",1},
-        {"ACE_MapTools",1}
-      };
+    vestContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",4},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"muzzle_snds_b",1},
+      {"ACE_MapTools",1}
+    };
 
     backpack[] = {"B_FieldPack_green_F"};
-      backpackContents[] = {
-        {"30Rnd_762x39_AK12_Mag_F",4},
-        {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
-        {"16Rnd_9x21_Mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"75rnd_762x39_AK12_Mag_Tracer_F",3}
-      };
+    backpackContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",4},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",3}
+    };
 
     magazines[] = {}; items[] = {};
   };
@@ -111,46 +110,45 @@ class REDFOR_SPETZ {
     };
     backpack[] = {"ITC_Land_b_uav_backpack"};
     assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","B_UavTerminal","O_NVGoggles_grn_F"};
-      backpackContents[] = {
-        {"30Rnd_762x39_AK12_Mag_F",4},
-        {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"ace_IR_strobe_item",1},
-        {"itc_land_b_ar2i_packed",1},
-        {"ace_uavbattery",2},
-        {"Laserdesignator_01_khk_F",1},
-        {"Laserbatteries",3},
-        {"itc_land_tablet_rover",1}
-      };
-
+    backpackContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",4},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"ace_IR_strobe_item",1},
+      {"itc_land_b_ar2i_packed",1},
+      {"ace_uavbattery",2},
+      {"Laserdesignator_01_khk_F",1},
+      {"Laserbatteries",3},
+      {"itc_land_tablet_rover",1}
+    };
   };
   class MED: BaseUnit {
     ace_medic = 2;
     backpack[] = {"B_Carryall_green_F"};
-      backpackContents[] = {
-        {"30Rnd_762x39_AK12_Mag_F",4},
-        {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"ACE_fieldDressing",20},
-        {"ACE_packingBandage",20},
-        {"ACE_quikclot",10},
-        {"ACE_elasticBandage",10},
-        {"ACE_morphine",10},
-        {"ACE_epinephrine",10},
-        {"ACE_adenosine",10},
-        {"ACE_salineIV_250",8},
-        {"ACE_salineIV_500",4},
-        {"ACE_bloodIV",1},
-        {"ACE_personalAidKit",1},
-        {"ACE_surgicalKit",1},
-        {"ACE_splint",8},
-        {"ACE_tourniquet",5}
-      };
+    backpackContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",4},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"ACE_fieldDressing",20},
+      {"ACE_packingBandage",20},
+      {"ACE_quikclot",10},
+      {"ACE_elasticBandage",10},
+      {"ACE_morphine",10},
+      {"ACE_epinephrine",10},
+      {"ACE_adenosine",10},
+      {"ACE_salineIV_250",8},
+      {"ACE_salineIV_500",4},
+      {"ACE_bloodIV",1},
+      {"ACE_personalAidKit",1},
+      {"ACE_surgicalKit",1},
+      {"ACE_splint",8},
+      {"ACE_tourniquet",5}
+    };
   };
   class RF: BaseUnit {};
   class UGL: BaseUnit {
@@ -160,31 +158,31 @@ class REDFOR_SPETZ {
       },
       {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}}
     };
-      vestContents[] = {
-        {"30Rnd_762x39_AK12_Mag_F",2},
-        {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
-        {"16Rnd_9x21_Mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"muzzle_snds_b",1},
-        {"1Rnd_HE_Grenade_shell",10},
-        {"1Rnd_Smoke_Grenade_Shell",2},
-        {"ACE_MapTools",1}
-      };
-      backpack[] = {"B_Carryall_green_F"};
-      backpackContents[] = {
-        {"30Rnd_762x39_AK12_Mag_F",4},
-        {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"1Rnd_HE_Grenade_shell",10},
-        {"1Rnd_Smoke_Grenade_Shell",2},
-        {"75rnd_762x39_AK12_Mag_Tracer_F",2}
-      };
+    vestContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",2},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"muzzle_snds_b",1},
+      {"1Rnd_HE_Grenade_shell",10},
+      {"1Rnd_Smoke_Grenade_Shell",2},
+      {"ACE_MapTools",1}
+    };
+    backpack[] = {"B_Carryall_green_F"};
+    backpackContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",4},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"1Rnd_HE_Grenade_shell",10},
+      {"1Rnd_Smoke_Grenade_Shell",2},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",2}
+    };
   };
   class LMG: BaseUnit {
     weapons[] = {
@@ -193,26 +191,26 @@ class REDFOR_SPETZ {
       },
       {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}}
     };
-      vestContents[] = {
-        {"75rnd_762x39_AK12_Mag_F",2},
-        {"75rnd_762x39_AK12_Mag_Tracer_F",2},
-        {"16Rnd_9x21_Mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"muzzle_snds_b",1},
-        {"ACE_MapTools",1}
-      };
-      backpack[] = {"B_Carryall_green_F"};
-      backpackContents[] = {
-        {"75rnd_762x39_AK12_Mag_F",2},
-        {"75rnd_762x39_AK12_Mag_Tracer_F",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1}
-      };
+    vestContents[] = {
+      {"75rnd_762x39_AK12_Mag_F",2},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"muzzle_snds_b",1},
+      {"ACE_MapTools",1}
+    };
+    backpack[] = {"B_Carryall_green_F"};
+    backpackContents[] = {
+      {"75rnd_762x39_AK12_Mag_F",2},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1}
+    };
   };
   class GPMG: LMG {};
   class DMR: BaseUnit {
@@ -223,26 +221,26 @@ class REDFOR_SPETZ {
       {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}},
       "RangeFinder"
     };
-      vestContents[] = {
-        {"10Rnd_762x54_Mag",4},
-        {"ACE_10Rnd_762x54_Tracer_mag",2},
-        {"16Rnd_9x21_Mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"muzzle_snds_93mmg",1},
-        {"ACE_MapTools",1}
-      };
-      backpackContents[] = {
-        {"10Rnd_762x54_Mag",4},
-        {"ACE_10Rnd_762x54_Tracer_mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"75rnd_762x39_AK12_Mag_Tracer_F",3}
-      };
+    vestContents[] = {
+      {"10Rnd_762x54_Mag",4},
+      {"ACE_10Rnd_762x54_Tracer_mag",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"muzzle_snds_93mmg",1},
+      {"ACE_MapTools",1}
+    };
+    backpackContents[] = {
+      {"10Rnd_762x54_Mag",4},
+      {"ACE_10Rnd_762x54_Tracer_mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",3}
+    };
   };
   class DMRDLC: BaseUnit {
     weapons[] = {
@@ -252,24 +250,24 @@ class REDFOR_SPETZ {
       {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}},
       "RangeFinder"
     };
-      vestContents[] = {
-        {"10Rnd_93x64_DMR_05_Mag",5},
-        {"16Rnd_9x21_Mag",2},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"muzzle_snds_93mmg",1},
-        {"ACE_MapTools",1}
-      };
-      backpackContents[] = {
-        {"10Rnd_93x64_DMR_05_Mag",6},
-        {"HandGrenade",2},
-        {"SmokeShell",2},
-        {"Chemlight_green",2},
-        {"B_IR_Grenade",1},
-        {"75rnd_762x39_AK12_Mag_Tracer_F",3}
-      };
+    vestContents[] = {
+      {"10Rnd_93x64_DMR_05_Mag",5},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"muzzle_snds_93mmg",1},
+      {"ACE_MapTools",1}
+    };
+    backpackContents[] = {
+      {"10Rnd_93x64_DMR_05_Mag",6},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",3}
+    };
   };
   class MAT: BaseUnit {
     weapons[] = {

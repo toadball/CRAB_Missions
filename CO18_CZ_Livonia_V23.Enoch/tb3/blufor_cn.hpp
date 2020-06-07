@@ -302,8 +302,12 @@ class BLUFOR_AOR2CN {
   };
   class PILOT: baseUnit {
     weapons[] = {
-      {"rhsusf_weap_MP7A2",{"rhsusf_mag_40Rnd_46x30_FMJ","rhsusf_acc_eotech_552_d","rhsusf_acc_anpeq15side_bk"}},
-      {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}}
+      {"rhsusf_weap_MP7A2",
+        {"rhsusf_mag_40Rnd_46x30_FMJ","rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side_bk"}
+      },
+      {"rhsusf_weap_glock17g4",
+        {"rhsusf_mag_17Rnd_9x19_JHP"}
+      }
     };
     headgear[] = {
       "rhsusf_hgu56p_black",
@@ -327,12 +331,9 @@ class BLUFOR_AOR2CN {
       "rhsusf_hgu56p_mask_smiley",
       "rhsusf_hgu56p_visor_mask_smiley"
     };
-    uniform[] = {
-      "rhs_uniform_g3_tan",
-    };
-    vest[] = {
-      "rhsusf_mbav_light",
-    };
+    uniform[] = {"rhs_uniform_g3_rgr"};
+
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
     vestContents[] = {
       {"rhsusf_mag_40Rnd_46x30_FMJ",6},
       {"SmokeShellRed",2},
@@ -340,9 +341,7 @@ class BLUFOR_AOR2CN {
       {"ACE_MapTools",1},
       {"ACE_MicroDagr",1}
     };
-    backpack[] = {
-      "rhsusf_falconii_coy","rhsusf_falconii_mc"
-    };
+    backpack[] = {"rhsusf_falconii_coy"};
     backpackContents[] = {
       {"ToolKit",1}
     };
