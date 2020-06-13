@@ -33,14 +33,13 @@ addons[]=
 	"A3_Characters_F_Common",
 	"itc_land_veh_hammer",
 	"itc_land_vls",
-	"A3_Characters_F",
-	"A3_Aegis_Characters_F_Aegis"
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=8;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -94,13 +93,6 @@ class AddonsMetaData
 			className="itc_land_vls";
 			name="itc_land_vls";
 			author="ITC Addons Team";
-		};
-		class Item8
-		{
-			className="A3_Aegis_Characters_F_Aegis";
-			name="Arma 3 Aegis - Characters and Clothing";
-			author="AveryTheKitty";
-			url="https://forums.bistudio.com/forums/topic/205858-arma-3-aegis-alpha";
 		};
 	};
 };
