@@ -4,7 +4,7 @@ class BLUFOR_SAQCN {
     ace_medic = 1;
     weapons[] = {
       {"arifle_CTAR_blk_F",
-        {"rhsusf_acc_su230","30Rnd_580x42_Mag_F","muzzle_snds_58_blk_f"}
+        {"rhsusf_acc_su230","30Rnd_580x42_Mag_F","muzzle_snds_58_blk_f","ace_acc_pointer_green_ir"}
       },
       {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}}
     };

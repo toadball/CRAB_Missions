@@ -5,24 +5,23 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	class ItemIDProvider
 	{
 		nextID=56;
 	};
 	class Camera
 	{
-		pos[]={3449.4827,17.80673,12876.299};
-		dir[]={-0.47226205,-0.64212847,-0.60404849};
-		up[]={-0.39550793,0.76657373,-0.50587648};
-		aside[]={-0.78789252,4.9204391e-007,0.61599731};
+		pos[]={3421.782,17.118055,12870.956};
+		dir[]={0.91984344,-0.36868802,-0.13429619};
+		up[]={0.36485595,0.92954355,-0.053268809};
+		aside[]={-0.14447671,3.8574217e-007,-0.98955417};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Aegis_Characters_F_Aegis",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Ui_F",
 	"A3_Boat_F_Destroyer_Destroyer_01",
@@ -35,7 +34,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=7;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -45,46 +44,39 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="A3_Aegis_Characters_F_Aegis";
-			name="Arma 3 Aegis - Characters and Clothing";
-			author="AveryTheKitty";
-			url="https://forums.bistudio.com/forums/topic/205858-arma-3-aegis-alpha";
-		};
-		class Item2
-		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item2
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item3
 		{
 			className="A3_Boat_F_Destroyer";
 			name="Arma 3 Jets - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item4
 		{
 			className="A3_Static_F_Destroyer";
 			name="CFGPATCHES_A3_Static_F_Destroyer";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item5
 		{
 			className="itc_land_veh_hammer";
 			name="itc_land_veh_hammer";
 			author="ITC Addons Team";
 		};
-		class Item7
+		class Item6
 		{
 			className="itc_land_vls";
 			name="itc_land_vls";

@@ -215,35 +215,6 @@ class REDFOR_SPETZ {
   class GPMG: LMG {};
   class DMR: BaseUnit {
     weapons[] = {
-      {"srifle_DMR_01_black_F",
-        {"optic_hamr","bipod_01_F_blk","rhs_acc_perst3","10Rnd_762x54_Mag"}
-      },
-      {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}},
-      "RangeFinder"
-    };
-    vestContents[] = {
-      {"10Rnd_762x54_Mag",4},
-      {"ACE_10Rnd_762x54_Tracer_mag",2},
-      {"16Rnd_9x21_Mag",2},
-      {"HandGrenade",2},
-      {"SmokeShell",2},
-      {"Chemlight_green",2},
-      {"B_IR_Grenade",1},
-      {"muzzle_snds_93mmg",1},
-      {"ACE_MapTools",1}
-    };
-    backpackContents[] = {
-      {"10Rnd_762x54_Mag",4},
-      {"ACE_10Rnd_762x54_Tracer_mag",2},
-      {"HandGrenade",2},
-      {"SmokeShell",2},
-      {"Chemlight_green",2},
-      {"B_IR_Grenade",1},
-      {"75rnd_762x39_AK12_Mag_Tracer_F",3}
-    };
-  };
-  class DMRDLC: BaseUnit {
-    weapons[] = {
       {"srifle_DMR_05_blk_F",
         {"optic_hamr","bipod_01_F_blk","rhs_acc_perst3","10Rnd_93x64_DMR_05_Mag"}
       },
