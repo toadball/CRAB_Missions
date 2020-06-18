@@ -199,7 +199,6 @@ class REDFOR_SPETZ {
       {"SmokeShell",2},
       {"Chemlight_green",2},
       {"B_IR_Grenade",1},
-      {"muzzle_snds_b",1},
       {"ACE_MapTools",1}
     };
     backpack[] = {"B_Carryall_green_F"};
@@ -209,7 +208,9 @@ class REDFOR_SPETZ {
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"Chemlight_green",2},
-      {"B_IR_Grenade",1}
+      {"B_IR_Grenade",1},
+      {"muzzle_snds_b",1}
+
     };
   };
   class GPMG: LMG {};
@@ -322,7 +323,7 @@ class REDFOR_SPETZ {
   };
   class LauncherCrate {
     vehCargoWeapons[] = {
-      {"rhs_weap_m72a7",10},
+      {"rhs_weap_rpg75",10},
       {"launch_RPG32_green_F",2},
       {"ACE_Vector",2}
     };
@@ -378,4 +379,268 @@ class REDFOR_SPETZ {
       {"B_Carryall_green_F",4}
     };
   };
+};
+class REDFOR_AFRF: REDFOR_SPETZ {
+  class BaseUnit {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+    backpack[] = {"B_Kitbag_rgr"};
+  };
+  class PL: PL {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+    vestContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",4},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"ace_IR_strobe_item",1},
+      {"ACRE_PRC148",1},
+      {"ACE_MapTools",1},
+      {"ACE_MicroDagr",1}
+    };
+    backpack[] = {"B_Kitbag_rgr"};
+    backpackContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",4},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"muzzle_snds_b",1},
+      {"itc_land_tablet_rover",1},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",3}
+    };
+  };
+  class ZEUS: PL {};
+  class TL: PL {};
+  class FSO: FSO {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+  };
+  class MED: MED {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+    backpack[] = {"B_Carryall_green_F"};
+  };
+  class RF: RF {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+    backpack[] = {"B_Kitbag_rgr"};
+  };
+  class UGL: UGL {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+    vestContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",2},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"muzzle_snds_b",1},
+      {"1Rnd_HE_Grenade_shell",6},
+      {"ACE_MapTools",1}
+    };
+
+    backpack[] = {"B_Kitbag_rgr"};
+    backpackContents[] = {
+      {"30Rnd_762x39_AK12_Mag_F",4},
+      {"30Rnd_762x39_AK12_Mag_Tracer_F",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"1Rnd_HE_Grenade_shell",14},
+      {"1Rnd_Smoke_Grenade_Shell",4},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",2}
+    };
+
+
+
+  };
+  class LMG: LMG {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+    //backpack[] = {"B_Kitbag_rgr"};
+    backpack[] = {"B_Carryall_green_F"};
+  };
+  class GPMG: LMG {};
+  class DMR: DMR {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+    vestContents[] = {
+      {"10Rnd_93x64_DMR_05_Mag",5},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"ACE_MapTools",1}
+    };
+    backpack[] = {"B_Kitbag_rgr"};
+    backpackContents[] = {
+      {"10Rnd_93x64_DMR_05_Mag",6},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"muzzle_snds_93mmg",1},
+      {"75rnd_762x39_AK12_Mag_Tracer_F",3}
+    };
+  };
+  class MAT: MAT {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+    //backpack[] = {"B_Kitbag_rgr"};
+    backpack[] = {"B_Carryall_green_F"};
+  };
+
+  class MATA: MATA {
+    headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
+    goggles[] = {
+      "G_Bandanna_beast",
+      "G_Bandanna_blk",
+      "G_Bandanna_khk",
+      "G_Bandanna_oli",
+      "G_Bandanna_tan"
+    };
+    uniform[] = {"U_O_R_Gorka_01_camo_F"};
+    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
+    //backpack[] = {"B_Kitbag_rgr"};
+    backpack[] = {"B_Carryall_green_F"};
+  };
+  class PILOT: PILOT {};
+  class LauncherCrate: LauncherCrate { };
+
+  class LargeGearCrate: LargeGearCrate { };
+};
+class REDFOR_AFRFA: REDFOR_AFRF {
+  class BaseUnit {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class PL: PL {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class ZEUS: ZEUS {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class TL: TL {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class FSO: FSO {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class RF: RF {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class UGL: UGL {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class LMG: LMG {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class GPMG: LMG {};
+  class DMR: DMR {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class MAT: MAT {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+
+  class MATA: MATA {
+    headgear[] = { "H_HelmetAggressor_cover_F" };
+    uniform[] = {"U_O_R_Gorka_01_brown_F"};
+  };
+  class PILOT: PILOT {};
+  class LauncherCrate: LauncherCrate { };
+
+  class LargeGearCrate: LargeGearCrate { };
 };
