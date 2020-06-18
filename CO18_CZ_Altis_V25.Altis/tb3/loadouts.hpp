@@ -7,7 +7,6 @@ class TB3_Gear {
     #include "ccesf.hpp"
     #include "cdf_wdl.hpp"
     #include "ldf.hpp"
-	  #include "brit_mtp.hpp"
 	  #include "crab_60.hpp"
 	  #include "crab_70.hpp"
 	  #include "crab_vhs.hpp"
