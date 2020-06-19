@@ -345,7 +345,7 @@
       },
       "ace_vector"
     };
-
+    
     backpack[]={"rhsgref_hidf_alicepack"};
     backpackContents[] = {
       {"rhsusf_ANPVS_15",1},
@@ -388,7 +388,7 @@
       },
       "ace_vector"
     };
-
+    
     backpack[]={"rhsgref_hidf_alicepack"};
     backpackContents[] = {
       {"rhsusf_ANPVS_15",1},
@@ -465,7 +465,7 @@
   class MG: GPMG {};
 
   class LMG: baseUnit {
-
+ 
     weapons[] = {
       {"rhs_weap_m249_light_S_vfg2",
         {"rhsusf_100Rnd_556x45_mixed_soft_pouch_coyote","rhsusf_acc_anpeq15side_bk","optic_Holosight_blk_F","rhsusf_acc_grip4_bipod"},
@@ -487,7 +487,7 @@
       {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",3},
       {"SmokeShell",2},
       {"rhs_mag_rgd5",2}
-    };
+    };   
   };
 
   class GPMGA: baseUnit {
