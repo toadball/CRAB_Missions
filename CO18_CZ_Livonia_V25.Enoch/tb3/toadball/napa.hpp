@@ -126,6 +126,7 @@ class NAPA {
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"ACRE_PRC148",1},
+      {"ACRE_PRC343",1},
       {"ACE_MapTools",1}
     };
 
@@ -133,7 +134,8 @@ class NAPA {
   class ZEUS: PL {};
   class TL: PL {};
   class RF: BaseUnit {};
-  class UGL: BaseUnit {
+  class UGL: BaseUnit {};
+  class MAT: BaseUnit {
     weapons[] = {
       {
         {"rhs_weap_savz58p",
@@ -157,8 +159,7 @@ class NAPA {
       {"rhs_rpg7_OG7V_mag",1}
     };
   };
-  class RPG: UGL {};
-  class RPGA: BaseUnit {
+  class MATA: BaseUnit {
     backpack[] = {"rhs_rpg_empty"};
     backpackContents[] = {
       {"RPG7_F",1},
@@ -190,12 +191,7 @@ class NAPA {
   };
 
   class LMG: BaseUnit {
-    weapons[] = {
-      {"rhs_weap_pkm",
-          {"rhs_100Rnd_762x54mmR"}
-      }
-    };
-
+    weapons[] = {"rhs_weap_pkm", {"rhs_100Rnd_762x54mmR"}};
     vest[] = {
       "V_TacVest_oli",
       "V_Chestrig_oli",
@@ -213,10 +209,12 @@ class NAPA {
       {"rhs_100Rnd_762x54mmR_green",1}
     };
   };
+  class GPMG: LMG { };
+
   class DMR: BaseUnit {
     weapons[] = {
       {"rhs_weap_svdp",
-        {"rhs_acc_pso1m21","rhs_10Rnd_762x54mmR_7N14"}
+        {"rhs_acc_pso1m2","rhs_10Rnd_762x54mmR_7N14"}
       }
     };
     vestContents[] = {

@@ -116,7 +116,7 @@ class RHSCON_WDL {
   class DMR: RF {
     weapons[] = {
       {"rhs_weap_svds",
-        {"rhs_10Rnd_762x54mmR_7N1","rhs_acc_pso1m21"}
+        {"rhs_10Rnd_762x54mmR_7N1","rhs_acc_pso1m2"}
       },
       {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}},
       "ACE_Vector"
