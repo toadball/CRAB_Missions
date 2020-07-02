@@ -128,8 +128,7 @@ class RHS_TNLA {
       {"ACE_MapTools",1}
     };
   };
-  class UAV: BaseUnit {};
-	class FSO: UAV {};
+	class FSO: TL {};
   class MED: BaseUnit {
     ace_medic = 2;
 
@@ -169,6 +168,36 @@ class RHS_TNLA {
       {"rhs_100Rnd_762x54mmR_green",2}
     };
   };
+  class GPMG: LMG { };
+
+  class MAT: BaseUnit {
+    weapons[] = {
+      {
+        {"rhs_weap_akm",
+          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
+        },
+        {"rhs_weap_akms",
+          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
+        },
+        {"rhs_weap_pm63",
+          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
+        }
+      },
+      "launch_RPG7_F"
+    };
+    backpack[] = {"rhs_rpg_empty"};
+    backpackContents[] = {
+      {"RPG7_F",2},
+      {"rhs_rpg7_OG7V_mag",1}
+    };
+  };
+  class MATA: BaseUnit {
+    backpack[] = {"rhs_rpg_empty"};
+    backpackContents[] = {
+      {"RPG7_F",1},
+      {"rhs_rpg7_OG7V_mag",2}
+    };
+  };
   class DMR: BaseUnit {
     weapons[] = {"rhs_weap_Izh18"};
     vestContents[] = {
@@ -180,7 +209,7 @@ class RHS_TNLA {
     };
   };
   class PILOT: baseUnit {
-
+    headgear[]={"H_Cap_headphones"};
     vestContents[] = {
       {"30Rnd_762x39_Mag_Green_F",2},
       {"30Rnd_762x39_Mag_Tracer_Green_F",2},

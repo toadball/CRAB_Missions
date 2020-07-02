@@ -2,7 +2,7 @@
 //Use those bellow as an example as to creating a side and unit class.
 class TB3_Gear {
     #include "toadball\loadouts.hpp"
-	#include "pieshade\loadouts.hpp"
+	  #include "pieshade\loadouts.hpp"
     #include "blufor.hpp"
     #include "ccesf.hpp"
     #include "cdf_wdl.hpp"
