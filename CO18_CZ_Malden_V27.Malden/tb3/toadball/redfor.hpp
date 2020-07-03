@@ -381,7 +381,7 @@ class REDFOR_SPETZ {
   };
 };
 class REDFOR_AFRF: REDFOR_SPETZ {
-  class BaseUnit {
+  class BaseUnit: BaseUnit {
     headgear[] = { "H_HelmetAggressor_cover_taiga_F" };
     goggles[] = {
       "G_Bandanna_beast",

@@ -188,13 +188,13 @@ class RHS_TNLA {
     backpack[] = {"rhs_rpg_empty"};
     backpackContents[] = {
       {"RPG7_F",2},
-      {"rhs_rpg7_OG7V_mag",1}
+      {"rhs_rpg7_OG7V_mag",2}
     };
   };
   class MATA: BaseUnit {
     backpack[] = {"rhs_rpg_empty"};
     backpackContents[] = {
-      {"RPG7_F",1},
+      {"RPG7_F",2},
       {"rhs_rpg7_OG7V_mag",2}
     };
   };

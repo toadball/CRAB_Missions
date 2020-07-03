@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
 		nextID=98;
 	};
 	class Camera
 	{
-		pos[]={11643.451,39.060001,4441.0049};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={2806.051,635.44897,6129.4468};
+		dir[]={-0.36069614,-0.49002534,-0.79361928};
+		up[]={-0.20275961,0.87169498,-0.44612038};
+		aside[]={-0.91040641,4.4557964e-008,0.41377625};
 	};
 };
 binarizationWanted=0;
@@ -606,7 +606,7 @@ class Mission
 			type="mil_triangle";
 			a=2;
 			b=2;
-			angle=312.8999;
+			angle=312.89984;
 			id=49;
 			atlOffset=7.5761547;
 		};

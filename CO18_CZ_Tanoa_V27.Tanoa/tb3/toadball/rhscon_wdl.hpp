@@ -63,7 +63,8 @@ class RHSCON_WDL {
       {"SmokeShell",2},
       {"Chemlight_green",2},
       {"B_IR_Grenade",1},
-      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",1}
+      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",1},
+      {"rhsusf_100Rnd_762x51_m62_tracer",1}
     };
 
     magazines[] = {}; items[] = {};
@@ -104,7 +105,8 @@ class RHSCON_WDL {
       {"Chemlight_green",2},
       {"B_IR_Grenade",1},
       {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",1},
-      {"itc_land_tablet_rover",1}
+      {"itc_land_tablet_rover",1},
+      {"rhsusf_100Rnd_762x51_m62_tracer",1}
     };
   };
   class ZEUS: PL {
@@ -139,7 +141,8 @@ class RHSCON_WDL {
       {"SmokeShell",2},
       {"Chemlight_green",2},
       {"B_IR_Grenade",1},
-      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",1}
+      {"rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",1},
+      {"rhsusf_100Rnd_762x51_m62_tracer",1}
     };
   };
   class FSO: PL {
@@ -219,9 +222,77 @@ class RHSCON_WDL {
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"rhsusf_100Rnd_762x51_m62_tracer",1}
+    };
+  };
+  class GPMG: BaseUnit {
+    weapons[] = {
+      {"rhs_weap_m240G",
+          {"rhsusf_100Rnd_762x51"}
+      },
+      {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}}
+    };
+    vestContents[] = {
+      {"rhsusf_100Rnd_762x51",1},
+      {"rhsusf_100Rnd_762x51_m62_tracer",1},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"ACE_MapTools",1}
+    };
+    backpackContents[] = {
+      {"rhsusf_100Rnd_762x51",1},
+      {"rhsusf_100Rnd_762x51_m62_tracer",1},      
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
       {"B_IR_Grenade",1}
     };
   };
+
+  class MAT: BaseUnit {
+    weapons[] = {
+      {
+        {"rhs_weap_m21s",
+            {"rhsgref_30rnd_556x45_m21"}
+        },
+        {"rhs_weap_m21a",
+            {"rhsgref_30rnd_556x45_m21"}
+        }
+      },
+      {"hgun_Rook40_F",{"16Rnd_9x21_Mag"}},
+      {"launch_MRAWS_green_rail_F",{"MRAWS_HEAT55_F"}}
+    };
+
+    backpackContents[] = {
+      {"rhsgref_30rnd_556x45_m21",4},
+      {"rhsgref_30rnd_556x45_m21_t",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"MRAWS_HEAT55_F",1},
+      {"MRAWS_HE_F",1}
+    };
+  };
+  class MATA: BaseUnit {
+    backpackContents[] = {
+      {"rhsgref_30rnd_556x45_m21",4},
+      {"rhsgref_30rnd_556x45_m21_t",2},
+      {"16Rnd_9x21_Mag",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"Chemlight_green",2},
+      {"B_IR_Grenade",1},
+      {"MRAWS_HEAT55_F",1},
+      {"MRAWS_HE_F",1}
+    };
+  };
+
 	class PILOT: baseUnit {
 		weapons[] = {
       {"rhsusf_weap_MP7A2",
