@@ -6,3 +6,4 @@
 #include "rhs_tnla.hpp"
 #include "rhscon_wdl.hpp"
 #include "ksf.hpp"
+#include "rhs_fia.hpp"
