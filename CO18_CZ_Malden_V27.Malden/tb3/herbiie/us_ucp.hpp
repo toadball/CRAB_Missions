@@ -88,7 +88,8 @@ class us_ucp {
       backpackContents[] = {
         {"rhs_mag_30Rnd_556x45_M855A1_Stanag",10},
         {"HandGrenade",2},
-        {"SmokeShell",2}
+        {"SmokeShell",2},
+        {"rhsusf_100Rnd_762x51",1}
       };
   };
   class RF: BaseUnit {
@@ -96,7 +97,8 @@ class us_ucp {
         {"rhs_mag_30Rnd_556x45_M855A1_Stanag",5},
         {"HandGrenade",2},
         {"SmokeShell",2},
-        {"rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_ucp",2}
+        {"rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_ucp",2},
+        {"rhsusf_100Rnd_762x51",1}
       };
   };
   class UGL: BaseUnit {
@@ -112,7 +114,9 @@ class us_ucp {
         {"rhs_mag_m714_White",5}
       };	  
   };
-  class FSO: BaseUnit {};
+  class FSO: PL {
+    assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14","B_UavTerminal"};
+	};
    
   class MED: BaseUnit {
     ace_medic = 2;
@@ -215,5 +219,42 @@ class us_ucp {
         {"ACE_microDAGR",1}
       };
 	};
+  class MAT: BaseUnit {
+    weapons[] = {
+        {"rhs_weap_m4a1",
+          {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_acc_anpeq15side","rhsusf_acc_acog"}
+        },{"rhs_weap_fgm148",{"rhs_fgm148_magazine_AT"}}
+    };
+    backpack[] = {"B_Carryall_cbr"};
+      backpackContents[] = {
+        {"rhs_fgm148_magazine_AT",1}
+      };
+  };
+  class MATA: BaseUnit {
+    backpack[] = {"B_Carryall_cbr"};
+      backpackContents[] = {
+        {"rhs_fgm148_magazine_AT",1}
+      };
+  };
+
+  class GPMG: BaseUnit {
+    weapons[] = {
+        {"rhs_weap_m240B",
+          {"rhsusf_100Rnd_762x51","rhsusf_acc_anpeq15side","rhsusf_acc_acog"}
+        }
+    };
+      vestContents[] = {
+        {"rhsusf_100Rnd_762x51",3},
+		{"ACE_salineIV_500",1},
+        {"HandGrenade",2},
+        {"SmokeShell",2},
+        {"ACRE_PRC343",1}
+      };
+      backpackContents[] = {
+        {"rhsusf_100Rnd_762x51",4},
+        {"HandGrenade",2},
+        {"SmokeShell",2},
+      };
+  };
 	
 };
