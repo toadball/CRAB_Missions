@@ -144,6 +144,7 @@ class KSF_PC {
 	class FSO: PL {};
   class MED: BaseUnit {
     ace_medic = 2;
+    vest[] = { "rhsgref_6b23_khaki_medic" };
     backpack[] = {"B_Carryall_oli"};
     backpackContents[] = {
       {"ACE_fieldDressing",20},
@@ -153,9 +154,9 @@ class KSF_PC {
       {"ACE_morphine",10},
       {"ACE_epinephrine",10},
       {"ACE_adenosine",10},
-      {"ACE_salineIV_250",8},
+      {"ACE_salineIV_250",4},
       {"ACE_salineIV_500",4},
-      {"ACE_bloodIV",1},
+      {"ACE_bloodIV",2},
       {"ACE_personalAidKit",1},
       {"ACE_surgicalKit",1},
       {"ACE_splint",8},

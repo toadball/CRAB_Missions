@@ -158,9 +158,9 @@ class BLUFOR_MTP {
         {"ACE_morphine",10},
         {"ACE_epinephrine",10},
         {"ACE_adenosine",10},
-        {"ACE_salineIV_250",8},
+        {"ACE_salineIV_250",4},
         {"ACE_salineIV_500",4},
-        {"ACE_bloodIV",1},
+        {"ACE_bloodIV",2},
         {"ACE_personalAidKit",1},
         {"ACE_surgicalKit",1},
         {"ACE_splint",8},
@@ -249,8 +249,10 @@ class BLUFOR_MTP {
         {"B_IR_Grenade",1},
         {"ACE_MapTools",1}
       };
-      backpack[]={"rhsusf_falconii_coy"};
+      //backpack[]={"rhsusf_falconii_coy"};
       backpackContents[] = {
+        {"rhsusf_100Rnd_762x51",1},
+        {"rhsusf_100Rnd_762x51_m62_tracer",1},        
         {"HandGrenade",2},
         {"SmokeShell",2},
         {"Chemlight_green",2},
