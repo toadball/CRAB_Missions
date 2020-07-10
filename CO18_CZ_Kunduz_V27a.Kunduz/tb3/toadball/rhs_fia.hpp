@@ -1,20 +1,11 @@
-//"rhs_weap_rpg75"
-
-class RHS_TNLA {
+class RHS_FIA {
   class BaseUnit {
     allowPlayerGoggles = 1;
     ace_medic = 1;
     weapons[] = {
       {
-        {"rhs_weap_akm",
-          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
-        },
-        {"rhs_weap_akms",
-          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
-        },
-        {"rhs_weap_pm63",
-          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
-        }
+        {"rhs_weap_ak74_2",{"rhs_30Rnd_545x39_7N10_plum_AK","rhs_acc_dtk1983"}},
+        {"rhs_weap_aks74_2",{"rhs_30Rnd_545x39_7N10_plum_AK","rhs_acc_dtk1983"}}
       }
     };
     priKit[] = {};
@@ -24,57 +15,58 @@ class RHS_TNLA {
     assignedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
 
     headgear[] = {
-      "H_Bandanna_cbr",
+      "H_Booniehat_oli",
+      "H_Booniehat_khk",
+      "H_Booniehat_mgrn",
+      "H_Bandanna_khk",
       "H_Bandanna_sgg",
       "H_Bandanna_sand",
-      "H_Bandanna_gry",
-      "H_Bandanna_khk",
-      "H_Booniehat_oli",
-      "H_Booniehat_tan",
-      "H_Booniehat_khk",
-      "H_Cap_oli",
-      "H_Cap_grn",
-      "H_Cap_tan",
-      "rhs_ssh68"
+      "H_Bandanna_cbr",
+      "H_Watchcap_cbr",
+      "H_Watchcap_camo",
+      "H_Watchcap_khk"
     };
     goggles[] = {};
 
     uniform[] = {
-      "rhsgref_uniform_TLA_1",
-      "rhsgref_uniform_TLA_2"
+      "rhsgref_uniform_altis_lizard_olive",
+      "rhsgref_uniform_altis_lizard"
     };
-      uniformContents[] = {
-        {"ACE_fieldDressing",5},
-				{"ACE_packingBandage",5},
-				{"ACE_quikclot",5},
-				{"ACE_Tourniquet",2},
-				{"ACE_splint",1},
-				{"ACE_morphine",2},
-        {"ACE_epinephrine",2},
-				{"ACE_salineIV_500",1},
-        {"ACE_Flashlight_MX991",1}
-      };
+    uniformContents[] = {
+      {"ACE_fieldDressing",5},
+			{"ACE_packingBandage",5},
+			{"ACE_quikclot",5},
+			{"ACE_Tourniquet",2},
+			{"ACE_splint",1},
+			{"ACE_morphine",2},
+      {"ACE_epinephrine",2},
+			{"ACE_salineIV_500",1},
+      {"ACE_Flashlight_MX991",1}
+    };
 
     vest[] = {
-      "rhsgref_chicom"
+      "V_Chestrig_oli",
+      "V_Chestrig_khk",
+      "V_Chestrig_rgr"
     };
     vestContents[] = {
-      {"30Rnd_762x39_Mag_Green_F",4},
-      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
-      {"HandGrenade",2},
-      {"SmokeShell",2},
+      {"rhs_30Rnd_545x39_7N10_plum_AK",4},
+      {"rhs_30Rnd_545x39_AK_plum_green",2},
+      {"rhs_mag_rgd5",2},
+      {"rhs_mag_rdg2_white",2},
       {"ACE_MapTools",1}
     };
 
     backpack[] = {
+      "B_FieldPack_khk",
       "B_FieldPack_oli",
-      "B_FieldPack_khk"
+      "B_FieldPack_green_F"
     };
     backpackContents[] = {
-      {"30Rnd_762x39_Mag_Green_F",4},
-      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
-      {"HandGrenade",2},
-      {"SmokeShell",2},
+      {"rhs_30Rnd_545x39_7N10_plum_AK",4},
+      {"rhs_30Rnd_545x39_AK_plum_green",2},
+      {"rhs_mag_rgd5",2},
+      {"rhs_mag_rdg2_white",2},
       {"rhs_100Rnd_762x54mmR_green",1}
     };
 
@@ -83,23 +75,16 @@ class RHS_TNLA {
   class PL: BaseUnit {
     weapons[] = {
       {
-        {"rhs_weap_akm",
-          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
-        },
-        {"rhs_weap_akms",
-          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
-        },
-        {"rhs_weap_pm63",
-          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
-        }
+        {"rhs_weap_ak74_2",{"rhs_30Rnd_545x39_7N10_plum_AK","rhs_acc_dtk1983"}},
+        {"rhs_weap_aks74_2",{"rhs_30Rnd_545x39_7N10_plum_AK","rhs_acc_dtk1983"}}
       },
       "Binocular"
     };
     vestContents[] = {
-      {"30Rnd_762x39_Mag_Green_F",4},
-      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
-      {"HandGrenade",2},
-      {"SmokeShell",2},
+      {"rhs_30Rnd_545x39_7N10_plum_AK",4},
+      {"rhs_30Rnd_545x39_AK_plum_green",2},
+      {"rhs_mag_rgd5",2},
+      {"rhs_mag_rdg2_white",2},
       {"ACRE_PRC148",1},
       {"ACE_MapTools",1}
     };
@@ -109,20 +94,13 @@ class RHS_TNLA {
   class RF: BaseUnit {};
   class UGL: BaseUnit {
     weapons[] = {
-      {
-        {"rhs_weap_akms_gp25",
-          {"30Rnd_762x39_Mag_Green_F","rhs_VOG25","rhs_acc_dtkakm"}
-        },
-        {"rhs_weap_akm_gp25",
-          {"30Rnd_762x39_Mag_Green_F","rhs_VOG25","rhs_acc_dtkakm"}
-        }
-      }
+      {"rhs_weap_ak74n_2_gp25",{"rhs_30Rnd_545x39_7N10_plum_AK","rhs_VOG25","rhs_acc_dtk1983"}}
     };
     backpackContents[] = {
-      {"30Rnd_762x39_Mag_Green_F",2},
-      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
-      {"HandGrenade",2},
-      {"SmokeShell",2},
+      {"rhs_30Rnd_545x39_7N10_plum_AK",2},
+      {"rhs_30Rnd_545x39_AK_plum_green",2},
+      {"rhs_mag_rgd5",2},
+      {"rhs_mag_rdg2_white",2},
       {"rhs_VOG25",20},
       {"rhs_GRD40_White",5},
       {"ACE_MapTools",1}
@@ -131,8 +109,11 @@ class RHS_TNLA {
 	class FSO: TL {};
   class MED: BaseUnit {
     ace_medic = 2;
-
-    backpack[] = { "B_Carryall_oli" };
+    backpack[] = {
+      "B_Carryall_oli",
+      "B_Carryall_green_F",
+      "B_Carryall_khk"
+    };
     backpackContents[] = {
       {"ACE_fieldDressing",20},
       {"ACE_packingBandage",20},
@@ -153,17 +134,14 @@ class RHS_TNLA {
 
   class LMG: BaseUnit {
     weapons[] = {
-      {"rhs_weap_pkm",
-          {"rhs_100Rnd_762x54mmR"}
-      }
+      {"rhs_weap_pkm", {"rhs_100Rnd_762x54mmR"}}
     };
     vestContents[] = {
       {"rhs_100Rnd_762x54mmR",1},
-      {"HandGrenade",2},
-      {"SmokeShell",2},
+      {"rhs_mag_rgd5",2},
+      {"rhs_mag_rdg2_white",2},
       {"ACE_MapTools",1}
     };
-    backpack[] = { "rhs_sidor" };
     backpackContents[] = {
       {"rhs_100Rnd_762x54mmR_green",2}
     };
@@ -172,17 +150,7 @@ class RHS_TNLA {
 
   class MAT: BaseUnit {
     weapons[] = {
-      {
-        {"rhs_weap_akm",
-          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
-        },
-        {"rhs_weap_akms",
-          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
-        },
-        {"rhs_weap_pm63",
-          {"30Rnd_762x39_Mag_Green_F","rhs_acc_dtkakm"}
-        }
-      },
+      {"rhs_weap_aks74un",{"rhs_30Rnd_545x39_7N10_plum_AK","rhs_acc_pgs64_74un"}},
       "launch_RPG7_F"
     };
     backpack[] = {"rhs_rpg_empty"};
@@ -199,29 +167,39 @@ class RHS_TNLA {
     };
   };
   class DMR: BaseUnit {
-    weapons[] = {"rhs_weap_Izh18"};
+    weapons[] = {
+      {"rhs_weap_svdp",{"rhs_10Rnd_762x54mmR_7N1","rhs_acc_pso1m2"}},
+      "Binocular"
+    };
     vestContents[] = {
-      {"rhsgref_1Rnd_00Buck",15},
-      {"rhsgref_1Rnd_Slug",5},
-      {"HandGrenade",2},
-      {"SmokeShell",2},
+      {"rhs_10Rnd_762x54mmR_7N1",4},
+      {"rhs_10Rnd_762x54mmR_7N14",2},
+      {"rhs_mag_rgd5",2},
+      {"rhs_mag_rdg2_white",2},
       {"ACE_MapTools",1}
+    };
+    backpackContents[] = {
+      {"rhs_10Rnd_762x54mmR_7N1",4},
+      {"rhs_10Rnd_762x54mmR_7N14",2},
+      {"rhs_mag_rgd5",2},
+      {"rhs_mag_rdg2_white",2},
+      {"rhs_100Rnd_762x54mmR_green",1}
     };
   };
   class PILOT: baseUnit {
     headgear[]={"H_Cap_headphones"};
+    weapons[] = {
+      {"rhs_weap_aks74un", {"rhs_30Rnd_545x39_7N10_plum_AK","rhs_acc_pgs64_74un"}}
+    };
     vestContents[] = {
-      {"30Rnd_762x39_Mag_Green_F",2},
-      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
+      {"rhs_30Rnd_545x39_7N10_plum_AK",2},
+      {"rhs_30Rnd_545x39_AK_plum_green",2},
       {"SmokeShellGreen",2},
-      {"HandGrenade",1},
+      {"rhs_mag_rgd5",1},
       {"SmokeShellRed",1},
       {"ACRE_PRC148",1},
       {"ACE_MapTools",1}
     };
-		backpack[] = {
-			"B_FieldPack_oli","B_FieldPack_khk"
-		};
 		backpackContents[] = {
 			{"ToolKit",1}
 		};
@@ -251,14 +229,14 @@ class RHS_TNLA {
       {"Binocular",2}
     };
     vehCargoMagazines[] = {
-      {"30Rnd_762x39_Mag_Green_F",32},
-      {"30Rnd_762x39_Mag_Tracer_Green_F",16},
+      {"rhs_30Rnd_545x39_7N10_plum_AK",32},
+      {"rhs_30Rnd_545x39_AK_plum_green",16},
       {"rhs_100Rnd_762x54mmR",12},
       {"rhs_100Rnd_762x54mmR_green",4},
       {"rhs_10Rnd_762x54mmR_7N1",8},
       {"rhs_10Rnd_762x54mmR_7N14",4},
-      {"HandGrenade",16},
-      {"SmokeShell",16},
+      {"rhs_mag_rgd5",16},
+      {"rhs_mag_rdg2_white",16},
       {"rhs_VOG25",40},
       {"rhs_GRD40_White",20},
       {"DemoCharge_Remote_Mag",16}
