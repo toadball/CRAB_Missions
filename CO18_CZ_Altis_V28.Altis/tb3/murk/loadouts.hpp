@@ -1,3 +1,3 @@
-#include "cdf_blk"
-#include "cdf_des"
-#include "cdf_wdl"
+#include "cdf_blk.hpp"
+#include "cdf_des.hpp"
+#include "cdf_wdl.hpp"
