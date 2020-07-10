@@ -139,7 +139,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="CO18_CZ_Tanoa_V27";
+		briefingName="CO18_CZ_Tanoa_V28";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0;
