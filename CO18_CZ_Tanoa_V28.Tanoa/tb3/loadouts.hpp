@@ -4,8 +4,8 @@ class TB3_Gear {
     #include "toadball\loadouts.hpp"
 	  #include "pieshade\loadouts.hpp"
 	  #include "herbiie\loadouts.hpp"
+    #include "murk\loadouts.hpp"
     #include "blufor.hpp"
     #include "ccesf.hpp"
-    #include "cdf_wdl.hpp"
     #include "ldf.hpp"
 };
