@@ -6,4 +6,6 @@
 #include "can_80.hpp"
 #include "aaf.hpp"
 #include "taf.hpp"
+#include "csat_ng.hpp"
+#include "ctrg.hpp"
 
