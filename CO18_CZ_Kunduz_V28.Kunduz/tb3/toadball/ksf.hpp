@@ -144,7 +144,6 @@ class KSF_PC {
 	class FSO: PL {};
   class MED: BaseUnit {
     ace_medic = 2;
-    vest[] = { "rhsgref_6b23_khaki_medic" };
     backpack[] = {"B_Carryall_oli"};
     backpackContents[] = {
       {"ACE_fieldDressing",20},
