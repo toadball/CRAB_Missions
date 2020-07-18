@@ -1,4 +1,4 @@
-V29version=53;
+version=53;
 class EditorData
 {
 	moveGridStep=5.719676;
@@ -109,7 +109,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -150,7 +150,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0

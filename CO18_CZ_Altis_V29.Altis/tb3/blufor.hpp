@@ -207,8 +207,13 @@ class BLUFOR_MTP {
   };
   class LMG: BaseUnit {
     weapons[] = {
-      {"rhs_weap_m249_pip_L",
-          {"rhsusf_acc_su230","rhsusf_acc_anpeq15side_bk","rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote"}
+      {
+        {"rhs_weap_m249_light_L",
+          {"rhsusf_acc_su230","rhsusf_acc_anpeq15side_bk","rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote","rhsusf_acc_grip4_bipod"}
+        },
+        {"rhs_weap_m249_light_S",
+            {"rhsusf_acc_su230","rhsusf_acc_anpeq15side_bk","rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote","rhsusf_acc_grip4_bipod"}
+        }
       },
       {"rhsusf_weap_glock17g4",{"rhsusf_mag_17Rnd_9x19_JHP"}}
     };
@@ -252,7 +257,7 @@ class BLUFOR_MTP {
       //backpack[]={"rhsusf_falconii_coy"};
       backpackContents[] = {
         {"rhsusf_100Rnd_762x51",1},
-        {"rhsusf_100Rnd_762x51_m62_tracer",1},        
+        {"rhsusf_100Rnd_762x51_m62_tracer",1},
         {"HandGrenade",2},
         {"SmokeShell",2},
         {"Chemlight_green",2},
