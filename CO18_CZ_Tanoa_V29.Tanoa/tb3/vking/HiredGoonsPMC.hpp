@@ -183,9 +183,7 @@ class HiredGoonsPMC {
                 {"CUP_arifle_ACRC_EGLM_blk_556", {"rhs_mag_30Rnd_556x45_M855A1_PMAG","CUP_1Rnd_HEDP_M203",{"rhsusf_acc_compm4","rhsusf_acc_eotech_552","rhsusf_acc_rx01","rhsusf_acc_t1_high","rhsusf_acc_eotech_xps3"},"rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"}},
                 {"CUP_arifle_ACRC_EGLM_blk_556", {"rhs_mag_30Rnd_556x45_M855A1_PMAG","CUP_1Rnd_HEDP_M203",{"rhsusf_acc_compm4","rhsusf_acc_eotech_552","rhsusf_acc_rx01","rhsusf_acc_t1_high","rhsusf_acc_eotech_xps3"},"rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"}},
                 {"CUP_arifle_HK416_CQB_M203_Black", {"rhs_mag_30Rnd_556x45_M855A1_PMAG","CUP_1Rnd_HEDP_M203",{"rhsusf_acc_compm4","rhsusf_acc_eotech_552","rhsusf_acc_rx01","rhsusf_acc_t1_high","rhsusf_acc_eotech_xps3"},"rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"}},
-                {"CUP_arifle_HK416_CQB_AG36", {"rhs_mag_30Rnd_556x45_M855A1_PMAG","CUP_1Rnd_HEDP_M203",{"rhsusf_acc_compm4","rhsusf_acc_eotech_552","rhsusf_acc_rx01","rhsusf_acc_t1_high","rhsusf_acc_eotech_xps3"},"rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"}},
-                {"CUP_arifle_Mk16_CQC_EGLM_black", {"rhs_mag_30Rnd_556x45_M855A1_PMAG","CUP_1Rnd_HEDP_M203",{"rhsusf_acc_compm4","rhsusf_acc_eotech_552","rhsusf_acc_rx01","rhsusf_acc_t1_high","rhsusf_acc_eotech_xps3"},"rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"}},
-                {"CUP_arifle_Mk16_CQC_EGLM_black", {"rhs_mag_30Rnd_556x45_M855A1_PMAG","CUP_1Rnd_HEDP_M203",{"rhsusf_acc_compm4","rhsusf_acc_eotech_552","rhsusf_acc_rx01","rhsusf_acc_t1_high","rhsusf_acc_eotech_xps3"},"rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"}}
+                {"CUP_arifle_HK416_CQB_AG36", {"rhs_mag_30Rnd_556x45_M855A1_PMAG","CUP_1Rnd_HEDP_M203",{"rhsusf_acc_compm4","rhsusf_acc_eotech_552","rhsusf_acc_rx01","rhsusf_acc_t1_high","rhsusf_acc_eotech_xps3"},"rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"}}
             },
             {"CUP_hgun_Phantom", {"CUP_18Rnd_9x19_Phantom","cup_acc_cz_m3x"}}
         };
