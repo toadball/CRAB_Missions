@@ -70,7 +70,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="CO18_CZ_Kunduz_V29";
+		briefingName="CO18_CZ_Kunduz_V30";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.25;
