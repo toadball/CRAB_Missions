@@ -1,4 +1,4 @@
-class natosf_cupwep_wdl {
+class NATOSF_CUPWEP_WDL {
   class BaseUnit {
     allowPlayerGoggles = 0;
     ace_medic = 1;
@@ -214,8 +214,8 @@ class natosf_cupwep_wdl {
     };
     backpack[] = {"B_AssaultPack_wdl_F"};
     backpackContents[] = {
-      {"rhsusf_100Rnd_762x51",1},
-      {"rhsusf_100Rnd_762x51_m62_tracer",1},
+      {"rhsusf_100Rnd_762x51",2},
+      {"rhsusf_100Rnd_762x51_m62_tracer",2},
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"Chemlight_green",2},
@@ -229,7 +229,7 @@ class natosf_cupwep_wdl {
       "ACE_Vector"
     };
     vest[] = {"V_PlateCarrier2_wdl"};
-    
+
     backpack[] = {"B_AssaultPack_wdl_F"};
     backpackContents[] = {
       {"rhs_mag_20Rnd_762x51_m80a1_fnfal",3},
