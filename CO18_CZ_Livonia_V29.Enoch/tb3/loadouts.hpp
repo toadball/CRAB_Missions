@@ -5,6 +5,7 @@ class TB3_Gear {
 	  #include "pieshade\loadouts.hpp"
 	  #include "herbiie\loadouts.hpp"
     #include "murk\loadouts.hpp"
+    #include "vking\loadouts.hpp"
     #include "blufor.hpp"
     #include "ccesf.hpp"
     #include "ldf.hpp"
