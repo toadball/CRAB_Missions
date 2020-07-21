@@ -1,5 +1,3 @@
-//"rhs_weap_rpg75"
-
 class RHSCUP_ALPEN {
   class BaseUnit {
     allowPlayerGoggles = 0;
