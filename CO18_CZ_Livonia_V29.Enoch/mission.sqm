@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	class ItemIDProvider
 	{
 		nextID=89;
 	};
 	class Camera
 	{
-		pos[]={9907.833,206.64746,3774.2583};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={9905.1396,193.9489,3785.8923};
+		dir[]={-0.097762682,-0.57985067,0.80883741};
+		up[]={-0.069579124,0.81472212,0.57566106};
+		aside[]={0.99277461,-6.5483619e-009,0.11999494};
 	};
 };
 binarizationWanted=0;
@@ -1165,7 +1165,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9907.0029,181.65021,3799.3042};
-						angles[]={-0,5.964592,6.2816415};
+						angles[]={0,5.964592,6.2816415};
 					};
 					side="West";
 					flags=4;
