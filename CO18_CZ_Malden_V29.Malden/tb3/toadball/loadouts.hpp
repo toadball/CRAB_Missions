@@ -7,3 +7,6 @@
 #include "rhscon_wdl.hpp"
 #include "ksf.hpp"
 #include "rhs_fia.hpp"
+#include "natosf_cupwep.hpp"
+#include "rhscup_alpen.hpp"
+#include "natosf_cupold.hpp"
