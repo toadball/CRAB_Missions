@@ -2,3 +2,4 @@
 #include "HiredGoonsPMC.hpp"
 #include "Bermany.hpp"
 #include "GothicShrimpDelta.hpp"
+#include "MARSOC_A2.hpp"
