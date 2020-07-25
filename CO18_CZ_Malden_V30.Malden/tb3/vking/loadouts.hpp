@@ -3,3 +3,4 @@
 #include "Bermany.hpp"
 #include "GothicShrimpDelta.hpp"
 #include "MARSOC_A2.hpp"
+#include "NOR70.hpp"
