@@ -7,6 +7,7 @@ class NOR70 {
         uniform[] = {"rhsgref_uniform_woodland_olive"};
         vest[] = {"rhsgref_alice_webbing"};
         backpack[] = {"B_FieldPack_green_F"};
+        #define MEDIC_PACK "B_FieldPack_green_F"
         headGear[] = {"rhsgref_helmet_M1_erdl"};
         goggles[] = {};
 
@@ -26,6 +27,8 @@ class NOR70 {
 
         #define RIFLES \
                 {"CUP_arifle_G3A3_ris", {"CUP_20Rnd_762x51_G3"}}
+
+        #define PISTOL {"rhsusf_weap_m1911a1",{"rhsusf_mag_7x45acp_MHP"}}
 
         weapons[] = {
             {RIFLES}
@@ -86,21 +89,24 @@ class NOR70 {
             {"CUP_20Rnd_762x51_G3",1}
         };
 
+        #define MEDIC_PACK_CONTENTS \
+                {"SmokeShellGreen",2},\
+                {"ACE_fieldDressing",20},\
+                {"ACE_packingBandage",20},\
+                {"ACE_quikclot",10},\
+                {"ACE_elasticBandage",15},\
+                {"ACE_morphine",10},\
+                {"ACE_epinephrine",10},\
+                {"ACE_adenosine",4},\
+                {"ACE_salineIV_500",3},\
+                {"ACE_salineIV",3},\
+                {"ACE_personalAidKit",1},\
+                {"ACE_surgicalKit",1},\
+                {"ACE_splint",8},\
+                {"ACE_tourniquet",5}
+
         backpackContents[] = {
-            {"SmokeShellGreen",2},
-            {"ACE_fieldDressing",20},
-            {"ACE_packingBandage",20},
-            {"ACE_quikclot",10},
-            {"ACE_elasticBandage",15},
-            {"ACE_morphine",10},
-            {"ACE_epinephrine",10},
-            {"ACE_adenosine",4},
-            {"ACE_salineIV_500",3},
-            {"ACE_salineIV",3},
-            {"ACE_personalAidKit",1},
-            {"ACE_surgicalKit",1},
-            {"ACE_splint",8},
-            {"ACE_tourniquet",5}
+            
         };
     };
 
@@ -222,6 +228,31 @@ class NOR70 {
         };
     };
 
+    class SNIPER: BaseUnit {
+        weapons[] = {
+            {"CUP_srifle_CZ550", {"CUP_5x_22_LR_17_HMR_M"}},
+            PISTOL
+        };
+
+        uniformContents[] = {
+            UNIFORM_CONTENTS,
+            {"rhsusf_mag_7x45acp_MHP",2}
+        };
+
+        vestContents[] = {
+            {"CUP_5x_22_LR_17_HMR_M",13},
+            {"rhs_grenade_mkii_mag",2}
+        };
+
+        backpackContents[] = {
+            {"ACE_salineIV_500",1},
+            {"CUP_5x_22_LR_17_HMR_M",18},
+            {"rhsusf_mag_7x45acp_MHP",3},
+            {"rhs_grenade_mkii_mag",2},
+            {"rhs_grenade_anm8_mag",2}
+        };
+    };
+
     class PILOT: BaseUnit {
         headGear[] = {"rhsusf_hgu56p","rhsusf_hgu56p_visor"};
         uniform[] = {"rhs_uniform_g3_rgr"};
@@ -230,7 +261,7 @@ class NOR70 {
 
         weapons[] = {
             {"CUP_smg_MP5A5",{"CUP_30Rnd_9x19_MP5"}},
-            {"rhsusf_weap_m1911a1",{"rhsusf_mag_7x45acp_MHP"}}
+            PISTOL
         };
 
         vestContents[] = {
@@ -244,32 +275,23 @@ class NOR70 {
         };
     };
 
-    class SNIPER: BaseUnit {
-        weapons[] = {
-            {"CUP_srifle_LeeEnfield", {"CUP_10x_303_M","cup_optic_no23mk2"}},
-            {"rhsusf_weap_m1911a1",{"rhsusf_mag_7x45acp_MHP"}}
+    class SupplyCrate {
+        vehCargoWeapons[] = {
+            {"CUP_arifle_G3A3_ris",4},
+            {"rhs_weap_rsp30_white",16}
         };
-
-        vestContents[] = {
-            {"CUP_10x_303_M",10},
-            {"rhsusf_mag_7x45acp_MHP",2},
-            {"rhs_grenade_mkii_mag",2}
+        vehCargoMagazines[] = {
+            {"CUP_20Rnd_762x51_G3",64},
+            {"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",24},
+            {"rhs_mag_M441_HE",32},
+            {"CUP_10x_303_M",16},
+            {"rhs_grenade_mkii_mag",24},
+            {"rhs_grenade_anm8_mag",16},
+            {"rhs_mag_maaws_HEAT",8}
         };
-
-        backpackContents[] = {
-            {"ACE_salineIV",1},
-            {"CUP_10x_303_M",15},
-            {"rhsusf_mag_7x45acp_MHP",3},
-            {"rhs_grenade_mkii_mag",2},
-            {"rhs_grenade_anm8_mag",2}
+        vehCargoItems[] = {};
+        vehCargoRucks[] = {
+            {MEDIC_PACK, 1, {MEDIC_PACK_CONTENTS}}
         };
-    };
-
-    class LauncherCrate {
-        
-    };
-
-    class LargeGearCrate {
-        
     };
 };
