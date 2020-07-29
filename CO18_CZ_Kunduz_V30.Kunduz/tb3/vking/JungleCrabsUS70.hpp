@@ -52,7 +52,7 @@ class JungleCrabsUS70 {
             {"rhs_grenade_mkii_mag",2},
             {"rhs_grenade_m15_mag",2},
             {"rhsusf_100Rnd_762x51",2},
-            {"ACE_FlareTripMine_Mag",2}
+            {"rhsusf_mine_m49a1_6m_mag",2}
         };
     };
 
@@ -146,7 +146,7 @@ class JungleCrabsUS70 {
             {"rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red",2},
             {"rhs_grenade_anm8_mag",2},
             {"rhs_grenade_mkii_mag",2},
-            {"ACE_FlareTripMine_Mag",2}
+            {"rhsusf_mine_m49a1_6m_mag",2}
         };
     };
 
@@ -172,7 +172,7 @@ class JungleCrabsUS70 {
             {"ACE_SpareBarrel",1},
             {"rhs_grenade_anm8_mag",2},
             {"rhs_grenade_mkii_mag",2},
-            {"ACE_FlareTripMine_Mag",2}
+            {"rhsusf_mine_m49a1_6m_mag",2}
         };
     };
 
@@ -202,7 +202,7 @@ class JungleCrabsUS70 {
             {"rhs_grenade_anm8_mag",2},
             {"rhs_grenade_mkii_mag",2},
             {"rhs_grenade_m15_mag",2},
-            {"ACE_FlareTripMine_Mag",2}
+            {"rhsusf_mine_m49a1_6m_mag",2}
         };
     };
 
@@ -218,7 +218,7 @@ class JungleCrabsUS70 {
             {"rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red",1},
             {"rhs_grenade_anm8_mag",2},
             {"rhs_grenade_mkii_mag",2},
-            {"ACE_FlareTripMine_Mag",2}
+            {"rhsusf_mine_m49a1_6m_mag",2}
         };
     };
 
@@ -243,7 +243,7 @@ class JungleCrabsUS70 {
         };
 
         backpackContents[] = {
-            {"ACE_FlareTripMine_Mag",2},
+            {"rhsusf_mine_m49a1_6m_mag",2},
             {"CUP_5x_22_LR_17_HMR_M",26},
             {"rhsusf_mag_7x45acp_MHP",4},
             {"rhs_grenade_mkii_mag",2},
