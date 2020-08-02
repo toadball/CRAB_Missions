@@ -26,10 +26,10 @@ class JungleCrabsUS70 {
         };
 
         #define RIFLES \
-                {"CUP_arifle_M16A1", {"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag"}},\
-                {"CUP_arifle_M16A1", {"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag"}},\
-                {"CUP_arifle_M16A1", {"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag"}},\
-                {"CUP_arifle_XM16E1", {"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag"}}
+                {"CUP_arifle_M16A1", {{"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag","rhs_mag_20Rnd_556x45_M193_Stanag"}}},\
+                {"CUP_arifle_M16A1", {{"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag","rhs_mag_20Rnd_556x45_M193_Stanag"}}},\
+                {"CUP_arifle_M16A1", {{"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag","rhs_mag_20Rnd_556x45_M193_Stanag"}}},\
+                {"CUP_arifle_XM16E1", {{"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag","rhs_mag_20Rnd_556x45_M193_Stanag"}}}
 
         #define PISTOL {"rhsusf_weap_m1911a1", {"rhsusf_mag_7x45acp_MHP"}}
 
@@ -38,20 +38,20 @@ class JungleCrabsUS70 {
         };
 
         vestContents[] = {
-            {"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag",1},
             {"rhs_mag_20Rnd_556x45_M193_Stanag",8},
             {"rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red",1},
-            {"rhs_grenade_mkii_mag",2},
+            {"rhs_grenade_mkii_mag",3},
             {"rhs_grenade_anm8_mag",2}
         };
 
         backpackContents[] = {
+            {"ACE_salineIV",1},
             {"rhs_mag_20Rnd_556x45_M193_Stanag",8},
             {"rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red",2},
             {"rhs_grenade_anm8_mag",2},
             {"rhs_grenade_mkii_mag",2},
             {"rhs_grenade_m15_mag",2},
-            {"rhsusf_100Rnd_762x51",2},
+            {"rhsusf_100Rnd_762x51_m62_tracer",2},
             {"rhsusf_mine_m49a1_6m_mag",2}
         };
     };
@@ -70,6 +70,7 @@ class JungleCrabsUS70 {
 
         backpackContents[] = {
             {"ACRE_PRC77",1},
+            {"ACE_salineIV",1},
             {"rhs_mag_20Rnd_556x45_M193_Stanag",6},
             {"rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red",4},
             {"rhs_grenade_anm8_mag",2},
@@ -81,7 +82,7 @@ class JungleCrabsUS70 {
     };
 
     class ZEUS: PL {
-        assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","B_UavTerminal","rhsusf_ANPVS_15"};
+        assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","B_UavTerminal"};
         backpackContents[] = {
             {"ACRE_PRC77",1},
             {"ACRE_PRC152",1}
@@ -126,7 +127,7 @@ class JungleCrabsUS70 {
 
     class UGL: BaseUnit {
         weapons[] = {
-            {"CUP_arifle_M16A1GL", {"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag","1Rnd_HE_Grenade_shell"}}
+            {"CUP_arifle_M16A1GL", {{"rhs_mag_20Rnd_556x45_M193_2MAG_Stanag","rhs_mag_20Rnd_556x45_M193_Stanag"},"1Rnd_HE_Grenade_shell"}}
         };
 
         vestContents[] = {
@@ -138,6 +139,7 @@ class JungleCrabsUS70 {
         };
 
         backpackContents[] = {
+            {"ACE_salineIV",1},
             {"rhs_mag_20Rnd_556x45_M193_Stanag",8},
             {"1Rnd_HE_Grenade_shell",20},
             {"ACE_40mm_Flare_white",8},
@@ -152,7 +154,7 @@ class JungleCrabsUS70 {
 
     class LMG: BaseUnit {
         weapons[] = {
-            {"CUP_lmg_M60", {"rhsusf_100Rnd_762x51"}},
+            {"CUP_lmg_M60", {"rhsusf_100Rnd_762x51_m62_tracer"}},
             PISTOL
         };
 
@@ -162,13 +164,14 @@ class JungleCrabsUS70 {
         };
 
         vestContents[] = {
-            {"rhsusf_100Rnd_762x51",2},
+            {"rhsusf_100Rnd_762x51_m62_tracer",2},
             {"rhs_grenade_mkii_mag",2},
             {"rhs_grenade_anm8_mag",2}
         };
 
         backpackContents[] = {
-            {"rhsusf_100Rnd_762x51",3},
+            {"ACE_salineIV",1},
+            {"rhsusf_100Rnd_762x51_m62_tracer",3},
             {"ACE_SpareBarrel",1},
             {"rhs_grenade_anm8_mag",2},
             {"rhs_grenade_mkii_mag",2},
@@ -180,7 +183,7 @@ class JungleCrabsUS70 {
 
     class DMR: BaseUnit {
         weapons[] = {
-            {"rhs_weap_m14_rail", {"rhsusf_20Rnd_762x51_m80_Mag","optic_khs_old", "rhsusf_acc_m14_bipod"}},
+            {"rhs_weap_m14_rail", {"rhsusf_20Rnd_762x51_m80_Mag","cup_optic_susat"}},
             PISTOL
         };
 
@@ -197,12 +200,13 @@ class JungleCrabsUS70 {
         };
 
         backpackContents[] = {
+            {"ACE_salineIV",1},
             {"rhsusf_20Rnd_762x51_m80_Mag",8},
             {"rhsusf_20Rnd_762x51_m62_Mag",2},
             {"rhs_grenade_anm8_mag",2},
             {"rhs_grenade_mkii_mag",2},
             {"rhs_grenade_m15_mag",2},
-            {"rhsusf_mine_m49a1_6m_mag",2}
+            {"rhsusf_mine_m49a1_6m_mag",1}
         };
     };
 
@@ -213,6 +217,7 @@ class JungleCrabsUS70 {
         };
 
         backpackContents[] = {
+            {"ACE_salineIV",1},
             {"rhs_weap_m72a7",2},
             {"rhs_mag_20Rnd_556x45_M193_Stanag",4},
             {"rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red",1},
@@ -226,10 +231,26 @@ class JungleCrabsUS70 {
         
     };
 
-    class SNIPER: BaseUnit {
+    class SNIPER: DMR {
+        headgear[] = {"H_Booniehat_oli"};
         weapons[] = {
-            {"CUP_srifle_CZ550", {"CUP_5x_22_LR_17_HMR_M"}},
+            {"rhs_weap_m14_rail", {"rhsusf_20Rnd_762x51_m80_Mag","optic_khs_old","rhsusf_acc_m14_bipod"}},
             PISTOL
+        };
+
+        uniformContents[] = {
+            UNIFORM_CONTENTS,
+            {"rhsusf_mag_7x45acp_MHP",2}
+        };
+    };
+
+    class SPOTTER: BaseUnit {
+        headgear[] = {"H_Booniehat_oli"};
+        weapons[] = {
+            {RIFLES},
+            PISTOL,
+            "Binocular",
+            "rhs_weap_m72a7"
         };
 
         uniformContents[] = {
@@ -238,16 +259,21 @@ class JungleCrabsUS70 {
         };
 
         vestContents[] = {
-            {"CUP_5x_22_LR_17_HMR_M",13},
+            {"rhs_mag_20Rnd_556x45_M193_Stanag",9},
+            {"rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red",2},
+            {"rhs_grenade_anm8_mag",2},
             {"rhs_grenade_mkii_mag",2}
         };
 
         backpackContents[] = {
-            {"rhsusf_mine_m49a1_6m_mag",2},
-            {"CUP_5x_22_LR_17_HMR_M",26},
-            {"rhsusf_mag_7x45acp_MHP",4},
-            {"rhs_grenade_mkii_mag",2},
-            {"rhs_grenade_anm8_mag",2}
+            {"ACRE_PRC77",1},
+            {"ACE_salineIV",1},
+            {"rhsusf_mine_m49a1_6m_mag",1},
+            {"rhsusf_20Rnd_762x51_m80_Mag",2},
+            {"rhs_mag_20Rnd_556x45_M193_Stanag",4},
+            {"rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red",2},
+            {"rhs_grenade_anm8_mag",2},
+            {"rhs_grenade_mkii_mag",2}
         };
     };
 
@@ -285,7 +311,7 @@ class JungleCrabsUS70 {
         vehCargoMagazines[] = {
             {"rhs_mag_20Rnd_556x45_M193_Stanag",64},
             {"rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red",16},
-            {"rhsusf_100Rnd_762x51",16},
+            {"rhsusf_100Rnd_762x51_m62_tracer",16},
             {"rhsusf_20Rnd_762x51_m80_Mag",16},
             {"rhs_grenade_mkii_mag",24},
             {"rhs_grenade_anm8_mag",16},
