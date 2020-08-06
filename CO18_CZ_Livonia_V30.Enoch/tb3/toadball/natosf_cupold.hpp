@@ -225,7 +225,7 @@ class NATOSF_CUPOLD_WDL {
         {"optic_KHS_old","rhsusf_20Rnd_762x51_m118_special_Mag"}
       },
       {"rhsusf_weap_m9",{"rhsusf_mag_15Rnd_9x19_JHP"}},
-      "Binocular"
+      "RangeFinder"
     };
       vestContents[] = {
         {"rhsusf_20Rnd_762x51_m118_special_Mag",2},
@@ -243,7 +243,7 @@ class NATOSF_CUPOLD_WDL {
         {"SmokeShell",2},
         {"Chemlight_green",2},
         {"rhsusf_200Rnd_556x45_mixed_soft_pouch",1},
-        {"rhsusf_100Rnd_762x51_m62_tracer",2}
+        {"rhsusf_100Rnd_762x51_m62_tracer",2}  
       };
   };
   class MAT: BaseUnit {

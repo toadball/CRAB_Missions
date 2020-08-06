@@ -6,7 +6,8 @@ class MARSOC_A2_Wdl {
 
         uniform[] = {"rhs_uniform_FROG01_wd","rhs_uniform_FROG01_wd","rhs_uniform_g3_m81"};
         vest[] = {"rhsusf_mbav_rifleman"};
-        backpack[] = {"rhsusf_assault_eagleaiii_coy"}; // "B_Kitbag_cbr","B_Kitbag_rgr"
+        backpack[] = {"rhsusf_assault_eagleaiii_coy","B_Kitbag_cbr","B_Kitbag_rgr"};
+        #define MEDIC_PACK "rhsusf_assault_eagleaiii_coy"
         headGear[] = {"rhs_booniehat2_marpatwd","rhs_Booniehat_m81","H_Bandanna_khk","H_Booniehat_khk_hs",
                       "H_Cap_oli",};
         goggles[] = {"rhs_googles_black","rhs_googles_clear","rhs_googles_orange","rhsusf_shemagh_od","rhsusf_shemagh_tan","G_Aviator","G_Shades_Black"};
@@ -177,23 +178,28 @@ class MARSOC_A2_Wdl {
         vest[] = {"rhsusf_mbav_medic"};
 
         ace_medic = 2;
+
+        #define MEDIC_PACK_CONTENTS \
+                {"SmokeShellGreen",2},\
+                {"ACE_fieldDressing",20},\
+                {"ACE_packingBandage",20},\
+                {"ACE_quikclot",10},\
+                {"ACE_elasticBandage",15},\
+                {"ACE_morphine",10},\
+                {"ACE_epinephrine",10},\
+                {"ACE_adenosine",4},\
+                {"ACE_salineIV_500",3},\
+                {"ACE_salineIV",3},\
+                {"ACE_personalAidKit",1},\
+                {"ACE_surgicalKit",1},\
+                {"ACE_splint",8},\
+                {"ACE_tourniquet",5}
+
         backpackContents[] = {
             {"NVGoggles_OPFOR",1},
-            {"SmokeShellGreen",2},
-            {"ACE_fieldDressing",20},
-            {"ACE_packingBandage",20},
-            {"ACE_quikclot",10},
-            {"ACE_elasticBandage",15},
-            {"ACE_morphine",10},
-            {"ACE_epinephrine",10},
-            {"ACE_adenosine",4},
-            {"ACE_salineIV_500",3},
-            {"ACE_salineIV",3},
-            {"ACE_personalAidKit",1},
-            {"ACE_surgicalKit",1},
-            {"ACE_splint",8},
-            {"ACE_tourniquet",5}
+            MEDIC_PACK_CONTENTS
         };
+            
     };
 
     class TL: BaseUnit {
@@ -281,18 +287,14 @@ class MARSOC_A2_Wdl {
     };
 
     class DMR: BaseUnit {
-        uniformContents[] = {
-            UNIFORM_CONTENTS,
-            {"ACE_RangeCard",1}
-        };
-
-        #define DMR_ATTACHMENTS "rhsusf_20Rnd_762x51_SR25_m118_special_Mag","rhsusf_acc_m8541_mrds","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
+        #define DMR_ATTACHMENTS_BLK "rhsusf_20Rnd_762x51_SR25_m118_special_Mag","cup_optic_leupoldmk4","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
+        #define DMR_ATTACHMENTS_WDL "rhsusf_20Rnd_762x51_SR25_m118_special_Mag","cup_optic_leupoldmk4_10x40_lrt_woodland","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
         weapons[] = {
             {
-                {"rhs_weap_sr25", {DMR_ATTACHMENTS,"rhsusf_acc_sr25s"}},
-                {"rhs_weap_sr25_ec", {DMR_ATTACHMENTS,"rhsusf_acc_aac_762sd_silencer"}},
-                {"rhs_weap_sr25_wd", {DMR_ATTACHMENTS,"rhsusf_acc_sr25s_wd"}},
-                {"rhs_weap_sr25_ec_wd", {DMR_ATTACHMENTS,"rhsgref_sdn6_suppressor"}}
+                {"rhs_weap_sr25", {DMR_ATTACHMENTS_BLK,"rhsusf_acc_sr25s"}},
+                {"rhs_weap_sr25_ec", {DMR_ATTACHMENTS_BLK,"rhsusf_acc_aac_762sd_silencer"}},
+                {"rhs_weap_sr25_wd", {DMR_ATTACHMENTS_WDL,"rhsusf_acc_sr25s_wd"}},
+                {"rhs_weap_sr25_ec_wd", {DMR_ATTACHMENTS_WDL,"rhsgref_sdn6_suppressor"}}
             },
             PISTOL_S
         };
@@ -432,6 +434,50 @@ class MARSOC_A2_Wdl {
         };
     };
 
+    class SNIPER: BaseUnit {
+        uniformContents[] = {
+            UNIFORM_CONTENTS,
+            {"ACE_RangeCard",1}
+        };
+
+        backpack[] = {"rhsusf_falconii_coy"};
+
+        #define SNIPER_ATTACHMENTS "rhsusf_10Rnd_762x51_m118_special_Mag","rhsusf_acc_premier","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_swivel"
+        weapons[] = {
+            {
+                {"rhs_weap_m40a5",{SNIPER_ATTACHMENTS}},
+                {"rhs_weap_m40a5_wd",{SNIPER_ATTACHMENTS}}
+            },
+            PISTOL_S,
+            "ace_vector"
+        };
+
+        vestContents[] = {
+            {"ACRE_PRC148",1},
+            {"ACE_Kestrel4500",1},
+            {"ACE_ATragMX",1},
+            {"rhsusf_10Rnd_762x51_m118_special_Mag",10},
+            {"rhsusf_10Rnd_762x51_m62_Mag",2},
+            {"CUP_15Rnd_9x19_M9",3},
+            {"rhs_mag_m67",2},
+            {"rhs_mag_an_m14_th3",1},
+            {"SmokeShell",2}
+        };
+
+        backpackContents[] = {
+            {"NVGoggles_OPFOR",1},
+            {"ACE_salineIV",1},
+            {"rhsusf_10Rnd_762x51_m118_special_Mag",4},
+            {"rhsusf_10Rnd_762x51_m993_Mag",4},
+            {"rhsusf_10Rnd_762x51_m62_Mag",4},
+            {"ACE_Clacker",1},
+            {"ClaymoreDirectionalMine_Remote_Mag",1},
+            {"CUP_15Rnd_9x19_M9",3},
+            {"rhs_mag_m67",2},
+            {"SmokeShell",2}
+        };
+    };
+
     class PILOT: BaseUnit {
         backpack[] = {};
         backpackContents[] = {};
@@ -456,11 +502,29 @@ class MARSOC_A2_Wdl {
         };
     };
 
-    class LauncherCrate {
-        
-    };
-
-    class LargeGearCrate {
-        
+    class SupplyCrate {
+        vehCargoWeapons[] = {
+            {"rhs_weap_m4a1",4},
+            {"rhs_weap_m72a7",8}
+        };
+        vehCargoMagazines[] = {
+            {"rhs_mag_30Rnd_556x45_Mk318_Stanag",64},
+            {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",16},
+            {"rhsusf_100Rnd_556x45_soft_pouch_coyote",24},
+            {"rhsusf_20Rnd_762x51_SR25_m118_special_Mag",16},
+            {"rhsusf_10Rnd_762x51_m118_special_Mag",16},
+            {"rhs_mag_M433_HEDP",16},
+            {"rhs_mag_M397_HET",16},
+            {"CUP_15Rnd_9x19_M9",8},
+            {"rhs_mag_m67",32},
+            {"SmokeShell",16},
+            {"CUP_SMAW_HEAA_M",4},
+            {"CUP_SMAW_HEDP_M",4},
+            {"CUP_SMAW_Spotting",4}
+        };
+        vehCargoItems[] = {};
+        vehCargoRucks[] = {
+            {MEDIC_PACK, 1, {MEDIC_PACK_CONTENTS}}
+        };
     };
 };

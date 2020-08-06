@@ -6,24 +6,33 @@ class GothicShrimpDelta {
         uniform[] = {"rhsgref_uniform_3color_desert"};
         vest[] = {"V_TacVestIR_blk"};
         backpack[] = {"B_AssaultPack_blk"};
+        #define MEDIC_PACK "B_AssaultPack_blk"
+
         headGear[] = {"rhsusf_protech_helmet_ess","rhsusf_protech_helmet_rhino_ess"};
         goggles[] = {};
 
+        #define UNIFORM_CONTENTS \
+                {"ACRE_PRC343",1},\
+                {"ACE_fieldDressing",4},\
+                {"ACE_elasticBandage",4},\
+                {"ACE_tourniquet",2},\
+                {"ACE_morphine",2},\
+                {"ACE_splint",2},\
+                {"ACE_salineIV",1},\
+                {"ACE_MapTools",1},\
+                {"ACE_Flashlight_XL50",1}
+
         uniformContents[] = {
-            {"ACRE_PRC343",1},
-            {"ACE_fieldDressing",4},
-            {"ACE_elasticBandage",4},
-            {"ACE_tourniquet",2},
-            {"ACE_morphine",2},
-            {"ACE_splint",2},
-            {"ACE_salineIV",1},
-            {"ACE_MapTools",1},
-            {"ACE_Flashlight_XL50",1},
+            UNIFORM_CONTENTS
         };
 
+        #define OPTICS "cup_optic_zddot","cup_optic_zddot",""
+        #define RIFLE {"CUP_arifle_Colt727", {"rhs_mag_30Rnd_556x45_M193_Stanag",{OPTICS},"acc_flashlight"}}
+        #define PISTOL {"rhsusf_weap_m1911a1", {"rhsusf_mag_7x45acp_MHP"}}
+
         weapons[] = {
-            {"CUP_arifle_Colt727", {"rhs_mag_30Rnd_556x45_M193_Stanag",{"cup_optic_zddot","cup_optic_zddot",""},"acc_flashlight"}},
-            {"rhsusf_weap_m1911a1", {"rhsusf_mag_7x45acp_MHP"}}
+            RIFLE,
+            PISTOL
         };
 
         vestContents[] = {
@@ -100,21 +109,23 @@ class GothicShrimpDelta {
 
     class MED: BaseUnit {
         ace_medic = 2;
-        backpackContents[] = {
-            {"SmokeShellGreen",2},
-            {"ACE_fieldDressing",15},
-            {"ACE_packingBandage",20},
-            {"ACE_elasticBandage",15},
-            {"ACE_morphine",10},
-            {"ACE_epinephrine",5},
-            {"ACE_adenosine",4},
-            {"ACE_salineIV_500",3},
-            {"ACE_salineIV",3},
-            {"ACE_personalAidKit",1},
-            {"ACE_surgicalKit",1},
-            {"ACE_splint",4},
+
+        #define MEDIC_PACK_CONTENTS \
+            {"SmokeShellGreen",2},\
+            {"ACE_fieldDressing",15},\
+            {"ACE_packingBandage",20},\
+            {"ACE_elasticBandage",15},\
+            {"ACE_morphine",10},\
+            {"ACE_epinephrine",5},\
+            {"ACE_adenosine",4},\
+            {"ACE_salineIV_500",3},\
+            {"ACE_salineIV",3},\
+            {"ACE_personalAidKit",1},\
+            {"ACE_surgicalKit",1},\
+            {"ACE_splint",4},\
             {"ACE_tourniquet",3}
-        };
+
+        backpackContents[] = {MEDIC_PACK_CONTENTS};
     };
 
     class RF: BaseUnit {
@@ -123,8 +134,8 @@ class GothicShrimpDelta {
 
     class UGL: BaseUnit {
         weapons[] = {
-            {"CUP_arifle_Colt727_M203", {"rhs_mag_30Rnd_556x45_M193_Stanag","CUP_1Rnd_HE_M203",{"cup_optic_zddot","cup_optic_zddot",""}}},
-            {"rhsusf_weap_m1911a1", {"rhsusf_mag_7x45acp_MHP"}}
+            {"CUP_arifle_Colt727_M203", {"rhs_mag_30Rnd_556x45_M193_Stanag","CUP_1Rnd_HE_M203",{OPTICS}}},
+            PISTOL
         };
 
         vestContents[] = {
@@ -151,7 +162,7 @@ class GothicShrimpDelta {
     class LMG: BaseUnit {
         weapons[] = {
             {"rhs_weap_m249", {"rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote","rhsusf_acc_saw_bipod"}},
-            {"rhsusf_weap_m1911a1", {"rhsusf_mag_7x45acp_MHP"}}
+            PISTOL
         };
         
         vestContents[] = {
@@ -173,7 +184,7 @@ class GothicShrimpDelta {
     class GPMG: BaseUnit {
         weapons[] = {
             {"CUP_lmg_M60", {"rhsusf_100Rnd_762x51"}},
-            {"rhsusf_weap_m1911a1", {"rhsusf_mag_7x45acp_MHP"}}
+            PISTOL
         };
         
         vestContents[] = {
@@ -194,13 +205,12 @@ class GothicShrimpDelta {
 
     class DMR: BaseUnit {
         weapons[] = {
-            {"rhs_weap_m14_rail_d", {"rhsusf_20Rnd_762x51_m80_Mag","optic_khs_old", "rhsusf_acc_m14_bipod","rhsusf_acc_aac_m14dcqd_silencer"}},
-            {"rhsusf_weap_m1911a1", {"rhsusf_mag_7x45acp_MHP"}}
+            {"rhs_weap_m14_rail_d", {"rhsusf_20Rnd_762x51_m80_Mag","cup_optic_sb_11_4x20_pm_tan","rhsusf_acc_aac_m14dcqd_silencer"}},
+            PISTOL
         };
 
         vestContents[] = {
             {"CUP_NVG_PVS7",1},
-            {"ACE_RangeCard",1},
             {"rhsusf_20Rnd_762x51_m80_Mag",6},
             {"rhsusf_mag_7x45acp_MHP",3},
             {"rhs_mag_mk3a2",1},
@@ -218,8 +228,8 @@ class GothicShrimpDelta {
 
     class MAT: BaseUnit {
         weapons[] = {
-            {"CUP_arifle_Colt727", {"rhs_mag_30Rnd_556x45_M193_Stanag",{"cup_optic_zddot","cup_optic_zddot",""},"acc_flashlight"}},
-            {"rhsusf_weap_m1911a1", {"rhsusf_mag_7x45acp_MHP"}},
+            RIFLE,
+            PISTOL,
             "rhs_weap_m72a7"
         };
 
@@ -243,7 +253,7 @@ class GothicShrimpDelta {
 
         weapons[] = {
             {"CUP_smg_MP5A5",{"CUP_30Rnd_9x19_MP5"}},
-            {"rhsusf_weap_m1911a1", {"rhsusf_mag_7x45acp_MHP"}}
+            PISTOL
         };
 
         vestContents[] = {
@@ -259,11 +269,28 @@ class GothicShrimpDelta {
         backpackContents[] = {};
     };
 
-    class LauncherCrate {
-        
-    };
-
-    class LargeGearCrate {
-        
+    class SupplyCrate {
+        vehCargoWeapons[] = {
+            {"CUP_arifle_Colt727",4},
+            {"rhs_weap_m72a7",8}
+        };
+        vehCargoMagazines[] = {
+            {"rhs_mag_30Rnd_556x45_M193_Stanag",64},
+            {"rhs_mag_30Rnd_556x45_M196_Stanag_Tracer_Red",16},
+            {"CUP_1Rnd_HE_M203",32},
+            {"rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote",8},
+            {"rhsusf_100Rnd_762x51",8},
+            {"rhsusf_20Rnd_762x51_m80_Mag",16},
+            {"SmokeShell",16},
+            {"SmokeShellGreen",16},
+            {"ACE_HandFlare_Green",24},
+            {"rhs_mag_mk3a2",16},
+            {"rhs_mag_mk84",24},
+            {"rhs_mag_m67",16}
+        };
+        vehCargoItems[] = {};
+        vehCargoRucks[] = {
+            {MEDIC_PACK, 1, {MEDIC_PACK_CONTENTS}}
+        };
     };
 };
