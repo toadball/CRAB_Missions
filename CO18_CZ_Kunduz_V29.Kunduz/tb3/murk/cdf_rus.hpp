@@ -1,663 +1,646 @@
-  class CDF_rus {
-    class BaseUnit {
-      ace_earplugs = 1;
-      allowPlayerGoggles = 0;
-      ace_medic = 1;
+  class CDF_Rus {
+	class BaseUnit {
+		ace_earplugs = 1;
+		allowPlayerGoggles = 0;
+		ace_medic = 1;
 
-    weapons[] = {
-      {
-        {"CUP_arifle_AK107_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        },
-        {"CUP_arifle_AK105_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        }
-      },	
-        {"hgun_rook40_f",
-          {"16rnd_9x21_mag"}
-        }
-      };
+	weapons[] = {
+			{
+		{"CUP_arifle_AKMS_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"RHS_Weap_PM63",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"CUP_arifle_AKM_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	}
+		},	
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+	}
+		};
 
-      assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		assignedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
 
-      headgear[] = {
-        "H_HelmetAggressor_cover_F",
-        "H_HelmetAggressor_F"
-      };
+	headgear[] = {
+		"RHS_6b27m_green",
+		"RHS_6b27m_green_bala",
+		"RHS_6b27m_ml",
+		"RHS_6b27m_ml_bala",
+		};
 
-      goggles[] = {
-        "rhsusf_shemagh_gogg_grn",
-        "rhsusf_shemagh2_gogg_grn",
-        "rhsusf_shemagh_gogg_od",
-        "rhsusf_shemagh2_gogg_od",
-        "rhsusf_shemagh_gogg_tan",		
-        "rhsusf_shemagh2_gogg_tan"
-      };
+	goggles[] = {"RHS_googles_clear"};
 
-      uniform[] = {"U_O_R_Gorka_01_F"};
-      uniformContents[] = {
-        {"ACE_fieldDressing",4},
-        {"ACE_elasticBandage",4},
-        {"ACE_quikclot",4},
-        {"ACE_morphine",2},
-        {"ACE_adenosine",1},
-        {"ACE_tourniquet",2},
-        {"ACE_Splint",2},
-        {"ACE_salineIV_500",1},
-        {"ACE_Flashlight_XL50",1}
-      };
+	uniform[] = {"RHS_uniform_flora_patchless_alt"};
+	uniformContents[] = {
+		{"ACRE_SEM52SL",1},
+		{"ACE_maptools",1},
+		{"ACE_fieldDressing",4},
+		{"ACE_elasticBandage",4},
+		{"ACE_quikclot",4},
+		{"ACE_morphine",2},
+		{"ACE_adenosine",1},
+		{"ACE_tourniquet",2},
+		{"ACE_Splint",2},
+		{"ACE_salineIV_250",1},
+		{"ACE_Flashlight_XL50",1}
+		};
 
-      vest[] = {V_CarrierRigKBT_01_light_Olive_F};
-      vestContents[] = {
-        {"rhs_30Rnd_545x39_7N22_AK",6},
-        {"handgrenade",2},
-        {"SmokeShell",2},
-        {"16rnd_9x21_mag",2},
-        {"ace_maptools",1}
-      };
+	vest[] = {"RHS_6b23_ML_6Sh92"};
+	vestContents[] = {
+		{"RHS_30Rnd_762x39mm_89",4},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2},
+		{"RHS_mag_762x25_8",2}
+		};
 
-      backpack[] = {"b_kitbag_rgr"};
-      backpackContents[] = {
-        {"o_nvgoggles_grn_f",1},
-        {"rhs_acc_dtk4short", 1},
-        {"rhs_30Rnd_545x39_7N22_AK",4},
-        {"SmokeShell",2},
-        {"handgrenade",2}
-      };
-    };
+	backpack[] = {"CUP_B_AlicePack_Bedroll"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"ACE_salineIV_500",1},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2}
+		};
+	};
 
-  class SL: baseUnit {
+class SL: BaseUnit {
+	weapons[] = {
+			{
+		{"CUP_arifle_AKMS_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"RHS_Weap_PM63",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"CUP_arifle_AKM_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	}
+		},	
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+		"ACE_Yardage450"
+	};
 
-    weapons[] = {
-      {
-        {"CUP_arifle_AK107_railed",
-          {"ace_acc_pointer_green","rhsusf_acc_su230","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        },
-        {"CUP_arifle_AK105_railed",
-          {"ace_acc_pointer_green","rhsusf_acc_su230","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        }
-      },	
-        {"hgun_rook40_f",
-          {"16rnd_9x21_mag"}
-      },
-      "ace_vector"
-    };
-    vest[] = {"V_CarrierRigKBT_01_heavy_Olive_F"};
-    vestContents[] = {
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"handgrenade", 2},
-      {"acre_prc148",1},
-      {"16rnd_9x21_mag",2},
-      {"itc_land_tablet_rover",1},
-      {"ace_maptools",1}
-    };
+	vest[] = {"RHS_6b23_ML_6Sh92_Headset_Mapcase"};
 
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short", 1},
-      {"handgrenade", 2},
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"ace_ir_strobe_item",1},
-      {"SmokeShell",2},
-      {"SmokeshellRed", 4},
-      {"SmokeShellGreen", 4},
-      {"ace_microdagr",1}
-    };
-  };
-  class PL: SL {};
-  class ZEUS: SL {};
-  class TL: SL {
-    weapons[] = {
-      {
-        {"CUP_arifle_AK107_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        },
-        {"CUP_arifle_AK105_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        }
-      },	
-        {"hgun_rook40_f",
-          {"16rnd_9x21_mag"}
-        },
-        "ace_vector"
-      };
-    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
-    vestContents[] = {
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"handgrenade", 2},
-      {"acre_prc148",1},
-      {"16rnd_9x21_mag",2},
-      {"ace_maptools",1}
-    };
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACRE_PRC152",1},
+		{"ACE_DAGR",1},
+		{"ACE_IR_strobe_item",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"ACE_salineIV_500",1},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2}	
+		};
+	};
 
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short", 1},
-      {"handgrenade", 2},
-      {"ace_ir_strobe_item",1},
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"SmokeShell",2},
-      {"SmokeshellRed", 4},
-      {"SmokeShellGreen", 4},
-      {"ace_microdagr",1}
-    };
-  };
+class TL: SL {
+	weapons[] = {
+			{
+		{"CUP_arifle_AKMS_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"RHS_Weap_PM63",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"CUP_arifle_AKM_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	}
+		},	
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+	};
 
-  class DFO: SL {
-    assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","B_UavTerminal"};
+	vest[] = {"RHS_6b23_ML_6Sh92_Headset"};
 
-    weapons[] = {
-      {
-        {"CUP_arifle_AK107_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        },
-        {"CUP_arifle_AK105_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        }
-      },	
-        {"hgun_rook40_f",
-          {"16rnd_9x21_mag"}
-        },
-        "ace_vector"
-      };
-    vest[] = {"V_CarrierRigKBT_01_heavy_Olive_F"};
-    vestContents[] = {
-      {"acre_prc148",2},
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"handgrenade", 2},
-      {"SmokeShell",2},
-      {"SmokeshellRed", 2},
-      {"SmokeShellGreen", 2},
-      {"16rnd_9x21_mag",2},
-      {"ace_maptools",1}
-    };
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_DAGR",1},
+		{"ACE_IR_strobe_item",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"ACE_salineIV_500",1},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2}	
+		};
+	};
 
-    backpack[]={"b_carryall_green_f"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short", 1},
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"SmokeShell",2},
-      {"SmokeshellRed", 2},
-      {"SmokeShellGreen", 2},
-      {"ace_microdagr",1},
-      {"ITC_Land_B_AR2i_Packed",2},
-      {"ACE_UAVBattery",2}
-    };
-  };
+class PL: SL {};
+class ZEUS: SL {};
 
-  class FSO: DFO {};
-  class FO: DFO {
-    assignedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+class FO: SL {
+	assignedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
 
-    weapons[] = {
-      {
-        {"CUP_arifle_AK107_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        },
-        {"CUP_arifle_AK105_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        }
-      },	
-        {"hgun_rook40_f",
-        {"16rnd_9x21_mag"}
-      },
-      "Laserdesignator_03"
-    };
-    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
-    vestContents[] = {
-      {"acre_prc148",1},
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"handgrenade", 2},
-      {"SmokeShell",2},
-      {"SmokeshellRed", 2},
-      {"SmokeShellGreen", 2},
-      {"16rnd_9x21_mag",2},
-      {"ace_maptools",1}
-    };
+	weapons[] = {
+			{
+		{"CUP_arifle_AKMS_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"RHS_Weap_PM63",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"CUP_arifle_AKM_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	}
+		},	
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+		"LaserDesignator_03"
+	};
 
-    backpack[]={"b_carryall_green_f"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short", 1},
-      {"handgrenade", 2},
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"SmokeShell",2},
-      {"SmokeshellRed", 2},
-      {"SmokeShellGreen", 2},
-      {"laserbatteries",2},
-      {"ace_microdagr",1}
-    };
-  };
+	backpack[] = {"CUP_B_AlicePack_Bedroll"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACRE_PRC152",1},
+		{"ACE_DAGR",1},
+		{"RHS_Mag_NSPD",6},
+	 	{"LaserBatteries",2},
+		{"ACE_entrenchingtool",1},
+		{"ACE_salineIV_500",1},
+		{"RHS_30Rnd_762x39mm_89",6}
+		};
+	};
 
-  class RTO: baseUnit {
-    backpack[]={"crab_radiobag_01_wdl_f"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short", 1},
-      {"handgrenade", 2},
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"SmokeShell",2},
-      {"ACRE_PRC117F",1}
-    };
-  };
+class RF: BaseUnit {
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"RHS_100Rnd_762x54mmR_7BZ3",1},
+		{"ACE_salineIV_500",1},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",4}
+		};
+	};
 
-  class DM: baseUnit {
+class FSO: FO {};
 
-    weapons[] = {
-      {"srifle_DMR_05_blk_F",
-        {"10Rnd_93x64_DMR_05_Mag","ace_acc_pointer_green","optic_ams","rhs_acc_harris_swivel"}
-      },
-      {"hgun_rook40_f",
-        {"16rnd_9x21_mag"}
-      },
-      "ace_vector"
-    };
+class DEMO: BaseUnit {
+	backpack[] = {"RHSGREF_ttsko_alicepack"};	
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"SatchelCharge_Remote_Mag",2},
+		{"ACE_M26_clacker",1},
+		{"ACE_salineIV_500",1},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2}
+		};
+	};
 
-    vest[] = {"V_CarrierRigKBT_01_heavy_Olive_F"};
-    vestContents[] = {
-      {"10Rnd_93x64_DMR_05_Mag",5},
-      {"handgrenade",2},
-      {"SmokeShell",2},
-      {"16rnd_9x21_mag",2},
-      {"ace_maptools",1}
-    };
+class RTO: BaseUnit {
+	backpack[] = {"CRAB_RadioBag_01_eaf_F"};	
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",4},
+		{"ACRE_PRC117F",1},
+		{"ACE_salineIV_500",1},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2}
+		};
+	};	
 
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"optic_tws_mg",1},
-      {"muzzle_snds_93mmg",1},
-      {"10Rnd_93x64_DMR_05_Mag",5},
-      {"ACE_salineIV_500",1},
-      {"SmokeShell",2},
-      {"handgrenade",2}
-    };
-  };
-  class DMR: DM {};
+class UGL: BaseUnit {
+	weapons[] = {
+			{
+		{"CUP_arifle_AKMS_GL_Early",
+			{"RHS_30Rnd_762x39mm_89","RHS_VOG25"},
+	},
+		{"CUP_arifle_AKM_GL_Early",
+			{"RHS_30Rnd_762x39mm_89","RHS_VOG25"},
+	}
+		},	
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+	};
 
-  class MGL: baseUnit {
+	vest[] = {"RHS_6b23_ML_6Sh92_Vog"};
 
-    weapons[] = {
-      {"CUP_glaunch_6G30",
-        {"CUP_6Rnd_HE_GP25_M"}
-      },
-        {"hgun_rook40_f",
-        {"16rnd_9x21_mag"}
-      },
-      "ace_yardage450"
-    };
+	backpack[] = {"CUP_B_AlicePack_Bedroll"};	
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"RHS_VOG25P",8},
+		{"RHS_VOG25",12},
+		{"RHS_VG40TB",4},
+		{"RHS_VG40MD",4},
+		{"ACE_salineIV_500",1},	
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2}
+		};
+	};
+	
+class MGL: BaseUnit {
+	weapons[] = {
+		{"CUP_glaunch_6G30",
+			{"CUP_6Rnd_HE_GP25_M"}
+		},
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+	};
 
-    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
-    vestContents[] = {
-      {"CUP_6Rnd_HE_GP25_M",2},
-      {"handgrenade",2},
-      {"SmokeShell",2},
-      {"16rnd_9x21_mag",2},
-      {"ace_maptools",1}
-    };
+	vest[] = {"RHS_6b23_ML_Engineer"};
+	vestContents[] = {
+		{"RHS_mag_762x25_8",6}
+		};
 
-    backpack[]={"b_carryall_green_f"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"CUP_6Rnd_HE_GP25_M",4},
-      {"16rnd_9x21_mag",4},
-      {"handgrenade",2},
-      {"SmokeShell",2}
-    };
-  };
+	backpack[] = {"RHSGREF_ttsko_alicepack"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"CUP_6Rnd_HE_GP25_M",8},
+		{"RHS_VG40TB",6},
+		{"RHS_VG40MD",6},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",4}
+		};
+	};		
 
-  class GN: baseUnit {
+class DM: BaseUnit {
+	weapons[] = {
+		{"CUP_srifle_SVD",
+			{"RHS_10Rnd_762x54mmR_7N14","RHS_acc_pso1m2"}
+		},
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+		"binocular"
+	};
 
-    weapons[] = {
-      {
-        {"CUP_arifle_AK107_GL_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_vog25","rhs_acc_dtk2"}
-        },
-        {"CUP_arifle_AK74M_GL_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_vog25","rhs_acc_dtk2"}
-        }
-      },	
-        {"hgun_rook40_f",
-          {"16rnd_9x21_mag"}
-        }
-      };
+	vest[] = {"RHS_6B23_ML_Sniper"};
+	vestContents[] = {
+		{"RHS_10Rnd_762x54mmR_7N14",8},
+		{"ACE_10Rnd_762x54_Tracer_mag",2},
+		{"RHS_mag_762x25_8",2}
+		};
 
-    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
-    vestContents[] = {
-      {"rhs_30Rnd_545x39_7N22_AK",8},
-      {"handgrenade", 2},
-      {"16rnd_9x21_mag",2},
-      {"ace_maptools",1}
-    };
+	backpack[] = {"CUP_B_AlicePack_Bedroll"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"CUP_Optic_Goshawk",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_10Rnd_762x54mmR_7N14",4},
+		{"ACE_salineIV_500",1},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2}
+		};
+	};
 
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short", 1},
-      {"rhs_30Rnd_545x39_7N22_AK",4},
-      {"SmokeShell",2},
-      {"handgrenade",2},
-      {"rhs_vog25",12},
-      {"rhs_vog25p",8},
-      {"rhs_vg25tb",4},
-      {"rhs_vg40md", 4}
-    };
-  };
-  class UGL: GN {};
+class LMG: BaseUnit {
+	weapons[] = {
+		{"CUP_arifle_RPK74",
+			{"RHS_75Rnd_762x39mm_89","RHS_acc_pso1m21"}
+		},
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+	};
 
-  class MAT: baseUnit {
+	vest[] = {"RHS_6b23_ML_Vydra_3m"};
+	vestContents[] = {
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2},
+		{"RHS_mag_762x25_8",2}
+		};
 
-    weapons[] = {
-      {"CUP_arifle_AK105_railed",
-        {"rhs_30Rnd_545x39_7N22_AK","ace_acc_pointer_green","optic_Holosight_blk_F","rhs_acc_dtk2"},
-      },
-      {"hgun_rook40_f",
-        {"16rnd_9x21_mag"}
-      },
-      {"launch_RPG32_green_F",
-        {"RPG32_F", "ace_acc_pointer_green"}
-      }
-    };
-    backpack[]={"b_kitbag_rgr"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short",1},
-      {"rhs_30Rnd_545x39_7N22_AK", 4},
-      {"RPG32_F", 1},
-      {"RPG32_HE_F", 2}
-    };
-  };
+	backpack[] = {"CUP_B_AlicePack_Bedroll"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_75Rnd_762x39mm_89",8},
+		{"ACE_salineIV_500",1},
+		};
+	};
 
-  class MATA: baseUnit {
+class GPMG: BaseUnit {
+	weapons[] = {
+		{"RHS_Weap_PKM",
+			{"RHS_100Rnd_762x54mmR_7BZ3"}
+		},
+	 	{"RHS_Weap_TT33",
+		{"RHS_mag_762x25_8"}
+		},
+	};
 
-    weapons[] = {
-      {
-        {"CUP_arifle_AK107_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        },
-        {"CUP_arifle_AK105_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        }
-      },	
-        {"hgun_rook40_f",
-          {"16rnd_9x21_mag"}
-        },
-        "ace_vector"
-      };
-    
-    backpack[]={"b_carryall_green_f"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short",1},
-      {"rhs_30Rnd_545x39_7N22_AK", 4},
-      {"RPG32_F", 2},
-      {"RPG32_HE_F", 2}
-    };
-  };
+	vest[] = {"RHS_6Sh92_VSR"};
+	vestContents[] = {
+		{"RHS_mag_762x25_8",2},
+		{"ACE_salineIV_500",1},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_mag_rgd5",2}
+		};
 
-  class HAT: baseUnit {
+	backpack[] = {"CUP_B_AlicePack_Bedroll"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_100Rnd_762x54mmR_7BZ3",3},
+		{"RHS_100Rnd_762x54mmR_green",1}
+		};
+	};
 
-    weapons[] = {
-      {"CUP_arifle_AK105_railed",
-        {"rhs_30Rnd_545x39_7N22_AK","ace_acc_pointer_green","optic_Holosight_blk_F","rhs_acc_dtk2"},
-      },
-      {"hgun_rook40_f",
-        {"16rnd_9x21_mag"}
-      },
-      {"launch_I_titan_short_f",
-        {"Titan_AT", "ace_acc_pointer_green"}
-      }
-    };
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short",1},
-      {"rhs_30Rnd_545x39_7N22_AK", 4},
-      {"Titan_AT", 1}
-    };
-  };
+class GPMGA: BaseUnit {
+	weapons[] = {
+		{"CUP_arifle_AKMS",
+			{"RHS_30Rnd_762x39mm_89","RHS_acc_pso1m21"}
+		},
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+	  "binocular"
+	};
 
-  class HATA: baseUnit {
+	vest[] = {"RHS_6Sh92_VSR"};
 
-    weapons[] = {
-      {
-        {"CUP_arifle_AK107_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        },
-        {"CUP_arifle_AK105_railed",
-          {"ace_acc_pointer_green","optic_Holosight_blk_F","rhs_30Rnd_545x39_7N22_AK","rhs_acc_dtk2"}
-        }
-      },	
-        {"hgun_rook40_f",
-        {"16rnd_9x21_mag"}
-      },
-      "ace_mx2a"
-    };
-    
-    backpack[]={"b_carryall_green_f"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short",1},
-      {"rhs_30Rnd_545x39_7N22_AK", 4},
-      {"Titan_AT", 1},
-      {"Titan_AP", 2}
-    };
-  };
+	backpack[] = {"RHSGREF_ttsko_alicepack"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"RHS_100Rnd_762x54mmR_7BZ3",3},
+		{"ACE_salineIV_500",1}
+		};
+	};	
 
-  class ME: baseUnit {
-    ace_medic = 2;
-    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
-    backpack[]={"b_carryall_green_f"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short", 1},
-      {"rhs_30Rnd_545x39_7N22_AK",6},
-      {"ACE_fieldDressing",15},
-      {"ACE_packingBandage",10},
-      {"ACE_quikclot",15},
-      {"ACE_elasticBandage",15},
-      {"ACE_morphine",8},
-      {"ACE_epinephrine",8},
-      {"ACE_adenosine",8},
-      {"ACE_salineIV_250",4},
-      {"ACE_salineiv_500",4},
-      {"ACE_salineiv",2},
-      {"ACE_bloodIV",4},
-      {"ACE_personalAidKit",1},
-      {"ACE_surgicalKit",1},
-      {"ACE_splint",8},
-      {"ACE_tourniquet",5}
-    };
-  };
-  class MED: ME {};
+class MAT: BaseUnit {
+	weapons[] = {
+			{
+		{"CUP_arifle_AKMS_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"RHS_Weap_PM63",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"CUP_arifle_AKM_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	}
+		},	
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+		{"RHS_Weap_RPG7",
+			{"RHS_RPG7_PG7V_Mag", "RHS_Acc_PGO7V3"}
+		}
+	};
 
-  class RM: baseUnit {
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short",1},
-      {"rhs_30Rnd_545x39_7N22_AK", 6},
-      {"handgrenade",4},
-      {"SmokeShell",2},
-      {"150rnd_762x54_box",1},      
-      {"ACE_salineIV_500",1}
-    };
-  };
-  class RF: RM {};
+	vest[] = {"RHS_6b23_ML_6Sh92"};
 
-  class GPMG: baseUnit {
-    weapons[] = {
-      {"CUP_lmg_Pecheneg",
-        {"150rnd_762x54_box","ace_acc_pointer_green","rhs_acc_ekp8_02d"},
-      },
-      {"hgun_rook40_f",
-          {"16rnd_9x21_mag"}
-      }
-    };
-    vest[] = {"V_CarrierRigKBT_01_light_Olive_F"};
-    vestContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"150rnd_762x54_box",1},
-      {"16rnd_9x21_mag",3},
-      {"ace_maptools",1}
-    };
+	backpack[] = {"CUP_B_AlicePack_Bedroll"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"RHS_RPG7_PG7V_Mag",1},
+		{"RHS_RPG7_OG7V_Mag",1},
+		{"ACE_salineIV_500",1}
+		};
+	};	
+	
+class MATA: BaseUnit {
+	weapons[] = {
+			{
+		{"CUP_arifle_AKMS_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"RHS_Weap_PM63",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"CUP_arifle_AKM_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	}
+		},	
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+	  "ACE_Yardage450"
+	};
 
-    backpack[]={"b_kitbag_rgr"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"CUP_muzzle_snds_KZRZP_PK",1},
-      {"150rnd_762x54_box",3},
-      {"SmokeShell",2},
-      {"handgrenade",2}
-    };
-  };
-  class MG: GPMG {};
+	backpack[] = {"RHSGREF_ttsko_alicepack"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"RHS_RPG7_PG7V_Mag",2},
+		{"RHS_RPG7_OG7V_Mag",3},
+		{"ACE_salineIV_500",1}
+		};
+	};
 
-  class LMG: baseUnit {
- 
-    weapons[] = {
-      {"CUP_arifle_RPK74M_railed",
-        {"CUP_60Rnd_545x39_AK74M_M","ace_acc_pointer_green","optic_Holosight_blk_F","rhs_acc_dtk2"},
-      },
-      {"hgun_rook40_f",
-          {"16rnd_9x21_mag"}
-      }
-    };
-    vestContents[] = {
-      {"CUP_60Rnd_545x39_AK74M_M",4},
-      {"SmokeShell",2},
-      {"16rnd_9x21_mag",2},
-      {"ace_maptools",1}
-    };
+class HAT: BaseUnit {
+	weapons[] = {
+			{
+		{"CUP_arifle_AKMS_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"RHS_Weap_PM63",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"CUP_arifle_AKM_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	}
+		},	
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+		{"RHS_Weap_RPG7",
+			{"RHS_RPG7_PG7VL_Mag", "RHS_Acc_PGO7V3"}
+		}
+	};
 
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short",1},
-      {"CUP_60Rnd_545x39_AK74M_M",8},
-      {"SmokeShell",2},
-      {"handgrenade",2}
-    };   
-  };
+	vest[] = {"RHS_6b23_ML_Engineer"};
+	vestContents[] = {
+		{"RHS_mag_762x25_8",2},
+		{"RHS_30Rnd_762x39mm_89",2}
+		};
 
-  class GPMGA: baseUnit {
+	backpack[] = {"CUP_B_AlicePack_Bedroll"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",8},
+		{"RHS_mag_rgd5",2},
+		{"RHS_mag_rdg2_black",2},
+		{"RHS_RPG7_TBG7V_Mag"},
+		{"RHS_RPG7_PG7VR_Mag",1}
+		};
+	};	
+	
+class HATA: BaseUnit {
+	weapons[] = {
+			{
+		{"CUP_arifle_AKMS_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"RHS_Weap_PM63",
+			{"RHS_30Rnd_762x39mm_89"},
+	},
+		{"CUP_arifle_AKM_Early",
+			{"RHS_30Rnd_762x39mm_89"},
+	}
+		},	
+	 	{"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+	  "ACE_Yardage450"
+	};
 
-    weapons[] = {
-      {"CUP_arifle_AK107_railed",
-        {"rhs_30Rnd_545x39_7N22_AK","ace_acc_pointer_green","optic_Holosight_blk_F","rhs_acc_dtk2"},
-      },
-      {"hgun_rook40_f",
-        {"16rnd_9x21_mag"}
-      },
-      "binocular"
-    };
+	backpack[] = {"RHSGREF_ttsko_alicepack"};
+	backpackContents[] = {
+	{"RHS_1PN138",1},
+	{"ACE_entrenchingtool",1},
+	{"RHS_30Rnd_762x39mm_89",4},
+	{"RHS_RPG7_PG7VR_Mag",1},
+	{"RHS_RPG7_TBG7V_Mag",2}
+		};
+	};
 
-    backpack[]={"b_carryall_green_f"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"rhs_acc_dtk4short",1},
-      {"rhs_30Rnd_545x39_7N22_AK",4},
-      {"rhs_30Rnd_545x39_AK_green",2},
-      {"SmokeShell",2},
-      {"handgrenade",2},
-      {"150rnd_762x54_box",2},	  
-      {"150rnd_762x54_box_tracer",1}
-    };
-  };
+class MED: BaseUnit {
+	ace_medic = 2;
+	
+	vest[] = {"RHS_6B23_ML_Medic"};
 
-  class PT: baseUnit {
+	backpack[] = {"RHSGREF_ttsko_alicepack"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"ACE_entrenchingtool",1},
+		{"RHS_30Rnd_762x39mm_89",6},
+		{"ACE_elasticBandage",15},
+		{"ACE_packingBandage",15},
+		{"ACE_quikclot",15},
+		{"ACE_fieldDressing",15},
+	  	{"ACE_morphine",8},
+		{"ACE_adenosine",8},
+	  	{"ACE_epinephrine",8},
+	  	{"ACE_salineIV_250",4},
+		{"ACE_salineIV_500",4},
+	  	{"ACE_salineiv",2},
+	  	{"ACE_bloodIV",4},
+		{"ACE_Splint",8},
+		{"ACE_tourniquet",4},
+	  	{"ACE_personalAidKit",1},
+		{"ACE_surgicalKit",1}
+		};
+	};
 
-    weapons[] = {
-      {"CUP_arifle_AKS74U_railed",
-        {"rhs_30Rnd_545x39_7N22_AK","ace_acc_pointer_green","optic_Holosight_blk_F","rhs_acc_dtk2"}
-      },
-      {"hgun_rook40_f",
-        {"16rnd_9x21_mag"}
-      }
-    };
+class Pilot: BaseUnit {
+	weapons[] = {
+		{"CUP_smg_bizon",
+			{"CUP_64Rnd_9x19_Bizon_M"}
+		},
+		{	"RHS_Weap_TT33",
+			{"RHS_mag_762x25_8"}
+		},
+	};
 
-    headgear[] = {
-      "rhsusf_hgu56p_visor_white",
-      "rhsusf_hgu56p_black",
-      "rhsusf_hgu56p_visor_mask_pink"
-      };
+	headgear[] = {"rhs_gssh18"};
 
-    goggles[] = {rhs_balaclava1_olive};
+	goggles[] = {"G_Aviator"};
 
-    vest[] = {"v_tacChestrig_oli_f"};
-    vestContents[] = {
-      {"acre_prc148",1},
-      {"rhs_30Rnd_545x39_7N22_AK",3},
-      {"16rnd_9x21_mag",2},
-      {"ace_maptools",1}
-    };
+	uniform[] = {"rhs_uniform_m88_patchless"};
 
-    backpack[] = {"b_fieldpack_green_f"};
-    backpackContents[] = {
-      {"o_nvgoggles_grn_f",1},
-      {"SmokeShell",2},
-      {"rhs_30Rnd_545x39_7N22_AK",3},
-      {"16rnd_9x21_mag",2},	  
-      {"SmokeShellgreen",2},
-      {"handgrenade",2},
-      {"Chemlight_green",2},
-      {"ace_ir_strobe_item",1},
-      {"Toolkit",1},
-      {"ace_microdagr",1}
-    };
-  };
+	vest[] = {"RHS_6B5_Rifleman_khak"};
+	vestContents[] = {
+		{"RHS_mag_762x25_8",2},
+		{"CUP_64Rnd_9x19_Bizon_M",2},
+		{"RHS_mag_rgd5",2},
+		{"RHS_mag_rdg2_black",2}
+		};
 
-  class PILOT: PT {};
+	backpack[] = {"CUP_B_RPGPack_Khaki"};
+	backpackContents[] = {
+		{"RHS_1PN138",1},
+		{"CUP_64Rnd_9x19_Bizon_M",2},
+		{"ACE_IR_strobe_item",1},
+		{"RHS_Mag_NSPD,2"},
+		{"Toolkit",1},
+		{"ACE_salineIV_500",1}
+		};
+	};	
 
-  class LauncherCrate {
-    vehCargoWeapons[] = {
-      {"rhs_weap_m72a7",10},
-      {"launch_MRAWS_green_rail_F",2},
-      {"ACE_Vector",2}
-    };
-    vehCargoMagazines[] = {
-      {"MRAWS_HE_F",10},
-      {"MRAWS_HEAT55_F",10},
-      {"MRAWS_HEAT_F",10}
-    };
-    vehCargoRucks[] = {
-      {"b_carryall_green_f",2}
-    };
-  };
-  class LargeGearCrate {
-    vehCargoWeapons[] = {
-      {"rhs_weap_m72a7",6},
-      {"ACE_Vector",2}
-    };
-    vehCargoMagazines[] = {
-      {"rhs_30Rnd_545x39_7N22_AK",40},
-      {"rhs_30Rnd_545x39_AK_green",10},
-      {"CUP_60Rnd_545x39_AK74M_M",20},
-      {"10Rnd_93x64_DMR_05_Mag",10},
-      {"150rnd_762x54_box",8},
-      {"150rnd_762x54_box_tracer",2},
-      {"handgrenade",20},
-      {"SmokeShell",10},
-      {"rhs_vog25",20},
-      {"ClaymoreDirectionalMine_Remote_Mag",4},
-      {"SLAMDirectionalMine_Wire_Mag",6},
-      {"DemoCharge_Remote_Mag",8}
-    };
-    vehCargoItems[] = {
-      {"ToolKit",1},
-      {"ACE_M26_Clacker",4},
-      {"ACE_DefusalKit",2},
-      {"ACE_fieldDressing",20},
-      {"ACE_packingBandage",20},
-      {"ACE_quikclot",20},
-      {"ACE_Tourniquet",8},
-      {"ACE_splint",4},
-      {"ACE_morphine",4},
-      {"ACE_epinephrine",4},
-      {"ACE_adenosine",4},
-      {"ACE_salineIV",4},      
-      {"ACE_salineIV_500",4},
-      {"ACE_Flashlight_MX991",4},
-      {"ACE_MapTools",4}
-    };
-    vehCargoRucks[] = {
-      {"b_carryall_green_f",4}
-    };
-  };
+class LargeGearCrate {
+	vehCargoWeapons[] = {
+		{"RHS_weap_RPG26",6},
+		{"RHS_weap_RSHG2",4},
+		{"binocular",2}
+	};
+	vehCargoMagazines[] = {
+		{"RHS_30Rnd_762x39mm_89",40},
+		{"RHS_75Rnd_762x39mm_89",10},
+		{"RHS_100Rnd_762x54mmR_7BZ3",10},
+		{"RHS_100Rnd_762x54mmR_green",5},
+		{"RHS_10Rnd_762x54mmR_7N14",20},
+		{"ACE_10Rnd_762x54_Tracer_mag",10},
+		{"RHS_VOG25",20},
+		{"RHS_VG40TB",10},
+		{"RHS_VG40MD",10},
+		{"RHS_mag_rdg2_black",10},
+		{"RHS_Mag_NSPD",10},
+		{"RHS_mag_rgd5",20},
+		{"DemoCharge_Remote_Mag",8}
+	};
+	vehCargoItems[] = {
+		{"ACE_fieldDressing",20},
+		{"ACE_quikclot",20},
+		{"ACE_elasticBandage",20},
+		{"ACE_packingBandage",20},
+		{"ACE_Splint",10},
+		{"ACE_tourniquet",10},
+		{"ACE_morphine",10},
+		{"ACE_adenosine",10},
+		{"ACE_epinephrine",10},
+		{"ACE_salineiv",4},
+		{"ACE_salineIV_500",4},
+		{"ACE_salineIV_250",4},
+		{"ACE_M26_clacker",4},
+		{"Toolkit",4},
+		{"ACE_DefusalKit",4}
+	};
+	vehCargoRucks[] = {
+		{"RHSGREF_ttsko_alicepack",4}
+		};
+	};
+
+class LauncherCrate {
+	vehCargoWeapons[] = {
+		{"RHS_weap_RPG26",6},
+		{"RHS_weap_RSHG2",4},
+		{"RHS_Weap_RPG7",2},
+		{"ACE_Yardage450",2}
+	};
+	vehCargoMagazines[] = {
+		{"RHS_RPG7_PG7VL_Mag",6},
+		{"RHS_RPG7_PG7VR_Mag",4},
+		{"RHS_RPG7_OG7V_Mag",6},
+		{"RHS_RPG7_TBG7V_Mag",4}
+	};
+	vehCargoItems[] = {
+		{"RHS_Acc_PGO7V3",2}
+	};
+	vehCargoRucks[] = {
+		{"RHSGREF_ttsko_alicepack",4}
+		};
+	};
+
+class DemoCrate {
+	vehCargoMagazines[] = {
+		{"DemoCharge_Remote_Mag",10},
+		{"SatchelCharge_Remote_Mag",10},
+		{"RHS_Mine_OZM72_c_mag",10}
+	};
+	vehCargoItems[] = {
+		{"ACE_M26_clacker",4},
+		{"ACE_DefusalKit",4}
+		};
+	};	
 };
