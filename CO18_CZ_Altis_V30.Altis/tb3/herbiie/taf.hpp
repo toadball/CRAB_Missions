@@ -205,7 +205,7 @@ class TAF {
 		
     vest[] = {"V_TacVest_oli"};
       vestContents[] = {
-        {"rhs_mag_20Rnd_762x51_m80_fnfal",5},
+        {"30Rnd_9x21_Yellow_Mag",5},
 		{"ACE_salineIV_500",1},
         {"HandGrenade",2},
         {"SmokeShell",2},

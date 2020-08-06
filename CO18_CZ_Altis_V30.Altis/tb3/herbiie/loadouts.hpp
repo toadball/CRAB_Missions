@@ -8,4 +8,6 @@
 #include "taf.hpp"
 #include "csat_ng.hpp"
 #include "ctrg.hpp"
+#include "brit_35.hpp"
+#include "brit_95.hpp"
 
