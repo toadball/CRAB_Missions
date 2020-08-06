@@ -1,22 +1,22 @@
 //"rhs_weap_rpg75"
 
-class NAPA {
+class RHSCUP_TNLA {
   class BaseUnit {
     allowPlayerGoggles = 0;
     ace_medic = 1;
     weapons[] = {
       {
-        {"rhs_weap_savz58p",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AKM_Early",
+          {"30Rnd_762x39_Mag_Green_F" }
         },
-        {"rhs_weap_savz58p_black",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AK47_Early",
+          {"30Rnd_762x39_Mag_Green_F" }
         },
-        {"rhs_weap_savz58v",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AKS",
+          {"30Rnd_762x39_Mag_Green_F" }
         },
-        {"rhs_weap_savz58v_black",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AKMS_Early",
+          {"30Rnd_762x39_Mag_Green_F" }
         }
       }
     };
@@ -27,30 +27,24 @@ class NAPA {
     assignedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
 
     headgear[] = {
-      "rhs_beanie_green",
-      "H_Booniehat_oli",
-      "H_Watchcap_khk",
-      "H_Cap_oli",
+      "H_Bandanna_cbr",
       "H_Bandanna_sgg",
-      "H_Bandanna_khk"
+      "H_Bandanna_sand",
+      "H_Bandanna_gry",
+      "H_Bandanna_khk",
+      "H_Booniehat_oli",
+      "H_Booniehat_tan",
+      "H_Booniehat_khk",
+      "H_Cap_oli",
+      "H_Cap_grn",
+      "H_Cap_tan",
+      "rhs_ssh68"
     };
-    goggles[] = {
-      "G_Bandanna_oli",
-      "G_Bandanna_khk",
-      "rhs_scarf",
-      "rhsusf_shemagh2_grn",
-      "rhsusf_shemagh_grn",
-      "rhsusf_shemagh_od",
-      "rhsusf_shemagh2_od"
-    };
+    goggles[] = {};
 
     uniform[] = {
-      "rhsgref_uniform_dpm_olive",
-      "rhsgref_uniform_dpm",
-      "rhsgref_uniform_flecktarn",
-      "rhsgref_uniform_flecktarn_full",
-      "rhsgref_uniform_woodland",
-      "rhsgref_uniform_woodland_olive"
+      "rhsgref_uniform_TLA_1",
+      "rhsgref_uniform_TLA_2"
     };
       uniformContents[] = {
         {"ACE_fieldDressing",5},
@@ -65,17 +59,11 @@ class NAPA {
       };
 
     vest[] = {
-      "V_TacVest_oli",
-      "V_Chestrig_oli",
-      "V_Chestrig_rgr",
-      "V_TacChestrig_grn_F",
-      "V_TacChestrig_oli_F",
-      "rhsgref_chicom_m88"
+      "rhsgref_chicom"
     };
-
     vestContents[] = {
-      {"rhs_30Rnd_762x39mm_Savz58",4},
-      {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
+      {"30Rnd_762x39_Mag_Green_F",4},
+      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"ACE_MapTools",1}
@@ -86,10 +74,11 @@ class NAPA {
       "B_FieldPack_khk"
     };
     backpackContents[] = {
-      {"rhs_30Rnd_762x39mm_Savz58",4},
-      {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
+      {"30Rnd_762x39_Mag_Green_F",4},
+      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
       {"HandGrenade",2},
       {"SmokeShell",2},
+      {"rhs_75Rnd_762x39mm_tracer",1},
       {"rhs_100Rnd_762x54mmR_green",1}
     };
 
@@ -98,81 +87,67 @@ class NAPA {
   class PL: BaseUnit {
     weapons[] = {
       {
-        {"rhs_weap_savz58p",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AKM_Early",
+          {"30Rnd_762x39_Mag_Green_F" }
         },
-        {"rhs_weap_savz58p_black",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AK47_Early",
+          {"30Rnd_762x39_Mag_Green_F" }
         },
-        {"rhs_weap_savz58v",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AKS",
+          {"30Rnd_762x39_Mag_Green_F" }
         },
-        {"rhs_weap_savz58v_black",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AKMS_Early",
+          {"30Rnd_762x39_Mag_Green_F" }
         }
       },
       "Binocular"
     };
-
-    vest[] = {
-      "V_Chestrig_oli",
-      "V_Chestrig_rgr",
-      "V_TacChestrig_grn_F",
-      "V_TacChestrig_oli_F"
-    };
     vestContents[] = {
-      {"rhs_30Rnd_762x39mm_Savz58",4},
-      {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
+      {"30Rnd_762x39_Mag_Green_F",4},
+      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"ACRE_PRC148",1},
-      {"ACRE_PRC343",1},
       {"ACE_MapTools",1}
     };
-
   };
   class ZEUS: PL {};
   class TL: PL {};
   class RF: BaseUnit {};
-  class UGL: BaseUnit {};
-  class MAT: BaseUnit {
+  class UGL: BaseUnit {
     weapons[] = {
       {
-        {"rhs_weap_savz58p",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AKM_GL_Early",
+          {"30Rnd_762x39_Mag_Green_F","rhs_VOG25" }
         },
-        {"rhs_weap_savz58p_black",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AK47_GL_Early",
+          {"30Rnd_762x39_Mag_Green_F","rhs_VOG25" }
         },
-        {"rhs_weap_savz58v",
-          {"rhs_30Rnd_762x39mm_Savz58"}
-        },
-        {"rhs_weap_savz58v_black",
-          {"rhs_30Rnd_762x39mm_Savz58"}
+        {"CUP_arifle_AKMS_GL_Early",
+          {"30Rnd_762x39_Mag_Green_F","rhs_VOG25" }
         }
-      },
-      "launch_RPG7_F"
+      }
     };
-    backpack[] = {"rhs_rpg_empty"};
     backpackContents[] = {
-      {"RPG7_F",2},
-      {"rhs_rpg7_OG7V_mag",2}
+      {"30Rnd_762x39_Mag_Green_F",2},
+      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"rhs_VOG25",20},
+      {"rhs_GRD40_White",5},
+      {"ACE_MapTools",1}
     };
   };
-  class MATA: BaseUnit {
-    backpack[] = {"rhs_rpg_empty"};
-    backpackContents[] = {
-      {"RPG7_F",2},
-      {"rhs_rpg7_OG7V_mag",2}
-    };
-  };
-  class UAV: BaseUnit {};
-	class FSO: UAV {};
+	class FSO: TL {};
   class MED: BaseUnit {
     ace_medic = 2;
 
     backpack[] = { "B_Carryall_oli" };
     backpackContents[] = {
+      {"30Rnd_762x39_Mag_Green_F",2},
+      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},      
       {"ACE_fieldDressing",20},
       {"ACE_packingBandage",20},
       {"ACE_quikclot",10},
@@ -191,29 +166,75 @@ class NAPA {
   };
 
   class LMG: BaseUnit {
-    weapons[] = {"rhs_weap_pkm", {"rhs_100Rnd_762x54mmR"}};
-    vest[] = {
-      "V_TacVest_oli",
-      "V_Chestrig_oli",
-      "V_Chestrig_rgr"
+    weapons[] = {
+      {"CUP_arifle_RPK74",
+          {"rhs_75Rnd_762x39mm_89"}
+      }
+    };
+    vestContents[] = {
+      {"rhs_75Rnd_762x39mm_89",2},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+      {"ACE_MapTools",1}
+    };
+    backpack[] = { "rhs_sidor" };
+    backpackContents[] = {
+      {"rhs_75Rnd_762x39mm_tracer",3},
+      {"HandGrenade",2},
+      {"SmokeShell",2},
+    };
+  };
+  class GPMG: LMG {
+    weapons[] = {
+      {"CUP_lmg_PKM",
+          {"rhs_100Rnd_762x54mmR"}
+      }
     };
     vestContents[] = {
       {"rhs_100Rnd_762x54mmR",1},
-      {"rhs_100Rnd_762x54mmR_green",1},
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"ACE_MapTools",1}
     };
     backpackContents[] = {
-      {"rhs_100Rnd_762x54mmR",1},
-      {"rhs_100Rnd_762x54mmR_green",1}
+      {"rhs_100Rnd_762x54mmR_green",2}
     };
   };
-  class GPMG: LMG { };
 
+  class MAT: BaseUnit {
+    weapons[] = {
+      {
+        {"CUP_arifle_AKM_Early",
+          {"30Rnd_762x39_Mag_Green_F" }
+        },
+        {"CUP_arifle_AK47_Early",
+          {"30Rnd_762x39_Mag_Green_F" }
+        },
+        {"CUP_arifle_AKS",
+          {"30Rnd_762x39_Mag_Green_F" }
+        },
+        {"CUP_arifle_AKMS_Early",
+          {"30Rnd_762x39_Mag_Green_F" }
+        }
+      },
+      "launch_RPG7_F"
+    };
+    backpack[] = {"rhs_rpg_empty"};
+    backpackContents[] = {
+      {"RPG7_F",2},
+      {"rhs_rpg7_OG7V_mag",2}
+    };
+  };
+  class MATA: BaseUnit {
+    backpack[] = {"rhs_rpg_empty"};
+    backpackContents[] = {
+      {"RPG7_F",2},
+      {"rhs_rpg7_OG7V_mag",2}
+    };
+  };
   class DMR: BaseUnit {
     weapons[] = {
-      {"rhs_weap_svdp",
+      {"CUP_srifle_SVD",
         {"rhs_acc_pso1m2","rhs_10Rnd_762x54mmR_7N14"}
       }
     };
@@ -229,13 +250,13 @@ class NAPA {
       {"rhs_10Rnd_762x54mmR_7N14",4},
       {"HandGrenade",2},
       {"SmokeShell",2}
-    };
+		};
   };
   class PILOT: baseUnit {
-
+    headgear[]={"H_Cap_headphones"};
     vestContents[] = {
-      {"rhs_30Rnd_762x39mm_Savz58",2},
-      {"rhs_30Rnd_762x39mm_Savz58_tracer",2},
+      {"30Rnd_762x39_Mag_Green_F",2},
+      {"30Rnd_762x39_Mag_Tracer_Green_F",2},
       {"SmokeShellGreen",2},
       {"HandGrenade",1},
       {"SmokeShellRed",1},
@@ -270,18 +291,22 @@ class NAPA {
   };
   class LargeGearCrate {
     vehCargoWeapons[] = {
-      {"rhs_weap_rpg75",10},
+      {"rhs_weap_rpg75",5},
       {"Binocular",2}
     };
     vehCargoMagazines[] = {
-      {"rhs_30Rnd_762x39mm_Savz58",32},
-      {"rhs_30Rnd_762x39mm_Savz58_Tracer",16},
-      {"rhs_100Rnd_762x54mmR",8},
-      {"rhs_100Rnd_762x54mmR_green",8},
+      {"30Rnd_762x39_Mag_Green_F",32},
+      {"30Rnd_762x39_Mag_Tracer_Green_F",16},
+      {"rhs_75Rnd_762x39mm_89",12},
+      {"rhs_75Rnd_762x39mm_Tracer",12},
+      {"rhs_100Rnd_762x54mmR",12},
+      {"rhs_100Rnd_762x54mmR_green",4},
       {"rhs_10Rnd_762x54mmR_7N1",8},
-      {"rhs_10Rnd_762x54mmR_7N14",8},
-      {"HandGrenade",24},
-      {"SmokeShell",24},
+      {"rhs_10Rnd_762x54mmR_7N14",4},
+      {"HandGrenade",16},
+      {"SmokeShell",16},
+      {"rhs_VOG25",40},
+      {"rhs_GRD40_White",20},
       {"DemoCharge_Remote_Mag",16}
     };
     vehCargoItems[] = {

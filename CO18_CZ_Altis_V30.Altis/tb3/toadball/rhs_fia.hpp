@@ -1,6 +1,6 @@
 class RHS_FIA {
   class BaseUnit {
-    allowPlayerGoggles = 1;
+    allowPlayerGoggles = 0;
     ace_medic = 1;
     weapons[] = {
       {

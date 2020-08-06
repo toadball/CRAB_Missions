@@ -2,7 +2,7 @@
 
 class NAPA {
   class BaseUnit {
-    allowPlayerGoggles = 1;
+    allowPlayerGoggles = 0;
     ace_medic = 1;
     weapons[] = {
       {
@@ -223,6 +223,12 @@ class NAPA {
       {"HandGrenade",2},
       {"SmokeShell",2},
       {"ACE_MapTools",1}
+    };
+    backpackContents[] = {
+      {"rhs_10Rnd_762x54mmR_7N1",4},
+      {"rhs_10Rnd_762x54mmR_7N14",4},
+      {"HandGrenade",2},
+      {"SmokeShell",2}
     };
   };
   class PILOT: baseUnit {

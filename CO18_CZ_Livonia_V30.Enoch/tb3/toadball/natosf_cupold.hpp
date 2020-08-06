@@ -19,9 +19,13 @@ class NATOSF_CUPOLD_WDL {
       "rhs_Booniehat_m81",
       "rhs_Booniehat_m81",
       "rhs_Booniehat_m81",
+      "rhs_Booniehat_m81",
+      "rhs_Booniehat_m81",
       "H_Watchcap_camo",
       "H_MilCap_grn",
-      "H_Booniehat_mgrn"
+      "H_Booniehat_mgrn",
+      "H_Bandanna_camo",
+      "H_Bandanna_khk"
     };
     goggles[] = { };
     uniform[] = {"rhsgref_uniform_woodland"};
@@ -185,7 +189,7 @@ class NATOSF_CUPOLD_WDL {
         {"ACE_MapTools",1}
       };
       backpackContents[] = {
-        {"rhsusf_200Rnd_556x45_mixed_soft_pouch",2},
+        {"rhsusf_200Rnd_556x45_mixed_soft_pouch",3},
         {"HandGrenade",2},
         {"SmokeShell",2},
         {"Chemlight_green",2},
@@ -329,4 +333,187 @@ class NATOSF_CUPOLD_WDL {
       {"rhsgref_wdl_alicepack",4}
     };
   };
+};
+class NATOSF_CUPOLD_DES: NATOSF_CUPOLD_WDL {
+  class PL: PL {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class ZEUS: ZEUS {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class TL: TL {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class FSO: FSO {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class MED: MED {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class RF: RF {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class UGL: UGL {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class LMG: LMG {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class DMR: DMR {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class MAT: MAT {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class MATA: MATA {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+  class PILOT: PILOT {
+    headgear[] = {
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Booniehat_tan",
+      "H_Watchcap_khk",
+      "H_MilCap_grn",
+      "H_Bandanna_sgg",
+      "H_Bandanna_sand"
+    };
+    uniform[] = {"rhsgref_uniform_3color_desert"};
+    backpack[] = {"rhsgref_hidf_alicepack"};
+  };
+
 };

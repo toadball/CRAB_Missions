@@ -10,3 +10,5 @@
 #include "natosf_cupwep.hpp"
 #include "rhscup_alpen.hpp"
 #include "natosf_cupold.hpp"
+#include "rhscup_tnla.hpp"
+#include "rhscup_hidf.hpp"

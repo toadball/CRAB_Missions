@@ -2,7 +2,7 @@
 
 class RHS_TNLA {
   class BaseUnit {
-    allowPlayerGoggles = 1;
+    allowPlayerGoggles = 0;
     ace_medic = 1;
     weapons[] = {
       {
